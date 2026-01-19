@@ -1,13 +1,13 @@
 import React from 'react';
-import { Facebook, Twitter, Youtube, Instagram, ArrowUpRight, Send } from 'lucide-react';
+import { Facebook, Twitter, Youtube, Instagram, Send } from 'lucide-react';
 
 const UniqueFooter = () => {
   return (
     <footer className="bg-[#050505] pt-24 pb-12 relative overflow-hidden">
-      {/* Background Big Text - Matching Hero Style */}
-      <div className="absolute bottom-[-10%] left-0 w-full pointer-events-none select-none">
-        <h2 className="text-[20vw] font-black text-white/[0.03] uppercase leading-none tracking-tighter">
-          Woshico
+      {/* Background Big Text - Updated to PRIME */}
+      <div className="absolute bottom-[-10% ] left-0 w-full pointer-events-none select-none">
+        <h2 className="text-[20vw] font-black text-white/[0.02] uppercase leading-none tracking-tighter">
+          PRIME
         </h2>
       </div>
 
@@ -17,18 +17,19 @@ const UniqueFooter = () => {
           {/* Brand Info */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#F21B23] rounded-full flex items-center justify-center">
+              {/* Logo Background changed to Brand Blue */}
+              <div className="w-10 h-10 bg-[#062da3] rounded-full flex items-center justify-center">
                 <img src="https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68295e67096b18189b5_car.svg" alt="logo" className="w-6 h-6 invert" />
               </div>
-              <span className="text-2xl font-bold tracking-tighter text-white">Woshico</span>
+              <span className="text-2xl font-bold tracking-tighter text-white uppercase">Prime Shine</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-8">
-              Premium car wash services designed for today’s busy drivers. We bring the shine back to your ride.
+              Professional automotive detailing and protection services. Engineering the perfect finish for the most discerning drivers.
             </p>
             <div className="flex gap-4">
               {[Facebook, Twitter, Youtube, Instagram].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#F21B23] hover:border-[#F21B23] transition-all duration-300">
-                  <Icon size={18} className="text-white" />
+                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#062da3] hover:border-[#062da3] transition-all duration-300 group">
+                  <Icon size={18} className="text-white group-hover:scale-110 transition-transform" />
                 </a>
               ))}
             </div>
@@ -36,12 +37,13 @@ const UniqueFooter = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-8">Navigation</h4>
+            <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Navigation</h4>
             <ul className="space-y-4">
               {['Home', 'About Us', 'Services', 'Our Blog', 'Contact'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-gray-400 hover:text-[#F21B23] hover:pl-2 transition-all duration-300 flex items-center gap-2 group">
-                    <span className="w-0 h-[1px] bg-[#F21B23] group-hover:w-4 transition-all"></span> {item}
+                  <a href="#" className="text-gray-400 hover:text-[#062da3] hover:pl-2 transition-all duration-300 flex items-center gap-2 group text-sm">
+                    {/* Hover line changed to Brand Blue */}
+                    <span className="w-0 h-[1px] bg-[#062da3] group-hover:w-4 transition-all"></span> {item}
                   </a>
                 </li>
               ))}
@@ -50,35 +52,36 @@ const UniqueFooter = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-8">Contact Us</h4>
-            <ul className="space-y-4 text-gray-400 text-sm">
+            <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Contact Us</h4>
+            <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex flex-col">
-                <span className="text-white font-semibold text-xs mb-1 uppercase">Location</span>
-                123 Shine Street, Dubai, UAE
+                <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Location</span>
+                123 Shine Avenue, Business Bay<br/>Dubai, UAE
               </li>
               <li className="flex flex-col">
-                <span className="text-white font-semibold text-xs mb-1 uppercase">Email</span>
-                hello@woshico.com
+                <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Email</span>
+                hello@primeshine.com
               </li>
               <li className="flex flex-col">
-                <span className="text-white font-semibold text-xs mb-1 uppercase">Phone</span>
-                +971 12 345 6789
+                <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Phone</span>
+                +971 4 123 4567
               </li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-8">Newsletter</h4>
-            <p className="text-gray-400 text-sm mb-6">Subscribe to get latest updates and offers.</p>
+            <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Newsletter</h4>
+            <p className="text-gray-400 text-sm mb-6">Stay updated with our latest detailing projects and offers.</p>
             <div className="relative">
               <input 
                 type="email" 
-                placeholder="Your Email" 
-                className="w-full bg-white/5 border border-white/10 rounded-full py-4 px-6 outline-none focus:border-[#F21B23] text-sm text-white"
+                placeholder="Email Address" 
+                className="w-full bg-white/5 border border-white/10 rounded-full py-4 px-6 outline-none focus:border-[#062da3] text-sm text-white transition-colors"
               />
-              <button className="absolute right-2 top-2 w-10 h-10 bg-[#F21B23] rounded-full flex items-center justify-center hover:bg-white group transition-all">
-                <Send size={16} className="text-white group-hover:text-[#F21B23]" />
+              {/* Button changed to Brand Blue */}
+              <button className="absolute right-2 top-2 w-10 h-10 bg-[#062da3] rounded-full flex items-center justify-center hover:bg-white group transition-all">
+                <Send size={14} className="text-white group-hover:text-[#062da3] transition-colors" />
               </button>
             </div>
           </div>
@@ -86,13 +89,13 @@ const UniqueFooter = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4">
-          <p className="text-gray-500 text-[10px] uppercase tracking-widest">
-            © 2026 Woshico. Made with Passion for Cars.
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-600 text-[10px] uppercase tracking-widest font-medium">
+            © 2026 Prime Shine Detailing. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-[10px] uppercase tracking-widest font-bold">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="text-gray-600 hover:text-[#062da3] transition-colors">Privacy Policy</a>
+            <a href="#" className="text-gray-600 hover:text-[#062da3] transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

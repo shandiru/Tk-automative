@@ -68,8 +68,9 @@ export default function AboutUsSection() {
           {/* Left Side - About Us Label */}
           <div className="lg:min-w-[120px] animate-fade-in">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-0.5 bg-yellow-400"></div>
-              <span className="text-yellow-400 font-semibold tracking-wider uppercase text-sm whitespace-nowrap">
+              {/* Using Brand Blue #062da3 */}
+              <div className="w-12 h-1 bg-[#062da3]"></div>
+              <span className="text-[#062da3] font-bold tracking-[0.2em] uppercase text-sm whitespace-nowrap">
                 About Us
               </span>
             </div>
@@ -80,7 +81,7 @@ export default function AboutUsSection() {
             {/* Heading */}
             <div className="animate-slide-up">
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                Discover the passion and expertise behind Prime Shine, your premier destination for luxury car wash and unmatched service.
+                Discover the passion and expertise behind Prime Shine, your premier destination for <span className="text-[#062da3]">luxury car care</span> and unmatched service.
               </h2>
             </div>
 
@@ -92,9 +93,9 @@ export default function AboutUsSection() {
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
                     {counters.bookings.toFixed(1)}
                   </span>
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400">K+</span>
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">K+</span>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base">Total Bookings</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Total Bookings</p>
               </div>
 
               {/* Models In Stock */}
@@ -103,9 +104,9 @@ export default function AboutUsSection() {
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
                     {counters.models}
                   </span>
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400">+</span>
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">+</span>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base">Models In Stock</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Service Types</p>
               </div>
 
               {/* Happy Clients */}
@@ -114,9 +115,9 @@ export default function AboutUsSection() {
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
                     {counters.clients}
                   </span>
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400">%</span>
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">%</span>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base">Happy Clients</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Happy Clients</p>
               </div>
 
               {/* Daily Bookings */}
@@ -125,26 +126,26 @@ export default function AboutUsSection() {
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
                     {counters.daily}
                   </span>
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400">+</span>
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">+</span>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base">Daily Bookings</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Daily Bookings</p>
               </div>
             </div>
 
             {/* Bottom Section */}
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12 pt-4 animate-fade-in-delay">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12 pt-8 border-t border-white/10 animate-fade-in-delay">
               {/* Description */}
               <div className="max-w-md">
                 <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-                  Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat aenean.
+                  We combine advanced technology with artisan attention to detail. Our mission is to provide every driver with a showroom-quality finish through eco-friendly practices.
                 </p>
               </div>
 
-              {/* Learn More Button */}
-              <button className="group relative px-8 py-4 border-2 border-yellow-400 hover:bg-yellow-400 text-yellow-400 hover:text-black font-semibold rounded-full transition-all duration-300 flex items-center gap-4 flex-shrink-0">
-                <span className="text-base md:text-lg">Learn More</span>
-                <div className="w-8 h-8 bg-yellow-400 group-hover:bg-black rounded-full flex items-center justify-center transition-colors duration-300">
-                  <ArrowRight className="w-5 h-5 text-black group-hover:text-yellow-400 transition-colors duration-300" />
+              {/* Learn More Button - Refreshed with Brand Blue */}
+              <button className="group relative px-8 py-4 bg-[#062da3] hover:bg-white text-white hover:text-[#062da3] font-bold rounded-sm transition-all duration-300 flex items-center gap-4 flex-shrink-0">
+                <span className="text-sm md:text-base uppercase tracking-tighter">Learn Our Story</span>
+                <div className="w-8 h-8 bg-white/20 group-hover:bg-[#062da3] rounded-full flex items-center justify-center transition-colors duration-300">
+                  <ArrowRight className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300" />
                 </div>
               </button>
             </div>
@@ -155,36 +156,18 @@ export default function AboutUsSection() {
 
       <style jsx>{`
         @keyframes fade-in {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
+          from { opacity: 0; }
+          to { opacity: 1; }
         }
 
         @keyframes slide-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out;
-        }
-
-        .animate-fade-in-delay {
-          animation: fade-in 1s ease-out 0.5s both;
-        }
-
-        .animate-slide-up {
-          animation: slide-up 0.8s ease-out both;
-        }
+        .animate-fade-in { animation: fade-in 0.8s ease-out; }
+        .animate-fade-in-delay { animation: fade-in 1s ease-out 0.5s both; }
+        .animate-slide-up { animation: slide-up 0.8s ease-out both; }
       `}</style>
     </section>
   );

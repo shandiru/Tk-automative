@@ -1,63 +1,86 @@
 import React from 'react';
 import { serviceBannerData } from '../Data/Diagnostics/data'; // Import your data
+import { Play } from 'lucide-react';
 
 const ServiceBanner = () => {
-  const { title, description, thumbnailImage, playIcon } = serviceBannerData;
+  const { title, description, thumbnailImage } = serviceBannerData;
 
   const handleVideoClick = () => {
-    // Lightbox logic or redirect to YouTube
     window.open(serviceBannerData.videoUrl, '_blank');
   };
 
   return (
-    <section className="bg-white py-16 md:py-48">
+    <section className="bg-black py-16 md:py-32 lg:py-48 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Text Content Area */}
-        <div className="max-w-3xl mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 tracking-tight">
+        <div className="max-w-4xl mb-16 animate-fade-in">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-[2px] bg-[#062da3]"></div>
+            <span className="text-[#062da3] font-bold uppercase tracking-[0.3em] text-xs">Premium Experience</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tighter uppercase">
             {title}
           </h1>
-          <p className="text-gray-500 text-lg md:text-xl leading-relaxed max-w-2xl">
+          <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl font-medium">
             {description}
           </p>
         </div>
 
         {/* Video / Image Section */}
-        <div className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-2xl" onClick={handleVideoClick}>
-          {/* Main Image */}
+        <div 
+          className="relative group cursor-pointer overflow-hidden rounded-sm shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/5" 
+          onClick={handleVideoClick}
+        >
+          {/* Main Image - Grayscale to Color transition */}
           <img 
             src={thumbnailImage} 
             alt={title} 
-            className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-[450px] md:h-[650px] object-cover transition-all duration-1000 grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105"
           />
           
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-300" />
+          {/* Brand Blue Tint Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 group-hover:bg-[#062da3]/10 transition-all duration-500" />
 
           {/* Play Button Overlay */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative flex items-center justify-center">
-              {/* Animated Circles */}
-              <div className="absolute w-20 h-20 bg-white/30 rounded-full animate-ping" />
-              <div className="absolute w-24 h-24 border border-white/50 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500" />
+              {/* Animated Circles - Now Brand Blue */}
+              <div className="absolute w-24 h-24 bg-[#062da3]/20 rounded-full animate-ping" />
+              <div className="absolute w-32 h-32 border border-[#062da3]/30 rounded-full scale-110 group-hover:scale-150 transition-transform duration-700" />
               
-              {/* Play Button */}
-              <div className="relative w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-[#F21B23] transition-colors duration-300">
-                <span className="text-black group-hover:text-white ml-1 text-xl">
-                  {/* Using a standard Play icon if font not loaded */}
-                  ▶
-                </span>
+              {/* Play Button - Hover changed to Brand Blue */}
+              <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-2xl group-hover:bg-[#062da3] transition-all duration-500 transform group-hover:rotate-[360deg]">
+                <Play 
+                  className="text-black group-hover:text-white transition-colors duration-300 ml-1" 
+                  fill="currentColor" 
+                  size={28} 
+                />
               </div>
             </div>
           </div>
 
-          {/* Optional: Video Label */}
-          <div className="absolute bottom-6 left-6 text-white font-bold uppercase tracking-widest text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Watch Service Video
+          {/* Bottom Label with Blue Accent */}
+          <div className="absolute bottom-8 left-8 flex items-center gap-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+            <div className="w-8 h-8 bg-[#062da3] rounded-full flex items-center justify-center">
+               <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+            </div>
+            <span className="text-white font-black uppercase tracking-[0.2em] text-sm">
+              Watch Process Video
+            </span>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out forwards;
+        }
+      `}</style>
     </section>
   );
 };
