@@ -12,6 +12,11 @@ import Home from "./page/Home";
 import TermsConditions from "./components/Term";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Diagnostics from "./page/Diagnostics";
+import DPFEGRAdBlueSolutions from "./page/DPFEGRAdBlueSolutions";
+import ECURemappingTuning from "./page/ECURemappingTuning";
+import MechanicalRepairs from "./page/MechanicalRepairs";
+import MotorsportRallyPreparation from "./page/MotorsportRallyPreparation";
+import RollingRoadWheelDyno from "./page/RollingRoadWheelDyno";
 function App() {
   useEffect(() => {
     // Initialize AOS once at app root
@@ -31,6 +36,11 @@ function App() {
         <Route path="/diagnostics" element={<Diagnostics />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/dpf-egr-adblue-solutions" element={<DPFEGRAdBlueSolutions />} />
+        <Route path="/ecu-remapping-tuning" element={<ECURemappingTuning />} />
+        <Route path="/mechanical-repairs" element={<MechanicalRepairs />} />
+        <Route path="/motorsport-rally-preparation" element={<MotorsportRallyPreparation />} />
+        <Route path="/rolling-road-wheel-dyno" element={<RollingRoadWheelDyno />} />
       </Routes>
       <Footer />
       <GDPRBanner />

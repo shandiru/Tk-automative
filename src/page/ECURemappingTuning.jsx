@@ -11,9 +11,9 @@ import {
   serviceDetailData, // Assuming you refactor this next
   discoverServicesData, 
   ctaData 
-} from '../Data/Diagnostics/data';
+} from '../Data/ECURemappingTuning/data';
 
-const Diagnostics = () => {
+const ECURemappingTuning = () => {
     return (
         <div className="bg-black">
             <ServiceBanner data={serviceBannerData} />
@@ -27,4 +27,4 @@ const Diagnostics = () => {
     );
 };
 
-export default Diagnostics;
+export default ECURemappingTuning ;

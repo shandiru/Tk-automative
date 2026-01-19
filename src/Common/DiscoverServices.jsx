@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import { discoverServicesData } from '../Data/Diagnostics/data';
 import { Plus, ArrowRight } from 'lucide-react';
 
-const DiscoverServices = () => {
+// Pass 'data' as a prop
+const DiscoverServices = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(null);
+
+  // Safety check: if no data is passed, don't crash the app
+  if (!data) return null;
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -14,21 +17,21 @@ const DiscoverServices = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Header with Title and All Services Button */}
-        <div className="flex flex-col md:row justify-between items-start md:items-center mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 gap-8">
           <div className="max-w-xl">
             <h3 className="text-[#062da3] uppercase tracking-[0.3em] font-bold text-xs mb-4">Our Expertise</h3>
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase">
-              {discoverServicesData.mainTitle}
+              {data.mainTitle}
             </h2>
           </div>
           <button className="bg-[#062da3] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-[#062da3]/20">
-            {discoverServicesData.buttonText}
+            {data.buttonText}
           </button>
         </div>
 
         {/* Categories Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12">
-          {discoverServicesData.categories.map((category, catIdx) => (
+          {data.categories.map((category, catIdx) => (
             <div key={catIdx} className="bg-[#0A0A0A] p-8 rounded-3xl border border-white/5">
               <h6 className="text-[10px] font-black uppercase tracking-[0.4em] text-[#062da3] mb-8 pb-4 border-b border-white/5">
                 {category.name}
@@ -71,7 +74,7 @@ const DiscoverServices = () => {
                           </p>
                           
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                            {service.problems.map((prob, pIdx) => (
+                            {service.problems?.map((prob, pIdx) => (
                               <div key={pIdx} className="text-[11px] text-gray-500 uppercase font-bold flex items-center gap-3">
                                 <span className="w-1.5 h-1.5 bg-[#062da3] rounded-full animate-pulse" /> {prob}
                               </div>

@@ -1,9 +1,12 @@
 import React from 'react';
-import { serviceDetailData } from '../Data/Diagnostics/data';
 import { Check } from 'lucide-react';
 
-const ServiceDetail = () => {
-  const { mainTitle, mainDescription, benefits, process } = serviceDetailData;
+// Pass 'data' as a prop
+const ServiceDetail = ({ data }) => {
+  // Guard clause to prevent errors if data is missing
+  if (!data) return null;
+
+  const { mainTitle, mainDescription, benefits, process } = data;
 
   return (
     <section className="bg-black py-16 md:py-24 transition-colors duration-500">
@@ -26,17 +29,16 @@ const ServiceDetail = () => {
         {/* Two Column Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           
-          {/* Left Column: Benefits - Deep Zinc Style */}
+          {/* Left Column: Benefits */}
           <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-[#062da3]/30 transition-colors duration-500 group">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-tight flex items-center gap-3">
               <span className="w-2 h-8 bg-[#062da3] rounded-full"></span>
-              {benefits.title}
+              {benefits?.title}
             </h3>
             <div className="space-y-10">
-              {benefits.items.map((item, index) => (
+              {benefits?.items?.map((item, index) => (
                 <div key={index} className="flex gap-5">
                   <div className="flex-shrink-0 mt-1">
-                    {/* Checkmark in Brand Blue */}
                     <div className="w-6 h-6 rounded-full bg-[#062da3]/10 flex items-center justify-center border border-[#062da3]/20 group-hover:bg-[#062da3] transition-colors duration-500">
                       <Check className="text-[#062da3] group-hover:text-white w-3.5 h-3.5 transition-colors duration-500" />
                     </div>
@@ -52,16 +54,15 @@ const ServiceDetail = () => {
             </div>
           </div>
 
-          {/* Right Column: Process - Numbered Style */}
+          {/* Right Column: Process */}
           <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-[#062da3]/30 transition-colors duration-500 group">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-tight flex items-center gap-3">
               <span className="w-2 h-8 bg-white/20 rounded-full group-hover:bg-[#062da3] transition-colors"></span>
-              {process.title}
+              {process?.title}
             </h3>
             <div className="space-y-10">
-              {process.steps.map((step, index) => (
+              {process?.steps?.map((step, index) => (
                 <div key={index} className="flex gap-5 relative">
-                  {/* Visual Connector Line */}
                   {index !== process.steps.length - 1 && (
                     <div className="absolute left-4 top-10 w-[1px] h-full bg-white/5 group-hover:bg-[#062da3]/20 transition-colors" />
                   )}
