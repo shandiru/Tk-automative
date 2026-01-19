@@ -1,207 +1,103 @@
+import React from 'react';
+import { Mail, Phone, ThumbsUp } from 'lucide-react';
 
-
-import React, { useState } from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
-
-export default function ContactSection() {
-  // Form state
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    vehicle: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const whatsappNumber = "+447392791919"; // WhatsApp number
-    const text = `*Name:* ${form.name}%0A*Email:* ${form.email}%0A*Phone:* ${form.phone}%0A*Vehicle:* ${form.vehicle}%0A*Message:* ${form.message}`;
-
-    const whatsappURL = `https://wa.me/${whatsappNumber.replace(
-      /[^\d]/g,
-      ""
-    )}?text=${text}`;
-
-    window.open(whatsappURL, "_blank");
-  };
-
+const ContactSection = () => {
   return (
-    <section className="relative py-20 bg-[#000000] text-white" id="contact">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-100"
-        style={{
-          backgroundImage: "url('pexels-photo-17045319-2880w.webp')",
-        }}
-      ></div>
-
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
-
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10">
-        {/* LEFT — FORM */}
-        <div className="bg-black/80 p-8 shadow-xl border border-white/10">
-          <h2 className="text-xl font-semibold mb-6">Send us a WhatsApp message:</h2>
-
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            {/* Row 1 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="text-[#C0C0C0] text-sm">Name:</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  className="w-full bg-black/50 border border-[#868386] text-white px-3 py-2 text-sm"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="text-[#C0C0C0] text-sm">Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  className="w-full bg-black/50 border border-[#868386] text-white px-3 py-2 text-sm"
-                  required
-                />
-              </div>
-            </div>
-
-            {/* Row 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="text-[#C0C0C0] text-sm">Phone:</label>
-                <input
-                  type="text"
-                  name="phone"
-                  value={form.phone}
-                  onChange={handleChange}
-                  className="w-full bg-black/50 border border-[#868386] text-white px-3 py-2 text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="text-[#C0C0C0] text-sm">Vehicle Registration:</label>
-                <input
-                  type="text"
-                  name="vehicle"
-                  placeholder="AX51 BCD"
-                  value={form.vehicle}
-                  onChange={handleChange}
-                  className="w-full bg-black/50 border border-[#868386] text-white px-3 py-2 text-sm"
-                />
-              </div>
-            </div>
-
-            {/* Message */}
+    <section className="bg-[#0A0A0A] py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Main Card Container */}
+        <div className="bg-[#111111] rounded-[40px] border border-white/10 overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+          
+          {/* Left Side: Contact Details */}
+          <div className="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-between">
             <div>
-              <label className="text-[#C0C0C0] text-sm">Message</label>
-              <textarea
-                name="message"
-                rows="4"
-                value={form.message}
-                onChange={handleChange}
-                className="w-full bg-black/50 border border-[#868386] text-white px-3 py-2 text-sm"
-                required
-              ></textarea>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">
+                Get in <span className="text-[#F21B23]">Touch</span>
+              </h2>
+              <p className="text-gray-400 text-lg leading-relaxed mb-12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi viverra ornare.
+              </p>
+
+              <h3 className="text-xl font-bold text-white mb-6 uppercase tracking-wider">Details</h3>
+              
+              <div className="space-y-6">
+                {/* Email Info */}
+                <div className="flex items-center gap-6 p-6 bg-[#0A0A0A] rounded-2xl border border-white/5 hover:border-[#F21B23]/50 transition-colors group">
+                  <div className="w-12 h-12 rounded-full bg-[#1A1A1A] flex items-center justify-center group-hover:bg-[#F21B23] transition-colors">
+                    <Mail className="text-white w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 text-xs uppercase font-bold tracking-widest">Email</p>
+                    <a href="mailto:example@email.com" className="text-white font-semibold hover:text-[#F21B23] transition-colors">
+                      example@email.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Phone Info */}
+                <div className="flex items-center gap-6 p-6 bg-[#0A0A0A] rounded-2xl border border-white/5 hover:border-[#F21B23]/50 transition-colors group">
+                  <div className="w-12 h-12 rounded-full bg-[#1A1A1A] flex items-center justify-center group-hover:bg-[#F21B23] transition-colors">
+                    <Phone className="text-white w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 text-xs uppercase font-bold tracking-widest">Phone</p>
+                    <a href="tel:+971123456789" className="text-white font-semibold hover:text-[#F21B23] transition-colors">
+                      +971 12 345 6789
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side: Form & Image Overlay */}
+          <div className="lg:w-1/2 relative min-h-[600px] flex items-center justify-center p-6 lg:p-12">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+              <img 
+                src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1000" 
+                alt="Premium Car" 
+                className="w-full h-full object-cover opacity-40"
+              />
+              <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/20 to-transparent" />
             </div>
 
-            {/* Button */}
-            <button
-              type="submit"
-              className="px-6 py-2 border border-[#D70C09] text-[#D70C09] text-sm hover:bg-[#D70C09] hover:text-white transition"
-            >
-              Send via WhatsApp
-            </button>
-          </form>
-         <p class="text-xs text-center mt-5 dark:text-gray-300">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
-          {/* MAP */}
-          <div className="mt-6 h-60 w-full bg-black/40 border border-white/10">
-            <iframe
-              title="map"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.8132316661526!2d-3.1427187234624776!3d53.224073879958504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ad5c97af0ab8b%3A0xbadd60618eaed8e6!2sQue%20Sera%2C%20Pentre%20Hill%2C%20Flint%20Mountain%2C%20Flint!5e0!3m2!1sen!2suk!4v1733268000000"
-            ></iframe>
-          </div>
-        </div>
+            {/* Floating Form Card */}
+            <div className="relative z-10 bg-white rounded-3xl p-8 lg:p-10 w-full max-w-lg shadow-2xl">
+              <form className="space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex flex-col">
+                    <label className="text-xs font-bold text-gray-500 uppercase mb-2">First Name</label>
+                    <input type="text" placeholder="First Name" className="w-full border-b border-gray-200 py-2 focus:border-[#F21B23] outline-none transition-colors text-black" />
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-xs font-bold text-gray-500 uppercase mb-2">Last Name</label>
+                    <input type="text" placeholder="Last Name" className="w-full border-b border-gray-200 py-2 focus:border-[#F21B23] outline-none transition-colors text-black" />
+                  </div>
+                </div>
 
-        {/* RIGHT — CONTACT DETAILS */}
-        <div className="text-white">
-          <h2 className="text-xl font-semibold mb-4">Contact details:</h2>
+                <div className="flex flex-col">
+                  <label className="text-xs font-bold text-gray-500 uppercase mb-2">Email Address</label>
+                  <input type="email" placeholder="example@email.com" className="w-full border-b border-gray-200 py-2 focus:border-[#F21B23] outline-none transition-colors text-black" />
+                </div>
 
-          <p className="text-[#C0C0C0]">
-            Que Sera, Pentre Hill,  
-            <br />
-            Flint Mountain, Flint, United Kingdom
-          </p>
+                <div className="flex flex-col">
+                  <label className="text-xs font-bold text-gray-500 uppercase mb-2">Message</label>
+                  <textarea placeholder="Provide details of your enquiry..." rows="3" className="w-full border-b border-gray-200 py-2 focus:border-[#F21B23] outline-none transition-colors text-black resize-none"></textarea>
+                </div>
 
-          <p className="text-[#C0C0C0] mt-4">
-            <a href="tel:07392791919" className="hover:text-[#D70C09]">
-              07392 791919
-            </a>
-          </p>
-
-          {/* Social Icons */}
-          <div className="flex items-center gap-4 mt-6 text-xl">
-            <a
-              href="https://web.facebook.com/profile.php?id=100037206957303"
-              target="_blank"
-              className="hover:text-[#D70C09]"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://www.instagram.com/broadway_remapping_/"
-              className="hover:text-[#D70C09]"
-              target="_blank"
-            >
-              <FaInstagram />
-            </a>
+                <button className="w-full bg-[#F21B23] hover:bg-black text-white font-bold py-4 rounded-xl transition-all duration-300 uppercase tracking-widest shadow-lg shadow-[#F21B23]/20 flex items-center justify-center gap-2 group">
+                  Submit 
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </button>
+              </form>
+            </div>
           </div>
 
-          {/* Business Hours */}
-          <h3 className="text-lg font-semibold mt-10">Business Hours</h3>
-
-          <ul className="text-[#C0C0C0] mt-2 space-y-1 text-sm">
-            <li>Monday: 8:00 AM – 8:00 PM</li>
-            <li>Tuesday: 8:00 AM – 8:00 PM</li>
-            <li>Wednesday: 8:00 AM – 8:00 PM</li>
-            <li>Thursday: 8:00 AM – 8:00 PM</li>
-            <li>Friday: 8:00 AM – 8:00 PM</li>
-            <li>Saturday: 9:00 AM – 5:00 PM</li>
-            <li>Sunday: 9:00 AM – 2:00 PM</li>
-          </ul>
-
-          {/* Facebook Embed */}
-          <div className="mt-10 border border-white/10 p-3 bg-black/40">
-            <p className="text-sm mb-1 text-[#C0C0C0]">Follow us on Facebook</p>
-            <iframe
-              title="facebook"
-              style={{ border: "none", overflow: "hidden" }}
-              scrolling="no"
-              frameBorder="0"
-              allow="encrypted-media"
-              src="https://www.facebook.com/plugins/page.php?href=https://web.facebook.com/profile.php?id=100037206957303&tabs&width=340&height=130&small_header=false&adapt_container_width=true"
-              width="340"
-              height="130"
-            ></iframe>
-          </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default ContactSection;

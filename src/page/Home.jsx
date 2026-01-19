@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import Gallery from "../components/Photo"
 import FAQSection from '../components/FAQSection';
 import WhyChooseSection from '../components/WhyChooseUs';
+import ServicesSection from '../components/ServicesSection';
 const Home = () => {
     return (
         <div>
@@ -15,6 +16,7 @@ const Home = () => {
             {/* <Service /> */}
              
             <About />
+            <ServicesSection />
             <WhyChooseSection />
             <FAQSection />
             <Review />
