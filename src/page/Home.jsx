@@ -6,7 +6,7 @@ import Review from "../components/Review";
 import Contact from "../components/Contact";
 
 import Gallery from "../components/Photo"
-import VehicleLookup from "../components/VehicleLookup"
+import FAQSection from '../components/FAQSection';
 import WhyChooseSection from '../components/WhyChooseUs';
 const Home = () => {
     return (
@@ -16,10 +16,11 @@ const Home = () => {
              
             <About />
             <WhyChooseSection />
+            <FAQSection />
             <Review />
             < Gallery />
           
-            <VehicleLookup />
+           
             <Contact />
         </div>
     )
