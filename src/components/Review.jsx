@@ -8,27 +8,27 @@ export default function TestimonialSection() {
     {
       id: 1,
       number: "01.",
-      name: "Cassie Carleton",
-      location: "CLIENT, USA",
-      quote: "My SUV had been through some rough weather and was looking very dull when I brought it in. The team took their time and really transformed it. The exterior shine was flawless and the interior was like new!",
+      name: "Matthew Lewis",
+      location: "CLIENT, UK",
+      quote: "Remap made the car considerably more powerful throughout the rev range without sacrificing any efficiency. Tristan was very flexible with times and managed to get the exact date and time I needed. Very good for fitting aftermarket parts and advice. 10/10 will definitely come back soon.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
     },
     {
       id: 2,
       number: "02.",
-      name: "Ronald Benson",
+      name: "Warren Johnstone",
       location: "CLIENT, UK",
-      quote: "My car always looks brand new when I visit, even after months of driving! The group is amiable, prompt, and professional. If you want your motor vehicle to shine, I highly recommend Prime Shine!",
+      quote: "Tristan and his team are exceptional, fast, high quality and reasonably priced. I wouldn’t consider using another garage on the iom. Highly recommended.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
     },
-    {
-      id: 3,
-      number: "03.",
-      name: "Daniel Reed",
-      location: "CLIENT, FRANCE",
-      quote: "This is the best vehicle wash in the area, out of all the ones I've tried. I continue to visit because of their great finish, quick service, and attention to detail. Truly unmatched quality!",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
-    }
+    // {
+    //   id: 3,
+    //   number: "03.",
+    //   name: "Daniel Reed",
+    //   location: "CLIENT, FRANCE",
+    //   quote: "This is the best vehicle wash in the area, out of all the ones I've tried. I continue to visit because of their great finish, quick service, and attention to detail. Truly unmatched quality!",
+    //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
+    // }
   ];
 
   return (
@@ -64,7 +64,7 @@ export default function TestimonialSection() {
 
           {/* Center Content - Quote Text */}
           <div className="flex-1 animate-slide-up transition-all duration-500">
-            <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-[1.2] tracking-tight">
+            <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-[1.2] tracking-tight">
               {testimonials[activeIndex].quote}
             </p>
           </div>
@@ -72,11 +72,11 @@ export default function TestimonialSection() {
           {/* Right - Client Image with Blue Glow */}
           <div className="flex-shrink-0 animate-fade-in-delay relative">
             <div className="absolute -inset-4 bg-[#062da3]/20 blur-2xl rounded-full"></div>
-            <img 
+            {/* <img 
               src={testimonials[activeIndex].image}
               alt={testimonials[activeIndex].name}
               className="relative w-64 h-80 md:w-72 md:h-[22rem] lg:w-80 lg:h-96 rounded-2xl object-cover shadow-[0_20px_50px_rgba(6,45,163,0.3)] border border-white/10"
-            />
+            /> */}
           </div>
         </div>
 
@@ -116,7 +116,7 @@ export default function TestimonialSection() {
             <Star className="absolute -right-8 -bottom-8 w-40 h-40 text-black/10 rotate-12" />
             
             <div className="relative z-10 flex items-center gap-6">
-              <div className="text-6xl md:text-7xl font-black text-white tracking-tighter">
+              <div className="text-5xl md:text-6xl font-black text-white tracking-tighter">
                 4.9
               </div>
               <div className="space-y-2">
