@@ -81,7 +81,7 @@ export default function AboutUsSection() {
             {/* Heading */}
             <div className="animate-slide-up">
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                Discover the passion and expertise behind Prime Shine, your premier destination for <span className="text-[#062da3]">luxury car care</span> and unmatched service.
+                Discover the passion and expertise behind Tk Automotive Shine, your premier destination for <span className="text-[#062da3]">luxury car care</span> and unmatched service.
               </h2>
             </div>
 

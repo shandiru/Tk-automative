@@ -4,10 +4,10 @@ import { Facebook, Twitter, Youtube, Instagram, Send } from 'lucide-react';
 const UniqueFooter = () => {
   return (
     <footer className="bg-[#050505] pt-24 pb-12 relative overflow-hidden">
-      {/* Background Big Text - Updated to PRIME */}
-      <div className="absolute bottom-[-10% ] left-0 w-full pointer-events-none select-none">
-        <h2 className="text-[20vw] font-black text-white/[0.02] uppercase leading-none tracking-tighter">
-          PRIME
+      {/* Background Big Text - Updated to Tk Automotive */}
+      <div className="absolute bottom-[-10% ] left-30 w-full pointer-events-none select-none">
+        <h2 className="text-[12vw] font-black text-white/[0.02] uppercase leading-none tracking-tighter">
+          Tk Automotive
         </h2>
       </div>
 
@@ -19,9 +19,9 @@ const UniqueFooter = () => {
             <div className="flex items-center gap-3 mb-6">
               {/* Logo Background changed to Brand Blue */}
               <div className="w-10 h-10 bg-[#062da3] rounded-full flex items-center justify-center">
-                <img src="https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68295e67096b18189b5_car.svg" alt="logo" className="w-6 h-6 invert" />
+                <img src="/logo.jpg" alt="logo" className="w-6 h-6 invert " />
               </div>
-              <span className="text-2xl font-bold tracking-tighter text-white uppercase">Prime Shine</span>
+              <span className="text-2xl font-bold tracking-tighter text-white uppercase">Tk Automotive</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-8">
               Professional automotive detailing and protection services. Engineering the perfect finish for the most discerning drivers.
@@ -60,7 +60,7 @@ const UniqueFooter = () => {
               </li>
               <li className="flex flex-col">
                 <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Email</span>
-                hello@primeshine.com
+                hello@Tk Automotiveshine.com
               </li>
               <li className="flex flex-col">
                 <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Phone</span>
@@ -91,7 +91,7 @@ const UniqueFooter = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-[10px] uppercase tracking-widest font-medium">
-            © 2026 Prime Shine Detailing. All Rights Reserved.
+            © 2026 Tk Automotive Shine Detailing. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-[10px] uppercase tracking-widest font-bold">
             <a href="#" className="text-gray-600 hover:text-[#062da3] transition-colors">Privacy Policy</a>

@@ -9,12 +9,13 @@ import 'swiper/css/navigation';
 
 const Gallery = () => {
   const images = [
-    "https://cdn.prod.website-files.com/666af2e7ac836c0b4d22e83a/666c627591a8a1e0ad20b650_nomad-conv-9.webp",
-    "https://cdn.prod.website-files.com/666af2e7ac836c0b4d22e83a/666c6275943215854194a0da_nomad-conv-54.webp",
-    "https://cdn.prod.website-files.com/666af2e7ac836c0b4d22e83a/666c6275ea57475d5c3bf2ea_nomad-conv-95.webp",
-    "https://cdn.prod.website-files.com/666af2e7ac836c0b4d22e83a/666c627502747730ffb0a061_nomad-conv-85.webp",
-    "https://cdn.prod.website-files.com/666af2e7ac836c0b4d22e83a/666c6275a5c74412da13fa17_nomad-conv-123.webp",
-    "https://cdn.prod.website-files.com/666af2e7ac836c0b4d22e83a/666c62758771dec99ba15484_nomad-conv-162.webp"
+    "TK1.jpg",
+    "TK2.jpg",
+    "TK3.jpg",
+    "TK4.jpg",
+    "TK5.jpg",
+    "TK6.jpg",
+    
   ];
 
   return (

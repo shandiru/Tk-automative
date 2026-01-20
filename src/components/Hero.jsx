@@ -54,12 +54,12 @@ export default function HeroSection() {
         {/* Bottom - Large Title (Centered) */}
         <div className="w-full px-6 pb-12">
           <div className="text-center">
-            <h1 className="text-[14vw] font-black text-white leading-none tracking-tighter animate-slide-up-slow uppercase" 
+            <h1 className="text-[10vw] font-black text-white leading-none tracking-tighter animate-slide-up-slow uppercase" 
                 style={{ 
                   letterSpacing: '-0.05em',
                   textShadow: '0 20px 50px rgba(0,0,0,0.5)'
                 }}>
-              Prime<span className="text-[#062da3]">.</span>Shine
+              Tk <span className="text-[#062da3]">.</span> Automotive
             </h1>
           </div>
         </div>

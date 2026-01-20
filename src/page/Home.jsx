@@ -15,17 +15,18 @@ const Home = () => {
         <div>
             <Hero />
             {/* <Service /> */}
-             
+
             <About />
-            <ServicesSection />
             <WhyChooseSection />
-            <FAQSection />
+            <ServicesSection />
             <Review />
             < Gallery />
-            <MapSection />
-          
-           
             <Contact />
+            <FAQSection />
+            <MapSection />
+
+
+
         </div>
     )
 }
