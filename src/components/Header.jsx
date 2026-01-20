@@ -37,7 +37,7 @@ const Navbar = () => {
           
           {/* Logo Section */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="Woshico Logo" className="h-12 w-auto object-contain" />
+            <img src="/logo.jpg" alt="Woshico Logo" className="h-12 w-auto object-contain rounded-full" />
           </div>
 
           {/* Desktop Navigation */}
