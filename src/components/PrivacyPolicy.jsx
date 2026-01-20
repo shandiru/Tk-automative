@@ -110,11 +110,10 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
                     </p>
                     <div className="text-white">
-                        <p><strong>BROADWAY REMAPPING</strong></p>
-                        <p>Email: <a href="mailto:yandmjones@outlook.com" className="text-red-400 hover:underline">yandmjones@outlook.com</a></p>
-                        <p>Phone: +44 7392 791919</p>
-                        <p>Address: Que Sera, Pentre Hill,
-Flint Mountain, Flint, United Kingdom</p>
+                         <p><strong>TK Automotive</strong></p>
+                        <p>Email: <a href="mailto:tkautomotiveiom@gmail.com" className="text-blue-400 hover:underline">tkautomotiveiom@gmail.com</a></p>
+                        <p>Phone: 01624860209</p>
+                        <p>Address: Lower Ballacottier, Ballacottier Rd, Onchan IM4 5BQ, Isle of Man</p>
                     </div>
                     <p className="mt-2 text-white">
                         If you are not satisfied with our response, you have the right to lodge a complaint with the{' '}
