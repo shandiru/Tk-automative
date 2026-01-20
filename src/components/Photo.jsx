@@ -19,7 +19,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-black overflow-hidden">
+    <section className="py-20 bg-black overflow-hidden"id='gallery'>
       <div className="container mx-auto px-6 mb-12 flex justify-between items-end">
         <div>
           {/* Color changed to brand blue #062da3 */}

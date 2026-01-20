@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 
 const ContactSection = () => {
   return (
-    <section className="bg-black py-20 px-6">
+    <section className="bg-black py-20 px-6"id='contact'>
       <div className="max-w-7xl mx-auto">
         {/* Main Card Container */}
         <div className="bg-[#111111] rounded-[40px] border border-white/10 overflow-hidden flex flex-col lg:flex-row shadow-2xl">

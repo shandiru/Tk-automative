@@ -1,9 +1,18 @@
 import React, { useState } from "react";
-import { Menu, X, ChevronDown, Facebook, Twitter, Youtube, Instagram, ArrowUpRight } from "lucide-react";
+import { Menu, X, ChevronDown, Facebook, Instagram, ArrowUpRight } from "lucide-react";
 
 const AnimatedLink = ({ text, href, hasDropdown, children }) => (
   <div className="group relative">
-    <a href={href} className="relative overflow-hidden h-6 flex items-center gap-1 cursor-pointer">
+    <a 
+      href={href} 
+      className="relative overflow-hidden h-6 flex items-center gap-1 cursor-pointer"
+      onClick={(e) => {
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+        }
+      }}
+    >
       <div className="relative h-6 overflow-hidden">
         <span className="flex items-center text-white font-bold uppercase tracking-wider text-sm transition-transform duration-300 group-hover:-translate-y-full">
           {text} {hasDropdown && <ChevronDown size={14} className="ml-1" />}
@@ -20,38 +29,47 @@ const AnimatedLink = ({ text, href, hasDropdown, children }) => (
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Your Service Routes
+  // Updated to point to your page sections
   const services = [
-    { name: "Diagnostics", href: "/diagnostics" },
-    { name: "DPF / EGR / AdBlue", href: "/dpf-egr-adblue-solutions" },
-    { name: "ECU Remapping", href: "/ecu-remapping-tuning" },
-    { name: "Mechanical Repairs", href: "/mechanical-repairs" },
-    { name: "Rolling Road Dyno", href: "/rolling-road-wheel-dyno" },
-    { name: "Motorsport Prep", href: "/motorsport-rally-preparation" },
+    { name: "Diagnostics", href: "#services" },
+    { name: "ECU Remapping", href: "#services" },
+    { name: "Mechanical Repairs", href: "#services" },
+    { name: "Performance Prep", href: "#services" },
   ];
 
+  const scrollToSection = (id) => {
+    setIsOpen(false);
+    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-[#0A0A0A]/90 backdrop-blur-sm border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/10">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="flex items-center justify-between h-24">
           
           {/* Logo Section */}
-          <div className="flex items-center">
-            <img src="/logo.jpg" alt="Woshico Logo" className="h-12 w-auto object-contain rounded-full" />
+          <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#hero')}>
+            <img src="/logo.jpg" alt="TK Automotive Logo" className="h-14 w-auto object-contain rounded-full border border-white/10" />
+           
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-10">
-            <AnimatedLink text="Home" href="/" />
+            <AnimatedLink text="Home" href="#hero" />
+            <AnimatedLink text="About" href="#about" />
             
-            {/* Services Dropdown - Brand Blue hover */}
-            <AnimatedLink text="Services" href="#" hasDropdown>
-              <div className="absolute top-full -left-4 mt-2 w-72 bg-[#0A0A0A] border border-white/10 rounded-xl py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            {/* Services Dropdown */}
+            <AnimatedLink text="Services" href="#services" hasDropdown>
+              <div className="absolute top-full -left-4 mt-2 w-72 bg-[#0A0A0A] border border-white/10 rounded-xl py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
                 {services.map((service, index) => (
                   <a
                     key={index}
                     href={service.href}
-                    className="block px-6 py-3 text-white text-[11px] font-bold uppercase tracking-widest hover:bg-[#062da3] hover:text-white transition-colors"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection(service.href);
+                    }}
+                    className="block px-6 py-3 text-white text-[11px] font-bold uppercase tracking-widest hover:bg-[#062da3] transition-colors"
                   >
                     {service.name}
                   </a>
@@ -59,25 +77,23 @@ const Navbar = () => {
               </div>
             </AnimatedLink>
 
-            <AnimatedLink text="Our Blog" href="/blog" />
-            <AnimatedLink text="Contact" href="/contact" />
+            <AnimatedLink text="Reviews" href="#reviews" />
+            <AnimatedLink text="Gallery" href="#gallery" />
           </div>
 
-          {/* Right Side: Socials & Action */}
+          {/* Right Side: Action */}
           <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex items-center space-x-4 text-white">
+            <div className="flex items-center space-x-4 text-white/50">
               <Facebook size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" />
-              <Twitter size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" />
-              <Youtube size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" />
               <Instagram size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" />
             </div>
 
-            <a
-              href="/contact"
-              className="flex items-center gap-2 bg-white text-black px-7 py-4 rounded-full font-bold text-sm hover:bg-[#062da3] hover:text-white transition-all duration-300"
+            <button
+              onClick={() => scrollToSection('#contact')}
+              className="flex items-center gap-2 bg-white text-black px-7 py-4 rounded-full font-bold text-sm hover:bg-[#062da3] hover:text-white transition-all duration-300 group"
             >
-              GET IN TOUCH <ArrowUpRight size={18} />
-            </a>
+              GET IN TOUCH <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" />
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,20 +104,27 @@ const Navbar = () => {
 
         {/* Mobile Menu Overlay */}
         {isOpen && (
-          <div className="lg:hidden bg-black border-t border-white/10 py-6 space-y-4 px-6">
-            <a href="/" className="block text-white font-bold uppercase">Home</a>
+          <div className="lg:hidden bg-[#0A0A0A] border-t border-white/10 py-8 space-y-6 px-6 h-screen">
+            <button onClick={() => scrollToSection('#hero')} className="block text-white text-2xl font-bold uppercase">Home</button>
+            <button onClick={() => scrollToSection('#about')} className="block text-white text-2xl font-bold uppercase">About</button>
             
-            <div className="space-y-3">
-              <p className="text-[#062da3] text-[10px] font-black uppercase tracking-widest">Our Services</p>
+            <div className="space-y-4">
+              <p className="text-[#062da3] text-[10px] font-black uppercase tracking-[0.2em]">Our Services</p>
               {services.map((service, index) => (
-                <a key={index} href={service.href} className="block text-gray-400 text-sm font-bold uppercase pl-4">
+                <button key={index} onClick={() => scrollToSection(service.href)} className="block text-gray-400 text-lg font-bold uppercase pl-4">
                   {service.name}
-                </a>
+                </button>
               ))}
             </div>
 
-            <a href="/blog" className="block text-white font-bold uppercase">Our Blog</a>
-            <a href="/contact" className="block text-white font-bold uppercase">Contact</a>
+            <button onClick={() => scrollToSection('#reviews')} className="block text-white text-2xl font-bold uppercase">Reviews</button>
+            <button onClick={() => scrollToSection('#gallery')} className="block text-white text-2xl font-bold uppercase">Gallery</button>
+            <button 
+                onClick={() => scrollToSection('#contact')}
+                className="w-full bg-[#062da3] text-white py-5 rounded-xl font-bold uppercase tracking-widest"
+            >
+                Contact Us
+            </button>
           </div>
         )}
       </div>

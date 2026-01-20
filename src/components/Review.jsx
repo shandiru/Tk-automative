@@ -32,7 +32,7 @@ export default function TestimonialSection() {
   ];
 
   return (
-    <section className="relative bg-black py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 overflow-hidden">
+    <section className="relative bg-black py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 overflow-hidden" id='reviews'>
       {/* Subtle Blue Hexagon Pattern Background */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
