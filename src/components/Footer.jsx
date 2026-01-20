@@ -99,8 +99,8 @@ const UniqueFooter = () => {
             © 2026 TK Automotive Isle of Man. Engineering Excellence.
           </p>
           <div className="flex gap-8 text-[10px] uppercase tracking-widest font-bold">
-            <a href="#" className="text-gray-600 hover:text-[#062da3] transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-600 hover:text-[#062da3] transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="text-gray-600 hover:text-[#062da3] transition-colors">Privacy Policy</a>
+            <a href="/terms-conditions" className="text-gray-600 hover:text-[#062da3] transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

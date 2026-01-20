@@ -3,7 +3,7 @@ import { Star, ArrowUpRight } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black">
+    <div className="relative min-h-screen w-full overflow-hidden bg-black pt-30">
       {/* Background Video with Deep Blue Overlay */}
       <div className="absolute inset-0">
         <video 
@@ -27,7 +27,7 @@ export default function HeroSection() {
         
         {/* Top Right Content */}
         <div className="flex justify-end px-6 md:px-12 lg:px-20">
-          <div className="max-w-xl lg:max-w-2xl space-y-6">
+          <div className="max-w-xl lg:max-w-2xl space-y-12 sm:space-y-6">
             {/* Premium Car Care Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full animate-fade-in">
               <Star className="w-4 h-4 text-[#062da3] fill-[#062da3]" />
