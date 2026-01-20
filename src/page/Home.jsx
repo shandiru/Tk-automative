@@ -9,6 +9,7 @@ import Gallery from "../components/Photo"
 import FAQSection from '../components/FAQSection';
 import WhyChooseSection from '../components/WhyChooseUs';
 import ServicesSection from '../components/ServicesSection';
+import MapSection from '../components/Map';
 const Home = () => {
     return (
         <div>
@@ -21,6 +22,7 @@ const Home = () => {
             <FAQSection />
             <Review />
             < Gallery />
+            <MapSection />
           
            
             <Contact />
