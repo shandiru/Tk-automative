@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Menu, X, ChevronDown, Facebook, Instagram, ArrowUpRight } from "lucide-react";
 
+// Use Link from react-router-dom for SPA navigation if available
+// import { Link } from "react-router-dom";
+
 const AnimatedLink = ({ text, href, hasDropdown, children }) => (
   <div className="group relative">
     <a 
       href={href} 
       className="relative overflow-hidden h-6 flex items-center gap-1 cursor-pointer"
       onClick={(e) => {
+        // Only prevent default if it's an ID on the current page
         if (href.startsWith('#')) {
           e.preventDefault();
           document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
@@ -29,17 +33,23 @@ const AnimatedLink = ({ text, href, hasDropdown, children }) => (
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Updated to point to your page sections
+  // Updated to match your exact Route paths
   const services = [
-    { name: "Diagnostics", href: "#services" },
-    { name: "ECU Remapping", href: "#services" },
-    { name: "Mechanical Repairs", href: "#services" },
-    { name: "Performance Prep", href: "#services" },
+    { name: "Diagnostics", href: "/diagnostics" },
+    { name: "DPF & AdBlue Solutions", href: "/dpf-egr-adblue-solutions" },
+    { name: "ECU Remapping", href: "/ecu-remapping-tuning" },
+    { name: "Mechanical Repairs", href: "/mechanical-repairs" },
+    { name: "Motorsport Prep", href: "/motorsport-rally-preparation" },
+    { name: "Rolling Road Dyno", href: "/rolling-road-wheel-dyno" },
   ];
 
-  const scrollToSection = (id) => {
+  const handleNav = (href) => {
     setIsOpen(false);
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+    if (href.startsWith('#')) {
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = href;
+    }
   };
 
   return (
@@ -48,27 +58,22 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-24">
           
           {/* Logo Section */}
-          <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#hero')}>
+          <div className="flex items-center cursor-pointer" onClick={() => handleNav('#hero')}>
             <img src="/logo.jpg" alt="TK Automotive Logo" className="h-14 w-auto object-contain rounded-full border border-white/10" />
-           
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-10">
-            <AnimatedLink text="Home" href="#hero" />
+            <AnimatedLink text="Home" href="/" />
             <AnimatedLink text="About" href="#about" />
             
-            {/* Services Dropdown */}
-            <AnimatedLink text="Services" href="#services" hasDropdown>
-              <div className="absolute top-full -left-4 mt-2 w-72 bg-[#0A0A0A] border border-white/10 rounded-xl py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+            {/* Services Dropdown - Now pointing to Routes */}
+            <AnimatedLink text="Services" href="/ecu-remapping-tuning" hasDropdown>
+              <div className="absolute top-full -left-4 mt-2 w-80 bg-[#0A0A0A] border border-white/10 rounded-xl py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
                 {services.map((service, index) => (
                   <a
                     key={index}
                     href={service.href}
-                    onClick={(e) => {
-                        e.preventDefault();
-                        scrollToSection(service.href);
-                    }}
                     className="block px-6 py-3 text-white text-[11px] font-bold uppercase tracking-widest hover:bg-[#062da3] transition-colors"
                   >
                     {service.name}
@@ -89,7 +94,7 @@ const Navbar = () => {
             </div>
 
             <button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => handleNav('#contact')}
               className="flex items-center gap-2 bg-white text-black px-7 py-4 rounded-full font-bold text-sm hover:bg-[#062da3] hover:text-white transition-all duration-300 group"
             >
               GET IN TOUCH <ArrowUpRight size={18} className="group-hover:rotate-45 transition-transform" />
@@ -104,23 +109,27 @@ const Navbar = () => {
 
         {/* Mobile Menu Overlay */}
         {isOpen && (
-          <div className="lg:hidden bg-[#0A0A0A] border-t border-white/10 py-8 space-y-6 px-6 h-screen">
-            <button onClick={() => scrollToSection('#hero')} className="block text-white text-2xl font-bold uppercase">Home</button>
-            <button onClick={() => scrollToSection('#about')} className="block text-white text-2xl font-bold uppercase">About</button>
+          <div className="lg:hidden bg-[#0A0A0A] border-t border-white/10 py-8 space-y-6 px-6 h-screen overflow-y-auto">
+            <button onClick={() => handleNav('#hero')} className="block text-white text-2xl font-bold uppercase">Home</button>
+            <button onClick={() => handleNav('#about')} className="block text-white text-2xl font-bold uppercase">About</button>
             
-            <div className="space-y-4">
-              <p className="text-[#062da3] text-[10px] font-black uppercase tracking-[0.2em]">Our Services</p>
+            <div className="space-y-4 border-l border-[#062da3] ml-2 pl-4">
+              <p className="text-[#062da3] text-[10px] font-black uppercase tracking-[0.2em]">Our Specialized Services</p>
               {services.map((service, index) => (
-                <button key={index} onClick={() => scrollToSection(service.href)} className="block text-gray-400 text-lg font-bold uppercase pl-4">
+                <a 
+                  key={index} 
+                  href={service.href} 
+                  className="block text-gray-400 text-lg font-bold uppercase"
+                >
                   {service.name}
-                </button>
+                </a>
               ))}
             </div>
 
-            <button onClick={() => scrollToSection('#reviews')} className="block text-white text-2xl font-bold uppercase">Reviews</button>
-            <button onClick={() => scrollToSection('#gallery')} className="block text-white text-2xl font-bold uppercase">Gallery</button>
+            <button onClick={() => handleNav('#reviews')} className="block text-white text-2xl font-bold uppercase">Reviews</button>
+            <button onClick={() => handleNav('#gallery')} className="block text-white text-2xl font-bold uppercase">Gallery</button>
             <button 
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => handleNav('#contact')}
                 className="w-full bg-[#062da3] text-white py-5 rounded-xl font-bold uppercase tracking-widest"
             >
                 Contact Us
