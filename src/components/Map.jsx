@@ -2,8 +2,9 @@ import React from 'react';
 import { MapPin, Phone, Clock, ArrowUpRight } from 'lucide-react';
 
 const MapSection = () => {
-  // Replace this with your actual Google Maps Embed URL
+  // Keeping your original embed links as requested
   const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.819243447957!2d-0.12775829999999997!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c321693173%3A0x5d05047b4d3f56b9!2sTrafalgar%20Square!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk";
+  const googleMapsExternal = "https://maps.google.com";
 
   return (
     <section className="bg-black py-16 md:py-24">
@@ -22,7 +23,7 @@ const MapSection = () => {
           </div>
           
           <a 
-            href="https://maps.google.com" 
+            href={googleMapsExternal} 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white border-b-2 border-[#062da3] pb-1 hover:text-[#062da3] transition-colors font-bold uppercase text-sm tracking-widest"
@@ -43,11 +44,11 @@ const MapSection = () => {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Workshop Location"
+              title="TK Automotive Location"
             ></iframe>
           </div>
 
-          {/* Contact Details Card */}
+          {/* Contact Details Card - Updated with TK Automotive Data */}
           <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-white/5 flex flex-col justify-between">
             <div className="space-y-8">
               <div className="flex gap-4">
@@ -55,11 +56,11 @@ const MapSection = () => {
                   <MapPin className="text-[#062da3]" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold uppercase tracking-wide mb-1">Address</h4>
+                  <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Address</h4>
                   <p className="text-gray-500 text-sm leading-relaxed">
-                    123 Performance Way,<br />
-                    Unit 4B, Industrial Estate,<br />
-                    London, UK
+                    Lower Ballacottier,<br />
+                    Ballacottier Rd, Onchan<br />
+                    IM4 5BQ, Isle of Man
                   </p>
                 </div>
               </div>
@@ -69,9 +70,9 @@ const MapSection = () => {
                   <Clock className="text-[#062da3]" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold uppercase tracking-wide mb-1">Working Hours</h4>
-                  <p className="text-gray-500 text-sm">Mon - Fri: 09:00 - 18:00</p>
-                  <p className="text-gray-500 text-sm">Saturday: 10:00 - 14:00</p>
+                  <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Working Hours</h4>
+                  <p className="text-gray-500 text-sm">Mon - Fri: 09:00 - 17:00</p>
+                  <p className="text-gray-500 text-sm">Sat - Sun: Closed</p>
                 </div>
               </div>
 
@@ -80,15 +81,20 @@ const MapSection = () => {
                   <Phone className="text-[#062da3]" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold uppercase tracking-wide mb-1">Phone</h4>
-                  <p className="text-gray-500 text-sm">+44 (0) 20 1234 5678</p>
+                  <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Phone </h4>
+                  <p className="text-gray-500 text-sm">01624 860209</p>
                 </div>
               </div>
             </div>
 
-            <button className="w-full mt-8 bg-white text-black py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-[#062da3] hover:text-white transition-all duration-300">
+            <a 
+              href={googleMapsExternal}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full mt-8 bg-white text-black py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-[#062da3] hover:text-white transition-all duration-300 flex items-center justify-center"
+            >
               Get Directions
-            </button>
+            </a>
           </div>
         </div>
       </div>
