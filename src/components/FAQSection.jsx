@@ -6,31 +6,39 @@ export default function FAQSection() {
 
   const faqsLeft = [
     {
-      question: "How is the car being delivered?",
-      answer: "When you book a car via our website, you are prompted to enter your residence address. We take care of the full logistic process and deliver your car to your residence location at least 2 hours before your booking time."
+      question: "What is an ECU?",
+      answer: "A vehicles brain is the ECU (engine control unit) this tells the vehicle what to do at any given time and condition from various inputs and sensors on the engine. From the factory the manufacturers must make compromises to allow for everywhere that vehicle will be sold, meaning, varying climates, fuel qualities, laws, and warranties, for this reason there is often a lot of leeway in both performance and economy to be had."
     },
     {
-      question: "What happens if i get a ticket?",
-      answer: "Fast and extraordinary cars catch attention. Unfortunately, speed or parking tickets are also part of the deal sometimes. In case of a ticket, we will always charge the driver of the car at the moment of incidence."
+      question: "Is it safe?",
+      answer: "A remap is completely safe providing it is performed by the correct people who have a strong understanding of vehicle workings and limitations. At TK Automotive we optimize the operating conditions for your vehicle and not beyond them. Each vehicle has varying limits, which is why it is important to ensure the vehicle is in good condition before a remap is carried out."
     },
     {
-      question: "Can i always reach customer service?",
-      answer: "Yes, we have a 24/7 customer service desk. This means we are there for you both on the road and off the road."
+      question: "Do I need to notify my insurance?",
+      answer: "We advise all our customers that it is their responsibility to notify their respective insurance companies, as it is technically a vehicle modification."
+    },
+    {
+      question: "What will it do to my fuel consumption?",
+      answer: "It is a common misconception that fuel economy will suffer greatly after having a remap carried out. This simply is not true. The fuel saving comes from an increase in low/ mid torque that a remap can provide. In real world terms the vehicle will have a greater pull at lighter throttle input."
     }
   ];
 
   const faqsRight = [
     {
-      question: "How many kilometers can I drive?",
-      answer: "You can drive as many kilometers as you want. For most of our cars, the first 250 kilometers are included in the rental price. After exceeding these numbers on a daily basis, you will be charged an additional 2 AED per driven kilometer. However, for sport cars such as the Ferrari Portofino, this range is 100 kilometers. The cost for the sport cars is 4 AED per extra driven kilometer."
+      question: "Why Do I want a remap?",
+      answer: "Each individual is different. Some strive for maximum power, other for maximum fuel efficiency, others just want a smoother drive with less gear changes. Typically, a remap offers a sharper throttle response, better drivability, greater power and torque and a reduction in fuel consumption."
     },
     {
-      question: "Where can I return the car?",
-      answer: "Your car can be returned to our location at all times. You can find our contact details at the contact page."
+      question: "Why choose you over cheaper alternatives?",
+      answer: "Power claims are just that; often numbers sell, but we offer a fair and reliable service. Our remaps are designed to work with the vehicle in question, ensuring we never push beyond mechanical limitations or sacrifice reliability for a peak BHP number."
     },
     {
-      question: "Can I also buy a car at M.I.P.?",
-      answer: "It may happen that you fall in love with a car from our inventory. All cars from our inventory are also available for sale. Click the 'buy now' button in our navigation bar or get in touch with our sales department for more information."
+      question: "Is it just about the peak BHP number?",
+      answer: "No. Peak HP alone does not tell the story. Often peak hp is high in the rev range, but even a fast road car spends most time at low/mid rpms. Concentrating on this area greatly improves overall drivability, which you don't see from a peak number."
+    },
+    {
+      question: "Do you inspect the vehicle first?",
+      answer: "Yes. A diagnostics test and a brief vehicle inspection is carried out prior to any remapping to ensure the vehicle is in a suitable condition for the work to be carried out."
     }
   ];
 
@@ -43,13 +51,13 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 md:mb-16 lg:mb-20 animate-fade-in">
-          {/* Subtitle */}
-          <div className="text-red-500 text-xs md:text-sm font-bold tracking-[0.2em] uppercase mb-6">
-            RENTING WITH MIP
+          {/* Subtitle - Color changed to Brand Blue */}
+          <div className="text-[#062da3] text-xs md:text-sm font-bold tracking-[0.2em] uppercase mb-6">
+            Engine Remapping Expertise
           </div>
 
           {/* Main Title */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-2xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-2xl uppercase tracking-tighter">
             Frequently asked questions
           </h2>
         </div>
@@ -61,21 +69,21 @@ export default function FAQSection() {
             {faqsLeft.map((faq, index) => (
               <div 
                 key={index}
-                className="border border-white/20 animate-slide-up"
+                className="border border-white/10 animate-slide-up group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/5 transition-colors duration-300"
+                  className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/[0.02] transition-colors duration-300"
                 >
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-white pr-4">
+                  <h3 className={`text-lg md:text-xl lg:text-2xl font-bold uppercase transition-colors duration-300 ${openIndex === index ? 'text-[#062da3]' : 'text-white'}`}>
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center">
                     {openIndex === index ? (
-                      <Minus className="w-6 h-6 text-white" />
+                      <Minus className="w-6 h-6 text-[#062da3]" />
                     ) : (
-                      <Plus className="w-6 h-6 text-white" />
+                      <Plus className="w-6 h-6 text-white group-hover:text-[#062da3]" />
                     )}
                   </div>
                 </button>
@@ -99,29 +107,29 @@ export default function FAQSection() {
           <div className="space-y-6">
             {faqsRight.map((faq, index) => (
               <div 
-                key={index + 3}
-                className="border border-white/20 animate-slide-up"
-                style={{ animationDelay: `${(index + 3) * 0.1}s` }}
+                key={index + 4}
+                className="border border-white/10 animate-slide-up group"
+                style={{ animationDelay: `${(index + 4) * 0.1}s` }}
               >
                 <button
-                  onClick={() => toggleAccordion(index + 3)}
-                  className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/5 transition-colors duration-300"
+                  onClick={() => toggleAccordion(index + 4)}
+                  className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/[0.02] transition-colors duration-300"
                 >
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-white pr-4">
+                  <h3 className={`text-lg md:text-xl lg:text-2xl font-bold uppercase transition-colors duration-300 ${openIndex === index + 4 ? 'text-[#062da3]' : 'text-white'}`}>
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center">
-                    {openIndex === index + 3 ? (
-                      <Minus className="w-6 h-6 text-white" />
+                    {openIndex === index + 4 ? (
+                      <Minus className="w-6 h-6 text-[#062da3]" />
                     ) : (
-                      <Plus className="w-6 h-6 text-white" />
+                      <Plus className="w-6 h-6 text-white group-hover:text-[#062da3]" />
                     )}
                   </div>
                 </button>
                 
                 <div 
                   className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    openIndex === index + 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    openIndex === index + 4 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <div className="px-6 md:px-8 pb-6 md:pb-8">
@@ -138,34 +146,15 @@ export default function FAQSection() {
 
       <style jsx>{`
         @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-
         @keyframes slide-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out;
-        }
-
-        .animate-slide-up {
-          animation: slide-up 0.8s ease-out both;
-        }
+        .animate-fade-in { animation: fade-in 0.8s ease-out; }
+        .animate-slide-up { animation: slide-up 0.8s ease-out both; }
       `}</style>
     </section>
   );
