@@ -37,21 +37,21 @@ export default function WhyChooseSection() {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-28">
           
-          {/* Left Side - Content */}
+          {/* Left Side - Content Updated */}
           <div className="space-y-6 md:space-y-8 animate-fade-in">
-            {/* Subtitle - Updated to Brand Blue */}
+            {/* Subtitle */}
             <div className="text-[#062da3] text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
-              WHY CHOOSE TK Automotive SHINE?
+              WHY CHOOSE TK AUTOMOTIVE?
             </div>
 
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tighter">
-              We offer <span className="text-[#062da3]">unseen service</span> and quality to our customers
+              We deliver <span className="text-[#062da3]">expertise and reliability</span> you can trust
             </h2>
 
-            {/* Description */}
+            {/* Description Updated */}
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl pt-2">
-              We understand that our clients value precision and time. Our service is engineered to integrate seamlessly into a luxury lifestyle, ensuring your vehicle remains in showroom condition without the hassle.
+              We understand that our clients value quality workmanship and dependable service. Our approach is designed to keep your vehicle performing at its best, whether you need routine maintenance, complex repairs, or performance enhancements.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export default function WhyChooseSection() {
                 className="flex items-start gap-5 md:gap-6 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Diamond Icon Container - Refined for Blue Theme */}
+                {/* Diamond Icon Container */}
                 <div className="relative flex-shrink-0">
                   <div 
                     className="w-20 h-20 md:w-24 md:h-24 rotate-45 flex items-center justify-center border border-[#062da3]/30 group hover:border-[#062da3] transition-colors duration-500"

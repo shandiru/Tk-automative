@@ -68,10 +68,7 @@ export default function AboutUsSection() {
           {/* Left Side - About Us Label */}
           <div className="lg:min-w-[120px] animate-fade-in">
             <div className="flex items-center gap-4">
-              {/* Line Indicator */}
               <div className="w-12 h-[2px] bg-[#062da3]"></div>
-
-              {/* Text with Background Badge */}
               <span className="bg-[#062da3]/10 px-4 py-1.5 rounded-full text-[#062da3] font-bold tracking-[0.2em] uppercase text-xs border border-[#062da3]/20 whitespace-nowrap">
                 About Us
               </span>
@@ -80,16 +77,16 @@ export default function AboutUsSection() {
 
           {/* Right Side - Main Content */}
           <div className="flex-1 space-y-12 md:space-y-16">
-            {/* Heading */}
+            {/* Heading - Updated Content */}
             <div className="animate-slide-up">
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                Discover the passion and expertise behind TK Automotive Shine, your premier destination for <span className="text-[#062da3]">luxury car care</span> and unmatched service.
+                Discover the passion and expertise behind TK Automotive, your premier destination for <span className="text-[#062da3]">reliable mechanical solutions</span> and unmatched engineering.
               </h2>
             </div>
 
-            {/* Metrics Grid */}
+            {/* Metrics Grid - Updated Values */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-              {/* Total Bookings */}
+              {/* Total Services */}
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.1s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -97,10 +94,10 @@ export default function AboutUsSection() {
                   </span>
                   <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">K+</span>
                 </div>
-                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Total Bookings</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Services Completed</p>
               </div>
 
-              {/* Models In Stock */}
+              {/* Service Types */}
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -108,10 +105,10 @@ export default function AboutUsSection() {
                   </span>
                   <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">+</span>
                 </div>
-                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Service Types</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Service Types Available</p>
               </div>
 
-              {/* Happy Clients */}
+              {/* Satisfaction Rate */}
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.3s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -119,10 +116,10 @@ export default function AboutUsSection() {
                   </span>
                   <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">%</span>
                 </div>
-                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Happy Clients</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Satisfaction Rate</p>
               </div>
 
-              {/* Daily Bookings */}
+              {/* Daily Appointments */}
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.4s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -130,21 +127,17 @@ export default function AboutUsSection() {
                   </span>
                   <span className="text-4xl md:text-5xl lg:text-6xl font-black text-[#062da3]">+</span>
                 </div>
-                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Daily Bookings</p>
+                <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Daily Appointments</p>
               </div>
             </div>
 
-            {/* Bottom Section */}
+            {/* Bottom Section - Our Commitment Content */}
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12 pt-8 border-t border-white/10 animate-fade-in-delay">
-              {/* Description */}
-              <div className="max-w-md">
+              <div className="max-w-2xl">
                 <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-                  We combine advanced technology with artisan attention to detail. Our mission is to provide every driver with a showroom-quality finish through eco-friendly practices.
+                  We combine cutting-edge diagnostic technology with skilled craftsmanship and years of experience. Our mission is to provide every driver with reliable, efficient, and honest automotive service through transparent practices and expert solutions.
                 </p>
               </div>
-
-              {/* Learn More Button - Refreshed with Brand Blue */}
-
             </div>
           </div>
 
