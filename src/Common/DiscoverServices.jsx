@@ -81,10 +81,10 @@ const DiscoverServices = ({ data }) => {
                             ))}
                           </div>
 
-                          <a href={service.link} className="inline-flex items-center gap-3 font-black uppercase tracking-widest text-[10px] text-white hover:text-[#062da3] transition-all group/link">
+                          {/* <a href={service.link} className="inline-flex items-center gap-3 font-black uppercase tracking-widest text-[10px] text-white hover:text-[#062da3] transition-all group/link">
                             Explore details 
                             <ArrowRight size={14} className="group-hover/link:translate-x-2 transition-transform" />
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
