@@ -17,6 +17,7 @@ import ECURemappingTuning from "./page/ECURemappingTuning";
 import MechanicalRepairs from "./page/MechanicalRepairs";
 import MotorsportRallyPreparation from "./page/MotorsportRallyPreparation";
 import RollingRoadWheelDyno from "./page/RollingRoadWheelDyno";
+import ScrollToHash from "../src/components/ScrollToHash"
 function App() {
   useEffect(() => {
     // Initialize AOS once at app root
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <Router>
+        <ScrollToHash />
       <ScrollToTop />
       <Header />
       <Routes>

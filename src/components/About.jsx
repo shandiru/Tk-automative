@@ -64,13 +64,15 @@ export default function AboutUsSection() {
     <section ref={sectionRef} className="bg-black py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20" id='about'>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 xl:gap-24">
-          
+
           {/* Left Side - About Us Label */}
           <div className="lg:min-w-[120px] animate-fade-in">
-            <div className="flex items-center gap-3">
-              {/* Using Brand Blue #062da3 */}
-              <div className="w-12 h-1 bg-[#062da3]"></div>
-              <span className="text-[#062da3] font-bold tracking-[0.2em] uppercase text-sm whitespace-nowrap">
+            <div className="flex items-center gap-4">
+              {/* Line Indicator */}
+              <div className="w-12 h-[2px] bg-[#062da3]"></div>
+
+              {/* Text with Background Badge */}
+              <span className="bg-[#062da3]/10 px-4 py-1.5 rounded-full text-[#062da3] font-bold tracking-[0.2em] uppercase text-xs border border-[#062da3]/20 whitespace-nowrap">
                 About Us
               </span>
             </div>
@@ -142,7 +144,7 @@ export default function AboutUsSection() {
               </div>
 
               {/* Learn More Button - Refreshed with Brand Blue */}
-              
+
             </div>
           </div>
 
