@@ -64,9 +64,7 @@ const Gallery = () => {
                 className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
               />
               {/* Overlay gradient changed to brand blue #062da3 for a cohesive feel */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#062da3]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-                <span className="text-white font-bold uppercase tracking-widest text-sm">View Project</span>
-              </div>
+              
             </div>
           </SwiperSlide>
         ))}

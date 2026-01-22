@@ -81,7 +81,7 @@ export default function AboutUsSection() {
             {/* Heading */}
             <div className="animate-slide-up">
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                Discover the passion and expertise behind Tk Automotive Shine, your premier destination for <span className="text-[#062da3]">luxury car care</span> and unmatched service.
+                Discover the passion and expertise behind TK Automotive Shine, your premier destination for <span className="text-[#062da3]">luxury car care</span> and unmatched service.
               </h2>
             </div>
 
@@ -142,12 +142,7 @@ export default function AboutUsSection() {
               </div>
 
               {/* Learn More Button - Refreshed with Brand Blue */}
-              <button className="group relative px-8 py-4 bg-[#062da3] hover:bg-white text-white hover:text-[#062da3] font-bold rounded-sm transition-all duration-300 flex items-center gap-4 flex-shrink-0">
-                <span className="text-sm md:text-base uppercase tracking-tighter">Learn Our Story</span>
-                <div className="w-8 h-8 bg-white/20 group-hover:bg-[#062da3] rounded-full flex items-center justify-center transition-colors duration-300">
-                  <ArrowRight className="w-5 h-5 text-white group-hover:text-white transition-colors duration-300" />
-                </div>
-              </button>
+              
             </div>
           </div>
 

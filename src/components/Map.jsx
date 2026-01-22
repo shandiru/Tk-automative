@@ -2,9 +2,11 @@ import React from 'react';
 import { MapPin, Phone, Clock, ArrowUpRight } from 'lucide-react';
 
 const MapSection = () => {
-  // Keeping your original embed links as requested
-  const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.819243447957!2d-0.12775829999999997!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c321693173%3A0x5d05047b4d3f56b9!2sTrafalgar%20Square!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk";
-  const googleMapsExternal = "https://maps.google.com";
+  // Replace the placeholder with the actual Google Maps embed URL for TK Automotive
+  const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2315.6558235282713!2d-4.4690898!3d54.168536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48639b249010e095%3A0xbc4f2e3c6dbca9e0!2sTK%20Automotive!5e0!3m2!1sen!2sim!4v1700000000000!5m2!1sen!2sim";
+
+  // URL that forces directions from "My Location" to the workshop destination
+  const googleMapsExternal = "https://www.google.com/maps/dir/?api=1&destination=TK+Automotive+Lower+Ballacottier+Onchan+IM4+5BQ&destination_place_id=ChIJleAQMCSbY0gR4Jm8bTwuTws";
 
   return (
     <section className="bg-black py-16 md:py-24">
@@ -33,7 +35,7 @@ const MapSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Map Container - Styled with Brand Blue border */}
+          {/* Map Container */}
           <div className="lg:col-span-2 h-[450px] rounded-2xl overflow-hidden border border-white/10 relative group">
             <div className="absolute inset-0 border-2 border-[#062da3]/0 group-hover:border-[#062da3]/30 transition-all duration-500 pointer-events-none z-10 rounded-2xl"></div>
             <iframe
@@ -48,7 +50,7 @@ const MapSection = () => {
             ></iframe>
           </div>
 
-          {/* Contact Details Card - Updated with TK Automotive Data */}
+          {/* Contact Details Card */}
           <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-white/5 flex flex-col justify-between">
             <div className="space-y-8">
               <div className="flex gap-4">
@@ -88,7 +90,7 @@ const MapSection = () => {
             </div>
 
             <a 
-              href={googleMapsExternal}
+              href="https://www.google.com/maps?sca_esv=c64924e04d081bdf&rlz=1C1GCEA_enLK1141LK1141&sxsrf=ANbL-n4_h608ZDTltFKr0gt-wf9qJfe2WQ:1768561763908&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObzKPDZUkK-x28ZtFWvmSc-n7emKZuGMr69zTiSzQFuxIqZfSqJtWiMT667fTk8SWBjWF2j68bma-7D_h-51vqOmwj-I&biw=1366&bih=633&dpr=1&aic=0&um=1&ie=UTF-8&fb=1&gl=lk&sa=X&geocode=KZXgEDAkm2NIMeCZvG08Lk8L&daddr=Lower+Ballacottier,+Ballacottier+Rd,+Onchan+IM4+5BQ,+Isle+of+Man"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full mt-8 bg-white text-black py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-[#062da3] hover:text-white transition-all duration-300 flex items-center justify-center"

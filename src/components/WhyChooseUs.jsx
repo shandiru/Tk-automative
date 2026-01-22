@@ -23,10 +23,10 @@ export default function WhyChooseSection() {
 
   return (
     <section className="relative bg-black py-20 md:py-28 lg:py-36 px-6 md:px-12 lg:px-20 overflow-hidden">
-      {/* Background Watermark Text - Tk Automotive */}
+      {/* Background Watermark Text - TK Automotive */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
         <div className="text-[25vw] md:text-[18vw] lg:text-[15vw] font-black text-white tracking-tighter uppercase" style={{ fontFamily: 'Inter, sans-serif' }}>
-          Tk Automotive
+          TK Automotive
         </div>
       </div>
 
@@ -41,7 +41,7 @@ export default function WhyChooseSection() {
           <div className="space-y-6 md:space-y-8 animate-fade-in">
             {/* Subtitle - Updated to Brand Blue */}
             <div className="text-[#062da3] text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
-              WHY CHOOSE Tk Automotive SHINE?
+              WHY CHOOSE TK Automotive SHINE?
             </div>
 
             {/* Main Heading */}

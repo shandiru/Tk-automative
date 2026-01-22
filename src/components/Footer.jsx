@@ -46,8 +46,8 @@ const UniqueFooter = () => {
               Professional ECU remapping, advanced diagnostics, and precision mechanical solutions for the Isle of Man.
             </p>
             <div className="flex gap-4">
-              {[Facebook, Instagram].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#062da3] hover:border-[#062da3] transition-all duration-300 group">
+              {[Facebook].map((Icon, i) => (
+                <a key={i} href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#062da3] hover:border-[#062da3] transition-all duration-300 group">
                   <Icon size={18} className="text-white group-hover:scale-110 transition-transform" />
                 </a>
               ))}

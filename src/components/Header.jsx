@@ -89,8 +89,9 @@ const Navbar = () => {
           {/* Right Side: Action */}
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-4 text-white/50">
-              <Facebook size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" />
-              <Instagram size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" />
+              
+              <a href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" target="_blank"><Facebook size={18} className="hover:text-[#062da3] cursor-pointer transition-colors" /></a>
+              
             </div>
 
             <button
