@@ -1,7 +1,7 @@
 // data.js
 export const serviceBannerData = {
   title: "DPF-EGR-AdBlue Solutions",
-  description: "Advanced diesel emission fixes to clear fault codes, restore engine power, and resolve AdBlue 'No Start' warnings. Professional roadside assistance.",
+  description: "Advanced diesel emission fixes to clear fault codes, restore engine power, and resolve AdBlue 'No Start' warnings.",
   videoUrl: "https://youtu.be/IeXQjsJlpNY",
   thumbnailImage: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67ebdf8a1482a0bf185bcd58_car-transporter-6569783_1920%20(1).webp",
   playIcon: ""
@@ -76,7 +76,7 @@ export const discoverServicesData = {
         },
         {
           title: "Vehicle Diagnostics",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20towing%20icon%20(1).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
           description: "Advanced scanning to identify and clear engine and electrical fault codes instantly.",
           problems: ["Check engine light", "Unknown electrical faults", "Dashboard warnings"],
           link: "#"
@@ -84,13 +84,13 @@ export const discoverServicesData = {
       ]
     },
     {
-      name: "Towing services",
+      name: "tuning services",
       services: [
         {
-          title: "Emergency Towing",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20towing%20icon%20(5).webp",
+          title: "Emergency tuning",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(5).webp",
           description: "24/7 assistance for breakdowns, accidents, and stranded vehicles.",
-          problems: ["Sudden car breakdown", "Accident recovery", "Urgent towing needed"],
+          problems: ["Sudden car breakdown", "Accident recovery", "Urgent tuning needed"],
           link: "#"
         }
       ]

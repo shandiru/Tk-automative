@@ -76,7 +76,7 @@ export const discoverServicesData = {
         },
         {
           title: "ECU Remapping & Tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20towing%20icon%20(1).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
           description: "Software optimization for increased power and better fuel efficiency.",
           problems: ["Manufacturer restrictions", "Slow acceleration", "Low torque"],
           link: "#"
@@ -88,7 +88,7 @@ export const discoverServicesData = {
       services: [
         {
           title: "Motorsport Preparation",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20towing%20icon%20(5).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(5).webp",
           description: "Professional preparation for track days and rally competitions.",
           problems: ["Track safety", "Chassis strengthening", "Race setups"],
           link: "#"

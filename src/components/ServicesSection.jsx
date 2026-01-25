@@ -134,18 +134,7 @@ const ServicesSection = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: #000;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #062da3;
-          border-radius: 10px;
-        }
-      `}</style>
+      
     </section>
   );
 };

@@ -71,27 +71,7 @@ export default function HeroSection() {
 
       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes slide-up {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slide-up-slow {
-          from { opacity: 0; transform: translateY(60px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in { animation: fade-in 0.8s ease-out; }
-        .animate-fade-in-delay { animation: fade-in 1s ease-out 0.5s both; }
-        .animate-slide-up { animation: slide-up 0.8s ease-out 0.2s both; }
-        .animate-slide-up-slow { animation: slide-up-slow 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
-      `}</style>
+      
     </div>
   );
 }

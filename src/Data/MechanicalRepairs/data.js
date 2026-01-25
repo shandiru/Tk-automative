@@ -76,7 +76,7 @@ export const discoverServicesData = {
         },
         {
           title: "Vehicle Diagnostics",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20towing%20icon%20(1).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
           description: "Advanced scanning to identify hidden mechanical and electrical issues.",
           problems: ["Warning lights", "Intermittent faults", "System errors"],
           link: "#"
@@ -84,11 +84,11 @@ export const discoverServicesData = {
       ]
     },
     {
-      name: "Towing & Performance",
+      name: "tuning & Performance",
       services: [
         {
           title: "ECU Remapping & Tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20towing%20icon%20(5).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(5).webp",
           description: "Optimize your engine for better power and fuel efficiency.",
           problems: ["Lack of power", "Poor throttle response", "High fuel usage"],
           link: "#"

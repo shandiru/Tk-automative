@@ -84,9 +84,9 @@ export default function AboutUsSection() {
               </h2>
             </div>
 
-            {/* Metrics Grid - Updated Values */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-              {/* Total Services */}
+            
+            {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+           
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.1s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -97,7 +97,7 @@ export default function AboutUsSection() {
                 <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Services Completed</p>
               </div>
 
-              {/* Service Types */}
+            
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -108,7 +108,7 @@ export default function AboutUsSection() {
                 <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Service Types Available</p>
               </div>
 
-              {/* Satisfaction Rate */}
+              
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.3s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -119,7 +119,7 @@ export default function AboutUsSection() {
                 <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Satisfaction Rate</p>
               </div>
 
-              {/* Daily Appointments */}
+         
               <div className="space-y-3 animate-slide-up" style={{ animationDelay: '0.4s' }}>
                 <div className="flex items-baseline">
                   <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
@@ -129,7 +129,7 @@ export default function AboutUsSection() {
                 </div>
                 <p className="text-gray-500 font-medium uppercase tracking-wider text-xs md:text-sm">Daily Appointments</p>
               </div>
-            </div>
+            </div> */}
 
             {/* Bottom Section - Our Commitment Content */}
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12 pt-8 border-t border-white/10 animate-fade-in-delay">
@@ -144,21 +144,7 @@ export default function AboutUsSection() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes slide-up {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in { animation: fade-in 0.8s ease-out; }
-        .animate-fade-in-delay { animation: fade-in 1s ease-out 0.5s both; }
-        .animate-slide-up { animation: slide-up 0.8s ease-out both; }
-      `}</style>
+     
     </section>
   );
 }

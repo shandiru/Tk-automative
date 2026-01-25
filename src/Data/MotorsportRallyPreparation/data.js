@@ -17,8 +17,8 @@ export const serviceDetailData = {
     title: "Our Expertise",
     items: [
       {
-        heading: "Chassis & Safety Prep",
-        text: "Installation of roll cages, racing seats, harnesses, and fire suppression systems to meet racing standards."
+        heading: "Proven in motor sports",
+        text: "Expert mobile support for tuned engines competing in rally, hillclimbs, sprint racing, trackdays, targa rallys, and drifting events. Fast diagnosis and on-site solutions to keep you running."
       },
       {
         heading: "Performance Suspension",
@@ -76,7 +76,7 @@ export const discoverServicesData = {
         },
         {
           title: "ECU Remapping & Tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20towing%20icon%20(1).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
           description: "Unlock maximum horsepower and torque for your race or street car.",
           problems: ["Power restrictions", "Slow throttle response", "Performance optimization"],
           link: "#"
@@ -84,11 +84,11 @@ export const discoverServicesData = {
       ]
     },
     {
-      name: "Towing & Support",
+      name: "tuning & Support",
       services: [
         {
-          title: "Flatbed Towing",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512417a95eea66b3aa316_Auto%20towing%20icon%20(4).webp",
+          title: "Flatbed tuning",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512417a95eea66b3aa316_Auto%20tuning%20icon%20(4).webp",
           description: "Safe transport for low-clearance race cars and project vehicles.",
           problems: ["Low ground clearance", "Non-road legal vehicles", "Event transport"],
           link: "#"
