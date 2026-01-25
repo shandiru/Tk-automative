@@ -82,7 +82,7 @@ export const discoverServicesData = {
         },
         {
           title: "Jump Start Service",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20towing%20icon%20(1).webp",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
           description: "We quickly restart dead batteries using professional-grade equipment, so you’re never left stranded.",
           problems: ["Dead car battery", "Left lights or radio on accidentally", "Battery affected by extreme temperatures"],
           link: "#"
@@ -90,16 +90,16 @@ export const discoverServicesData = {
       ]
     },
     {
-      name: "Towing services",
+      name: "tuning services",
       services: [
         {
-          title: "Heavy-Duty Towing",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512d2a17e18addc582b6e_Auto%20towing%20icon%20(6).webp",
-          description: "Towing for larger vehicles, including trucks, RVs, and commercial fleets.",
+          title: "Heavy-Duty tuning",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512d2a17e18addc582b6e_Auto%20tuning%20icon%20(6).webp",
+          description: "tuning for larger vehicles, including trucks, RVs, and commercial fleets.",
           problems: ["Breakdown of trucks, buses, or RVs", "Accidents involving large vehicles", "Road blocked by oversized vehicles"],
           link: "#"
         }
-        // Additional towing services can be added here with link: "#"
+        // Additional tuning services can be added here with link: "#"
       ]
     }
   ]
@@ -107,7 +107,7 @@ export const discoverServicesData = {
 
 export const ctaData = {
   titlePart1: "Need help?",
-  titlePart2: "AutoTowing is just a call away!",
+  titlePart2: "Autotuning is just a call away!",
   buttonText: "Request a tow now",
   buttonLink: "#",
   image: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce876dc/67d2e18af8d1c0c328adac3a_pexels-jakewymoore-12330350%20(1).webp",

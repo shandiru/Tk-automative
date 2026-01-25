@@ -84,12 +84,12 @@ export const discoverServicesData = {
       ]
     },
     {
-      name: "Towing & Recovery",
+      name: "tuning & Recovery",
       services: [
         {
-          title: "Flatbed Towing",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512417a95eea66b3aa316_Auto%20towing%20icon%20(4).webp",
-          description: "Secure towing for luxury, classic, or damaged vehicles.",
+          title: "Flatbed tuning",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512417a95eea66b3aa316_Auto%20tuning%20icon%20(4).webp",
+          description: "Secure tuning for luxury, classic, or damaged vehicles.",
           problems: ["Vehicle transport", "Non-running cars", "Lowered vehicles"],
           link: "#"
         }
