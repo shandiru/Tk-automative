@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ServicesSection = () => {
-  // All 6 services defined here
-  const allServices = [
+  // 1. Move services into state so React re-renders when they swap
+  const [services, setServices] = useState([
     { 
       name: "Diagnostics", 
       href: "/diagnostics",
       description: "Advanced dealership-level fault finding and system analysis to identify complex electrical and mechanical issues.",
-     image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68295e67096b18189b5_car.svg"
     },
     { 
@@ -45,17 +45,29 @@ const ServicesSection = () => {
       image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68295e67096b18189b5_car.svg"
     },
-  ];
+  ]);
 
-  // We take the first one for the Big Card
-  const mainService = allServices[0];
-  // We take the remaining for the Side List
-  const otherServices = allServices.slice(1);
+  // 2. Logic to rotate positions every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setServices((prevServices) => {
+        const newServices = [...prevServices];
+        // Remove the first item and push it to the end
+        const firstItem = newServices.shift();
+        if (firstItem) newServices.push(firstItem);
+        return newServices;
+      });
+    }, 5000); // 5000ms = 5 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+  const mainService = services[0];
+  const otherServices = services.slice(1);
 
   return (
-    <section className="bg-black py-20 px-6">
+    <section className="bg-black py-20 px-6 transition-all duration-700" id="srvuce">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tighter">
@@ -70,11 +82,10 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        {/* Main Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           
-          {/* Left Column - Large Card (Diagnostics) */}
-          <div className="bg-[#0A0A0A] rounded-[2px] overflow-hidden flex flex-col group border border-white/5 hover:border-[#062da3]/50 transition-colors duration-500 h-full">
+          {/* Left Column - Large Card (Changes every 5s) */}
+          <div key={mainService.name} className="animate-fade-in bg-[#0A0A0A] rounded-[2px] overflow-hidden flex flex-col group border border-white/5 hover:border-[#062da3]/50 transition-all duration-700 h-full">
             <div className="relative h-72 lg:h-[480px] overflow-hidden">
               <img 
                 src={mainService.image} 
@@ -103,8 +114,8 @@ const ServicesSection = () => {
 
           {/* Right Column - Remaining Services */}
           <div className="flex flex-col gap-6 max-h-[900px] overflow-y-auto pr-2 custom-scrollbar">
-            {otherServices.map((service, index) => (
-              <div key={index} className="bg-[#0A0A0A] rounded-[2px] overflow-hidden flex flex-col md:flex-row group border border-white/5 hover:border-[#062da3]/50 transition-colors duration-500">
+            {otherServices.map((service) => (
+              <div key={service.name} className="animate-slide-up bg-[#0A0A0A] rounded-[2px] overflow-hidden flex flex-col md:flex-row group border border-white/5 hover:border-[#062da3]/50 transition-all duration-500">
                 <div className="md:w-2/5 relative h-48 md:h-auto overflow-hidden">
                   <img 
                     src={service.image} 
@@ -133,8 +144,6 @@ const ServicesSection = () => {
 
         </div>
       </div>
-
-      
     </section>
   );
 };

@@ -101,11 +101,14 @@ const ContactSection = () => {
                   Send Message 
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </button>
+                <p class="text-xs text-center mt-5 ">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
               </form>
             </div>
+            
           </div>
 
         </div>
+        
       </div>
     </section>
   );

@@ -6,10 +6,10 @@ export default function HeroSection() {
     <div className="relative min-h-screen w-full overflow-hidden bg-black pt-30">
       {/* Background Video with Deep Blue Overlay */}
       <div className="absolute inset-0">
-        <video 
-          autoPlay 
-          loop 
-          muted 
+        <video
+          autoPlay
+          loop
+          muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         >
@@ -24,7 +24,7 @@ export default function HeroSection() {
 
       {/* Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col justify-between py-12 md:py-16">
-        
+
         {/* Top Right Content - Updated for Automotive Services */}
         <div className="flex justify-end px-6 md:px-12 lg:px-20">
           <div className="max-w-xl lg:max-w-2xl space-y-8 sm:space-y-6 text-right lg:text-left">
@@ -48,7 +48,10 @@ export default function HeroSection() {
 
             {/* CTA Button - Updated Text */}
             <div className="pt-4 animate-fade-in-delay">
-              <button className="group relative px-8 py-4 bg-[#062da3] hover:bg-white text-white hover:text-[#062da3] font-bold rounded-sm transition-all duration-300 flex items-center gap-3 shadow-[0_10px_30px_rgba(6,45,163,0.3)] ml-auto lg:ml-0">
+              <button
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                className="group relative px-8 py-4 bg-[#062da3] hover:bg-white text-white hover:text-[#062da3] font-bold rounded-sm transition-all duration-300 flex items-center gap-3 shadow-[0_10px_30px_rgba(6,45,163,0.3)] ml-auto lg:ml-0"
+              >
                 <span className="relative z-10 text-sm md:text-base uppercase tracking-tighter">Explore Services</span>
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </button>
@@ -59,11 +62,11 @@ export default function HeroSection() {
         {/* Bottom - Large Title (Centered) */}
         <div className="w-full px-6 pb-12">
           <div className="text-center">
-            <h1 className="text-[10vw] font-black text-white leading-none tracking-tighter animate-slide-up-slow uppercase" 
-                style={{ 
-                  letterSpacing: '-0.05em',
-                  textShadow: '0 20px 50px rgba(0,0,0,0.5)'
-                }}>
+            <h1 className="text-[10vw] font-black text-white leading-none tracking-tighter animate-slide-up-slow uppercase"
+              style={{
+                letterSpacing: '-0.05em',
+                textShadow: '0 20px 50px rgba(0,0,0,0.5)'
+              }}>
               Tk <span className="text-[#062da3]">.</span> Automotive
             </h1>
           </div>
@@ -71,7 +74,7 @@ export default function HeroSection() {
 
       </div>
 
-      
+
     </div>
   );
 }

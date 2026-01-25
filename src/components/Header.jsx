@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-24">
 
           {/* Logo */}
-          <div onClick={() => handleNav("#hero")} className="cursor-pointer">
+          <div onClick={() => handleNav("/")} className="cursor-pointer">
             <img src="/logo.jpg" className="h-14 rounded-full" />
           </div>
 
