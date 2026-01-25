@@ -35,12 +35,12 @@ const UniqueFooter = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-          
+
           {/* Brand Info */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <img src="/logo.jpg" alt="TK Automotive Logo" className="w-full h-full  rounded-full border border-white/10" />
-            
+
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-8">
               Professional ECU remapping, advanced diagnostics, and precision mechanical solutions for the Isle of Man.
@@ -66,8 +66,8 @@ const UniqueFooter = () => {
                 { name: 'Contact Us', path: '#contact' }
               ].map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.path} 
+                  <a
+                    href={link.path}
                     onClick={(e) => handleNavClick(e, link.path)}
                     className="text-gray-400 hover:text-[#062da3] transition-all duration-300 flex items-center gap-2 group text-sm"
                   >
@@ -85,7 +85,7 @@ const UniqueFooter = () => {
             <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex flex-col">
                 <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Location</span>
-                Lower Ballacottier, Onchan IM4 5BQ,<br/>Isle of Man
+                Lower Ballacottier, Onchan IM4 5BQ,<br />Isle of Man
               </li>
               <li className="flex flex-col">
                 <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Phone</span>
@@ -122,6 +122,10 @@ const UniqueFooter = () => {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-[10px] uppercase tracking-widest font-medium">
             © 2026 TK Automotive. All rights reserved.
+          </p>
+          <span className="hidden md:block text-white/10">|</span>
+          <p className="text-gray-600 text-[10px] uppercase tracking-widest font-medium">
+            Powered by <a href="https://www.ansely.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 text-blue-900 transition-colors">Ansely</a>
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-[10px] uppercase tracking-widest font-bold">
             <a href="/ecu-remapping-tuning" className="text-gray-600 hover:text-[#062da3] transition-colors">Remapping</a>
