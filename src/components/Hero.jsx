@@ -7,14 +7,16 @@ export default function HeroSection() {
       {/* Background Video with Deep Blue Overlay */}
       <div className="absolute inset-0">
         <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
-        >
-          <source src="https://cdn.prod.website-files.com/68a54cc1e7d85352c9523604%2F690060d7d84437e2d567275f_slider-video-transcode.mp4" type="video/mp4" />
-        </video>
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/hero.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/fall.png"
+        onError={(e) => (e.currentTarget.style.display = "none")}
+      >
+      </video>
         {/* Adjusted gradient to use brand blue #062da3 */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-[#062da3]/20 to-black/95"></div>
       </div>
