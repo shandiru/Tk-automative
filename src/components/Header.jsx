@@ -33,14 +33,7 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false); // 🔥 NEW
   const navigate = useNavigate();
 
-  const services = [
-    { name: "Diagnostics", href: "/diagnostics" },
-    { name: "DPF & AdBlue Solutions", href: "/dpf-egr-adblue-solutions" },
-    { name: "ECU Remapping", href: "/ecu-remapping-tuning" },
-    { name: "Mechanical Repairs", href: "/mechanical-repairs" },
-    { name: "Motorsport Prep", href: "/motorsport-rally-preparation" },
-    { name: "Rolling Road Dyno", href: "/rolling-road-wheel-dyno" },
-  ];
+
 
   const handleNav = (href) => {
     setIsOpen(false);
@@ -68,24 +61,7 @@ const Navbar = () => {
             <AnimatedLink text="Home" href="/" onClick={handleNav} />
             <AnimatedLink text="About" href="#about" onClick={handleNav} />
 
-            <AnimatedLink
-              text="Services"
-              href="/ecu-remapping-tuning"
-              hasDropdown
-              onClick={handleNav}
-            >
-              <div className="absolute top-full mt-2 w-80 bg-[#0A0A0A] border border-white/10 rounded-xl py-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all">
-                {services.map((s, i) => (
-                  <button
-                    key={i}
-                    onClick={() => handleNav(s.href)}
-                    className="block w-full text-left px-6 py-3 text-white text-xs font-bold uppercase hover:bg-[#062da3]"
-                  >
-                    {s.name}
-                  </button>
-                ))}
-              </div>
-            </AnimatedLink>
+              <AnimatedLink text="Service" href="#service" onClick={handleNav} />
 
             <AnimatedLink text="Reviews" href="#reviews" onClick={handleNav} />
             <AnimatedLink text="Gallery" href="#gallery" onClick={handleNav} />
@@ -131,36 +107,15 @@ const Navbar = () => {
           >
             About
           </button>
+             
+          <button
+            onClick={() => handleNav("#service")}
+            className="block text-white text-2xl font-bold uppercase"
+          >
+            Service
+          </button>
 
-          {/* 🔥 MOBILE SERVICES ACCORDION */}
-          <div>
-            <button
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
-              className="flex items-center justify-between w-full text-white text-2xl font-bold uppercase"
-            >
-              Services
-              <ChevronDown
-                className={`transition-transform ${
-                  isServicesOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-
-            {isServicesOpen && (
-              <div className="mt-4 ml-4 border-l-2 border-[#062da3] pl-4 space-y-3">
-                {services.map((s, i) => (
-                  <button
-                    key={i}
-                    onClick={() => handleNav(s.href)}
-                    className="block text-gray-400 text-lg font-bold uppercase"
-                  >
-                    {s.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
+          
           <button
             onClick={() => handleNav("#reviews")}
             className="block text-white text-2xl font-bold uppercase"
