@@ -93,7 +93,7 @@ const Navbar = () => {
 
           {/* ---------- Desktop CTA ---------- */}
           <div className="hidden lg:flex items-center gap-6">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" target="_blank" rel="noreferrer">
               <Facebook size={18} className="text-white" />
             </a>
             <button

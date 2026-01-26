@@ -66,7 +66,7 @@ const ServicesSection = () => {
   const otherServices = services.slice(1);
 
   return (
-    <section className="bg-black py-20 px-6 transition-all duration-700" id="srvuce">
+    <section className="bg-black py-20 px-6 transition-all duration-700" id="service">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">

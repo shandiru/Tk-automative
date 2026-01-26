@@ -24,9 +24,7 @@ const DiscoverServices = ({ data }) => {
               {data.mainTitle}
             </h2>
           </div>
-          <button className="bg-[#062da3] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-[#062da3]/20">
-            {data.buttonText}
-          </button>
+          
         </div>
 
         {/* Categories Grid */}

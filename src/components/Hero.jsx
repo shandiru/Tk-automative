@@ -49,7 +49,7 @@ export default function HeroSection() {
             {/* CTA Button - Updated Text */}
             <div className="pt-4 animate-fade-in-delay">
               <button
-                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('service')?.scrollIntoView({ behavior: 'smooth' })}
                 className="group relative px-8 py-4 bg-[#062da3] hover:bg-white text-white hover:text-[#062da3] font-bold rounded-sm transition-all duration-300 flex items-center gap-3 shadow-[0_10px_30px_rgba(6,45,163,0.3)] ml-auto lg:ml-0"
               >
                 <span className="relative z-10 text-sm md:text-base uppercase tracking-tighter">Explore Services</span>
