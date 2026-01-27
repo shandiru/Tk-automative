@@ -62,47 +62,59 @@ export const discoverServicesData = {
   buttonText: "All services list",
   categories: [
     {
-      name: "Roadside assistance services",
+      name: "Performance & Tuning",
       services: [
         {
-          title: "Vehicle Diagnostics",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
-          description: "Advanced on-site scanning to identify engine and electrical problems instantly.",
-          problems: ["Check engine light is on", "Unknown engine noises", "Car stalling or losing power"],
-          link: "#"
-        },
-        {
-          title: "Flat Tire Change",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
-          description: "We provide fast and safe tire replacement so you can get back on the road without delay.",
-          problems: ["Tire puncture or blowout on the road", "No spare tire or tools available", "Unsafe to change tire on a busy road"],
-          link: "#"
-        },
-        {
-          title: "Jump Start Service",
+          title: "ECU Remapping & Tuning",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
-          description: "We quickly restart dead batteries using professional-grade equipment, so you’re never left stranded.",
-          problems: ["Dead car battery", "Left lights or radio on accidentally", "Battery affected by extreme temperatures"],
+          description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
+          problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
+          link: "#"
+        },
+        {
+          title: "Rolling Road / Wheel Dyno",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
+          description: "Accurate power and torque measurement using professional-grade dyno equipment.",
+          problems: ["Unknown power output", "Hidden engine faults", "Tuning verification"],
+          link: "#"
+        },
+        {
+          title: "Motorsport & Rally Preparation",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(5).webp",
+          description: "Professional preparation, chassis strengthening, and safety setups for track and rally.",
+          problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
         }
       ]
     },
     {
-      name: "tuning services",
+      name: "Diagnostics & Maintenance",
       services: [
         {
-          title: "Heavy-Duty tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512d2a17e18addc582b6e_Auto%20tuning%20icon%20(6).webp",
-          description: "tuning for larger vehicles, including trucks, RVs, and commercial fleets.",
-          problems: ["Breakdown of trucks, buses, or RVs", "Accidents involving large vehicles", "Road blocked by oversized vehicles"],
+          title: "DPF-EGR-AdBlue Solutions",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
+          description: "Specialized maintenance and software solutions for exhaust after-treatment systems.",
+          problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
+          link: "#"
+        },
+        {
+          title: "Diagnostics",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",
+          description: "Advanced dealer-level fault finding and electrical system analysis.",
+          problems: ["Intermittent faults", "Warning lights", "Electrical gremlins"],
+          link: "#"
+        },
+        {
+          title: "Mechanical Repairs",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
+          description: "Expert mechanical servicing, part replacements, and engine work.",
+          problems: ["Engine noise", "Component wear", "General maintenance"],
           link: "#"
         }
-        // Additional tuning services can be added here with link: "#"
       ]
     }
   ]
 };
-
 export const ctaData = {
   titlePart1: "Need help?",
   titlePart2: "Autotuning is just a call away!",

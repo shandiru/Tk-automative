@@ -63,39 +63,59 @@ export const discoverServicesData = {
   buttonText: "All services list",
   categories: [
     {
-      name: "Performance Services",
+      name: "Performance & Tuning",
       services: [
         {
           title: "ECU Remapping & Tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
-          description: "Unlock more power and better fuel efficiency through custom software optimization.",
-          problems: ["Sluggish acceleration", "Poor fuel economy", "Manufacturer power restrictions"],
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
+          description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
+          problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
           link: "#"
         },
         {
-          title: "DPF-EGR-AdBlue Solutions",
+          title: "Rolling Road / Wheel Dyno",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
-          description: "Expert diagnostics and repairs for diesel emission systems.",
-          problems: ["Limp mode", "AdBlue errors", "Blocked DPF"],
+          description: "Accurate power and torque measurement using professional-grade dyno equipment.",
+          problems: ["Unknown power output", "Hidden engine faults", "Tuning verification"],
+          link: "#"
+        },
+        {
+          title: "Motorsport & Rally Preparation",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(5).webp",
+          description: "Professional preparation, chassis strengthening, and safety setups for track and rally.",
+          problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
         }
       ]
     },
     {
-      name: "tuning & Recovery",
+      name: "Diagnostics & Maintenance",
       services: [
         {
-          title: "Flatbed tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512417a95eea66b3aa316_Auto%20tuning%20icon%20(4).webp",
-          description: "Secure tuning for luxury, classic, or damaged vehicles.",
-          problems: ["Vehicle transport", "Non-running cars", "Lowered vehicles"],
+          title: "DPF-EGR-AdBlue Solutions",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
+          description: "Specialized maintenance and software solutions for exhaust after-treatment systems.",
+          problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
+          link: "#"
+        },
+        {
+          title: "Diagnostics",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",
+          description: "Advanced dealer-level fault finding and electrical system analysis.",
+          problems: ["Intermittent faults", "Warning lights", "Electrical gremlins"],
+          link: "#"
+        },
+        {
+          title: "Mechanical Repairs",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
+          description: "Expert mechanical servicing, part replacements, and engine work.",
+          problems: ["Engine noise", "Component wear", "General maintenance"],
           link: "#"
         }
       ]
     }
   ]
 };
-
 // data.js updated
 export const ctaData = {
   titlePart1: "Ready for more power?",
