@@ -36,7 +36,7 @@ const Navbar = () => {
   const services = [
     { name: "Diagnostics", href: "/diagnostics" },
     { name: "DPF & AdBlue Solutions", href: "/dpf-egr-adblue-solutions" },
-   
+    { name: "ECU Remapping", href: "/ecu-remapping-tuning" },
     { name: "Mechanical Repairs", href: "/mechanical-repairs" },
     { name: "Motorsport Prep", href: "/motorsport-rally-preparation" },
     { name: "Rolling Road Dyno", href: "/rolling-road-wheel-dyno" },
@@ -70,7 +70,7 @@ const Navbar = () => {
 
             <AnimatedLink
               text="Services"
-              href="/ecu-remapping-tuning"
+            
               hasDropdown
               onClick={handleNav}
             >
@@ -135,7 +135,7 @@ const Navbar = () => {
           {/* 🔥 MOBILE SERVICES ACCORDION */}
           <div>
             <button
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
+             
               className="flex items-center justify-between w-full text-white text-2xl font-bold uppercase"
             >
               Services

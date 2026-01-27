@@ -16,13 +16,13 @@ const ServicesSection = () => {
       image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2000&auto=format&fit=crop",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68779e7ecf40eac726b_color.svg"
     },
-    // { 
-    //   name: "ECU Remapping", 
-    //   href: "/ecu-remapping-tuning",
-    //   description: "Optimize your engine's performance, torque, and fuel efficiency via software.",
-    //   image: "https://images.unsplash.com/photo-1551522435-a13afa10f103?q=80&w=2000&auto=format&fit=crop",
-    //   icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b686798cc48683818cb1_paint.svg"
-    // },
+    { 
+      name: "ECU Remapping", 
+      href: "/ecu-remapping-tuning",
+      description: "Optimize your engine's performance, torque, and fuel efficiency via software.",
+      image: "https://images.unsplash.com/photo-1551522435-a13afa10f103?q=80&w=2000&auto=format&fit=crop",
+      icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b686798cc48683818cb1_paint.svg"
+    },
     { 
       name: "Mechanical Repairs", 
       href: "/mechanical-repairs",
