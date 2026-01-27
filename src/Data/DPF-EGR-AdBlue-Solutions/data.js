@@ -2,9 +2,7 @@
 export const serviceBannerData = {
   title: "DPF-EGR-AdBlue Solutions",
   description: "Advanced diesel emission fixes to clear fault codes, restore engine power, and resolve AdBlue 'No Start' warnings.",
-  videoUrl: "https://youtu.be/IeXQjsJlpNY",
-  thumbnailImage: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67ebdf8a1482a0bf185bcd58_car-transporter-6569783_1920%20(1).webp",
-  playIcon: ""
+  thumbnailImage: "tmp.jpg",
 };
 
 // data.js

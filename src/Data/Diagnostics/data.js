@@ -3,9 +3,7 @@
 export const serviceBannerData = {
   title: "Vehicle Diagnostics",
   description: "Identify car issues instantly with our professional roadside diagnostic tools. We find the problem so you can get the right fix fast.",
-  videoUrl: "https://youtu.be/IeXQjsJlpNY",
-  thumbnailImage: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67ebdf8a1482a0bf185bcd58_car-transporter-6569783_1920%20(1).webp",
-  playIcon: "" 
+  thumbnailImage: "tmp.jpg",
 };
 
 export const serviceDetailData = {

@@ -2,9 +2,7 @@
 export const serviceBannerData = {
   title: "Motorsport & Rally Preparation",
   description: "From track day setups to full rally builds, we provide professional engineering and performance tuning to make your vehicle competition-ready.",
-  videoUrl: "https://youtu.be/IeXQjsJlpNY",
-  thumbnailImage: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67ebdf8a1482a0bf185bcd58_car-transporter-6569783_1920%20(1).webp",
-  playIcon: "" 
+  thumbnailImage: "tmp.jpg",
 };
 
 // data.js
