@@ -2,7 +2,7 @@
 export const serviceBannerData = {
   title: "Mechanical Repairs",
   description: "From engine fixes to suspension adjustments, our expert mechanics provide reliable on-site and shop-based repairs to keep your car running smooth.",
-  thumbnailImage: "tmp.jpg",
+  thumbnailImage: "Gemini_Generated_Image_eauxt4eauxt4eaux.png",
 };
 
 // data.js

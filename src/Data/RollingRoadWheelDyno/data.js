@@ -2,7 +2,7 @@
 export const serviceBannerData = {
   title: "Rolling Road / Wheel Dyno",
   description: "Measure your vehicle's true power and torque with our precision Wheel Dyno. Perfect for performance tuning and diagnostic health checks.",
-  thumbnailImage: "tmp.jpg",
+  thumbnailImage: "Gemini_Generated_Image_ggyt1pggyt1pggyt.png",
 };
 
 // data.js
