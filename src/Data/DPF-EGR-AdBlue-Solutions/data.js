@@ -85,19 +85,20 @@ export const discoverServicesData = {
           description: "Professional preparation, chassis strengthening, and safety setups for track and rally.",
           problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
-        }
-      ]
-    },
-    {
-      name: "Diagnostics & Maintenance",
-      services: [
-        {
+        },
+         {
           title: "DPF-EGR-AdBlue Solutions",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
           description: "Specialized maintenance and software solutions for exhaust after-treatment systems.",
           problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
           link: "#"
         },
+      ]
+    },
+    {
+      name: "Diagnostics & Maintenance",
+      services: [
+       
         {
           title: "Diagnostics",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",
