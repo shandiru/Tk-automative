@@ -2,7 +2,7 @@
 export const serviceBannerData = {
   title: "ECU Remapping & Tuning",
   description: "Unlock your vehicle's true potential. Increase horsepower, improve torque, and enhance fuel efficiency with our expert tuning services.",
-   thumbnailImage: "tmp.jpg",
+   thumbnailImage: "Gemini_Generated_Image_hupbihhupbihhupb.png",
 };
 
 // data.js
