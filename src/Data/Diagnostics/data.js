@@ -3,7 +3,7 @@
 export const serviceBannerData = {
   title: "Vehicle Diagnostics",
   description: "Identify car issues instantly with our professional roadside diagnostic tools. We find the problem so you can get the right fix fast.",
-  thumbnailImage: "Gemini_Generated_Image_7y29nt7y29nt7y29.png",
+  thumbnailImage: "Diagnostics.png",
 };
 
 export const serviceDetailData = {

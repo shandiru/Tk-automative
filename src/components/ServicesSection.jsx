@@ -6,42 +6,42 @@ const ServicesSection = () => {
       name: "Diagnostics", 
       href: "/diagnostics",
       description: "Advanced dealership-level fault finding and system analysis to identify complex electrical and mechanical issues.",
-      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop",
+      image: "Diagnostics.png",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68295e67096b18189b5_car.svg"
     },
     { 
       name: "DPF & AdBlue Solutions", 
       href: "/dpf-egr-adblue-solutions",
       description: "Advanced cleaning and electronic solutions for exhaust filtration systems.",
-      image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2000&auto=format&fit=crop",
+      image: "DPF-EGR-AdBlue-Solutions.png",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68779e7ecf40eac726b_color.svg"
     },
     { 
       name: "ECU Remapping", 
       href: "/ecu-remapping-tuning",
       description: "Optimize your engine's performance, torque, and fuel efficiency via software.",
-      image: "https://images.unsplash.com/photo-1551522435-a13afa10f103?q=80&w=2000&auto=format&fit=crop",
+      image: "ECURemappingTuning.png",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b686798cc48683818cb1_paint.svg"
     },
     { 
       name: "Mechanical Repairs", 
       href: "/mechanical-repairs",
       description: "Expert mechanical maintenance and complex engine repairs for all makes.",
-      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2000&auto=format&fit=crop",
+      image: "MechanicalRepairs.png",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68779e7ecf40eac726b_color.svg"
     },
     { 
       name: "Motorsport Prep", 
       href: "/motorsport-rally-preparation",
       description: "Professional track and rally preparation for competitive performance.",
-      image: "https://images.unsplash.com/photo-1547744152-14d985cb937f?q=80&w=2000&auto=format&fit=crop",
+      image: "MotorsportRallyPreparation.png",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b686798cc48683818cb1_paint.svg"
     },
     { 
       name: "Rolling Road Dyno", 
       href: "/rolling-road-wheel-dyno",
       description: "Precision power measurement and tuning using our state-of-the-art dyno.",
-      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop",
+      image: "RollingRoadWheelDyno.png",
       icon: "https://cdn.prod.website-files.com/66cff9498fc86ce442fee452/66d6b68295e67096b18189b5_car.svg"
     },
   ]);

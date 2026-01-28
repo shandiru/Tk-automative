@@ -1,89 +1,90 @@
 import React from 'react';
-import { Smartphone, Building2, Shield, Headphones } from 'lucide-react';
+import { Wrench, Gauge, Cpu, ShieldCheck } from 'lucide-react';
 
 export default function WhyChooseSection() {
   const features = [
     {
-      icon: <Smartphone className="w-7 h-7 md:w-8 md:h-8" />,
-      title: "Make a reservation online, pay later"
+      icon: <Cpu className="w-7 h-7 md:w-8 md:h-8" />,
+      title: "Deep mechanical understanding"
     },
     {
-      icon: <Building2 className="w-7 h-7 md:w-8 md:h-8" />,
-      title: "Delivery and pickup at your residence"
+      icon: <Wrench className="w-7 h-7 md:w-8 md:h-8" />,
+      title: "Strong diagnostic skills"
     },
     {
-      icon: <Shield className="w-7 h-7 md:w-8 md:h-8" />,
-      title: "All of our bookings come with insurance"
+      icon: <Gauge className="w-7 h-7 md:w-8 md:h-8" />,
+      title: "Hands-on experience & continuous learning"
     },
     {
-      icon: <Headphones className="w-7 h-7 md:w-8 md:h-8" />,
-      title: "Personal assistance at your fingertips"
+      icon: <ShieldCheck className="w-7 h-7 md:w-8 md:h-8" />,
+      title: "Attention to detail & safety awareness"
     }
   ];
 
   return (
     <section className="relative bg-black py-20 md:py-28 lg:py-36 px-6 md:px-12 lg:px-20 overflow-hidden">
-      {/* Background Watermark Text - TK Automotive */}
+      {/* Background Watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
-        <div className="text-[25vw] md:text-[18vw] lg:text-[15vw] font-black text-white tracking-tighter uppercase" style={{ fontFamily: 'Inter, sans-serif' }}>
+        <div className="text-[25vw] md:text-[18vw] lg:text-[15vw] font-black text-white tracking-tighter uppercase">
           TK Automotive
         </div>
       </div>
 
-      {/* Decorative Brand Accent - Top Left */}
+      {/* Brand Accent - Original Blue */}
       <div className="absolute left-0 top-0 w-1.5 h-32 bg-gradient-to-b from-[#062da3] via-[#062da3]/50 to-transparent"></div>
 
-      {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-28">
           
-          {/* Left Side - Content Updated */}
+          {/* Left Side - Your Specific Content */}
           <div className="space-y-6 md:space-y-8 animate-fade-in">
-            {/* Subtitle */}
             <div className="text-[#062da3] text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
-              WHY CHOOSE TK AUTOMOTIVE?
+              Proven in Motorsport
             </div>
 
-            {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tighter">
-              We deliver <span className="text-[#062da3]">expertise and reliability</span> you can trust
+              Performance Tuning <span className="text-[#062da3]">Built on Experience</span>
             </h2>
 
-            {/* Description Updated */}
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl pt-2">
-              We understand that our clients value quality workmanship and dependable service. Our approach is designed to keep your vehicle performing at its best, whether you need routine maintenance, complex repairs, or performance enhancements.
-            </p>
+            <div className="space-y-5 pt-2">
+              <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
+                TK Automotive is a dedicated two-man team—Alex and myself. We focus on mechanical precision over high-volume turnaround, providing a specialized service strictly by appointment.
+              </p>
+
+              <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
+                Our expertise is <strong>Proven in Motorsport</strong>. I have specialized in tuning engines and performance setups for <strong>Rally, Hillclimbs, Sprints, Track Days, Targa Rally, and Drifting</strong>. 
+              </p>
+
+              <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
+                We don't offer mobile services, towing, or tyre fitting. We focus on what we do best: engine work, suspension tuning, and conventional mechanical repairs in a controlled workshop environment.
+              </p>
+
+              <div className="flex items-center gap-4 text-[#062da3] font-bold uppercase tracking-widest text-sm pt-2">
+                <span className="h-px w-8 bg-[#062da3]"></span>
+                Workshop Only • Strictly By Appointment
+              </div>
+            </div>
           </div>
 
-          {/* Right Side - Feature Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
+          {/* Right Side - Cleaned up with correct Icons */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
             {features.map((feature, index) => (
               <div 
                 key={index}
-                className="flex items-start gap-5 md:gap-6 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="group relative"
               >
-                {/* Diamond Icon Container */}
-                <div className="relative flex-shrink-0">
-                  <div 
-                    className="w-20 h-20 md:w-24 md:h-24 rotate-45 flex items-center justify-center border border-[#062da3]/30 group hover:border-[#062da3] transition-colors duration-500"
-                    style={{
-                      background: 'linear-gradient(135deg, rgba(6, 45, 163, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%)'
-                    }}
-                  >
-                    <div className="-rotate-45 text-white group-hover:text-[#062da3] transition-colors duration-300">
-                      {React.cloneElement(feature.icon, { 
-                        className: "w-7 h-7 md:w-8 md:h-8 group-hover:scale-110 transition-transform duration-300" 
-                      })}
-                    </div>
+                <div className="flex flex-col gap-4">
+                  {/* Icon Box */}
+                  <div className="w-14 h-14 bg-[#062da3]/10 border border-[#062da3]/20 flex items-center justify-center text-[#062da3] group-hover:bg-[#062da3] group-hover:text-white transition-all duration-300">
+                    {feature.icon}
                   </div>
-                </div>
-
-                {/* Feature Text */}
-                <div className="flex-1 pt-1 md:pt-2">
-                  <p className="text-white text-base md:text-lg lg:text-xl font-medium leading-relaxed tracking-tight">
-                    {feature.title}
-                  </p>
+                  {/* Text */}
+                  <div>
+                    <h3 className="text-white text-xl font-bold mb-2 tracking-tight group-hover:text-[#062da3] transition-colors">
+                      {feature.title}
+                    </h3>
+                    <div className="w-10 h-0.5 bg-[#062da3]/30 group-hover:w-20 group-hover:bg-[#062da3] transition-all duration-500"></div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -91,8 +92,6 @@ export default function WhyChooseSection() {
 
         </div>
       </div>
-
-      
     </section>
   );
 }
