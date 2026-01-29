@@ -7,7 +7,7 @@ export const serviceBannerData = {
 
 // data.js
 export const serviceDetailData = {
-  mainTitle: "Specialized Emission Diagnostics",
+  mainTitle: "Specialised Emission Diagnostics",
   mainDescription: "Our DPF-EGR-AdBlue Solutions service is designed to fix complex diesel exhaust issues on the spot. Whether your car is in 'Limp Mode' due to a clogged filter or facing AdBlue system errors, our technicians use professional tools to diagnose and resolve the issue without the need for expensive garage visits.",
   
   // Left Column - When you need it
@@ -28,7 +28,7 @@ export const serviceDetailData = {
       },
       {
         heading: "System Software Errors",
-        text: "Emission-related fault codes are appearing on your dashboard that require specialized resetting."
+        text: "Emission-related fault codes are appearing on your dashboard that require Specialised resetting."
       }
     ]
   },
@@ -89,7 +89,7 @@ export const discoverServicesData = {
          {
           title: "DPF-EGR-AdBlue Solutions",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
-          description: "Specialized maintenance and software solutions for exhaust after-treatment systems.",
+          description: "Specialised maintenance and software solutions for exhaust after-treatment systems.",
           problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
           link: "#"
         },
@@ -133,7 +133,7 @@ export const ctaData = {
   image: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce876dc/67d2e18af8d1c0c328adac3a_pexels-jakewymoore-12330350%20(1).webp",
   features: [
     "Expert Diesel Technicians",
-    "Specialized Emission Tools",
+    "Specialised Emission Tools",
     "Fast On-Site Recovery"
   ]
 };

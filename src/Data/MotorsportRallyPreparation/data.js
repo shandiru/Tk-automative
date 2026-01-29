@@ -8,7 +8,7 @@ export const serviceBannerData = {
 // data.js
 export const serviceDetailData = {
   mainTitle: "Built for Performance & Endurance",
-  mainDescription: "Entering the world of motorsport requires more than just speed—it demands reliability, safety, and precision engineering. Our Motorsport & Rally Preparation service covers everything from chassis strengthening and roll cage installation to specialized engine tuning and suspension setups. We help drivers transform standard vehicles into high-performance machines capable of handling the toughest tracks and rally stages.",
+  mainDescription: "Entering the world of motorsport requires more than just speed—it demands reliability, safety, and precision engineering. Our Motorsport & Rally Preparation service covers everything from chassis strengthening and roll cage installation to Specialised engine tuning and suspension setups. We help drivers transform standard vehicles into high-performance machines capable of handling the toughest tracks and rally stages.",
   
   // Left Column - When you need it
   benefits: {
@@ -89,7 +89,7 @@ export const discoverServicesData = {
          {
           title: "DPF-EGR-AdBlue Solutions",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
-          description: "Specialized maintenance and software solutions for exhaust after-treatment systems.",
+          description: "Specialised maintenance and software solutions for exhaust after-treatment systems.",
           problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
           link: "#"
         },

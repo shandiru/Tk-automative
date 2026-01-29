@@ -48,16 +48,14 @@ export default function WhyChooseSection() {
 
             <div className="space-y-5 pt-2">
               <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
-                TK Automotive is a dedicated two-man team—Alex and myself. We focus on mechanical precision over high-volume turnaround, providing a specialized service strictly by appointment.
+                TK Automotive is a dedicated two-man team—Alex and myself. We focus on mechanical precision over high-volume turnaround, providing a Specialised service strictly by appointment.
               </p>
 
               <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
-                Our expertise is <strong>Proven in Motorsport</strong>. I have specialized in tuning engines and performance setups for <strong>Rally, Hillclimbs, Sprints, Track Days, Targa Rally, and Drifting</strong>. 
+                Our expertise is <strong>Proven in Motorsport</strong>. I have Specialised in tuning engines and performance setups for <strong>Rally, Hillclimbs, Sprints, Track Days, Targa Rally, and Drifting</strong>. 
               </p>
 
-              <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
-                We don't offer mobile services, towing, or tyre fitting. We focus on what we do best: engine work, suspension tuning, and conventional mechanical repairs in a controlled workshop environment.
-              </p>
+             
 
               <div className="flex items-center gap-4 text-[#062da3] font-bold uppercase tracking-widest text-sm pt-2">
                 <span className="h-px w-8 bg-[#062da3]"></span>

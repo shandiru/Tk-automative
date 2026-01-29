@@ -101,7 +101,7 @@ export const discoverServicesData = {
         {
           title: "DPF-EGR-AdBlue Solutions",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
-          description: "Specialized maintenance and software solutions for exhaust after-treatment systems.",
+          description: "Specialised maintenance and software solutions for exhaust after-treatment systems.",
           problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
           link: "#"
         },
