@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock, ArrowUpRight } from 'lucide-react';
 
 const MapSection = () => {
   // Replace the placeholder with the actual Google Maps embed URL for TK Automotive
-  const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2315.6558235282713!2d-4.4690898!3d54.168536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48639b249010e095%3A0xbc4f2e3c6dbca9e0!2sTK%20Automotive!5e0!3m2!1sen!2sim!4v1700000000000!5m2!1sen!2sim";
+  const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.44627746045!2d-4.462221799999999!3d54.19195630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48639b243010e095%3A0xb4f2e3c6dbc99e0!2sTK%20Automotive!5e1!3m2!1sen!2slk!4v1769709511202!5m2!1sen!2slk"
 
   // URL that forces directions from "My Location" to the workshop destination
   const googleMapsExternal = "https://www.google.com/maps/dir/?api=1&destination=TK+Automotive+Lower+Ballacottier+Onchan+IM4+5BQ&destination_place_id=ChIJleAQMCSbY0gR4Jm8bTwuTws";

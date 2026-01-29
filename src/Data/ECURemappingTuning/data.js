@@ -86,6 +86,14 @@ export const discoverServicesData = {
           problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
         }
+        ,
+         {
+          title: "Mechanical Repairs",
+          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
+          description: "Expert mechanical servicing, part replacements, and engine work.",
+          problems: ["Engine noise", "Component wear", "General maintenance"],
+          link: "#"
+        }
       ]
     },
     {
@@ -112,13 +120,7 @@ export const discoverServicesData = {
           problems: ["Intermittent faults", "Warning lights", "Electrical gremlins"],
           link: "#"
         },
-        {
-          title: "Mechanical Repairs",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
-          description: "Expert mechanical servicing, part replacements, and engine work.",
-          problems: ["Engine noise", "Component wear", "General maintenance"],
-          link: "#"
-        }
+       
       ]
     }
   ]

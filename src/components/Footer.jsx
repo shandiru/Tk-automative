@@ -59,7 +59,7 @@ const UniqueFooter = () => {
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Quick Navigation</h4>
             <ul className="space-y-4">
               {[
-                { name: 'Home', path: '#hero' },
+                { name: 'Home', path: '/' },
                 { name: 'About Us', path: '#about' },
                 { name: 'ECU Remapping', path: '/ecu-remapping-tuning' }, // Route
                 { name: 'Diagnostics', path: '/diagnostics' },           // Route

@@ -4,7 +4,6 @@ import {
   X,
   ChevronDown,
   Facebook,
-  ArrowUpRight,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const AnimatedLink = ({ text, href, hasDropdown, children, onClick }) => (
   <div className="group relative">
     <button
-      onClick={() => onClick(href)}
+      onClick={() => !hasDropdown && onClick(href)}
       className="relative overflow-hidden h-6 flex items-center gap-1 bg-transparent cursor-pointer"
     >
       <div className="relative h-6 overflow-hidden">
@@ -30,7 +29,7 @@ const AnimatedLink = ({ text, href, hasDropdown, children, onClick }) => (
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // 🔥 NEW
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const navigate = useNavigate();
 
   const services = [
@@ -45,9 +44,8 @@ const Navbar = () => {
   const handleNav = (href) => {
     setIsOpen(false);
     setIsServicesOpen(false);
-
     if (href.startsWith("#")) {
-      navigate(`/${href}`); // /#about
+      navigate(`/${href}`);
     } else {
       navigate(href);
     }
@@ -60,7 +58,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div onClick={() => handleNav("/")} className="cursor-pointer">
-            <img src="/logo.jpg" className="h-14 rounded-full" />
+            <img src="/logo.jpg" alt="Logo" className="h-14 rounded-full" />
           </div>
 
           {/* ---------- Desktop Menu ---------- */}
@@ -68,12 +66,7 @@ const Navbar = () => {
             <AnimatedLink text="Home" href="/" onClick={handleNav} />
             <AnimatedLink text="About" href="#about" onClick={handleNav} />
 
-            <AnimatedLink
-              text="Services"
-            
-              hasDropdown
-              onClick={handleNav}
-            >
+            <AnimatedLink text="Services" hasDropdown onClick={handleNav}>
               <div className="absolute top-full mt-2 w-80 bg-[#0A0A0A] border border-white/10 rounded-xl py-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all">
                 {services.map((s, i) => (
                   <button
@@ -93,22 +86,19 @@ const Navbar = () => {
 
           {/* ---------- Desktop CTA ---------- */}
           <div className="hidden lg:flex items-center gap-6">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <Facebook size={18} className="text-white" />
+            <a href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" target="_blank" rel="noreferrer">
+              <Facebook size={18} className="text-white hover:text-[#062da3] transition-colors" />
             </a>
             <button
               onClick={() => handleNav("#contact")}
-              className="bg-white px-6 py-3 rounded-full font-bold"
+              className="bg-white text-black px-6 py-3 rounded-full font-bold"
             >
               GET IN TOUCH 
             </button>
           </div>
 
           {/* ---------- Mobile Toggle ---------- */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white"
-          >
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
@@ -117,37 +107,25 @@ const Navbar = () => {
       {/* ================= MOBILE MENU ================= */}
       {isOpen && (
         <div className="lg:hidden bg-[#0A0A0A] border-t border-white/10 px-6 py-8 space-y-6">
-
-          <button
-            onClick={() => handleNav("/")}
-            className="block text-white text-2xl font-bold uppercase"
-          >
+          <button onClick={() => handleNav("/")} className="block text-white text-2xl font-bold uppercase">
             Home
           </button>
-
-          <button
-            onClick={() => handleNav("#about")}
-            className="block text-white text-2xl font-bold uppercase"
-          >
+          <button onClick={() => handleNav("#about")} className="block text-white text-2xl font-bold uppercase">
             About
           </button>
 
-          {/* 🔥 MOBILE SERVICES ACCORDION */}
+          {/* 🔥 MOBILE SERVICES ACCORDION - FIXED CLICK HANDLER */}
           <div>
             <button
-             
+              onClick={() => setIsServicesOpen(!isServicesOpen)}
               className="flex items-center justify-between w-full text-white text-2xl font-bold uppercase"
             >
               Services
-              <ChevronDown
-                className={`transition-transform ${
-                  isServicesOpen ? "rotate-180" : ""
-                }`}
-              />
+              <ChevronDown className={`transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
             </button>
 
             {isServicesOpen && (
-              <div className="mt-4 ml-4 border-l-2 border-[#062da3] pl-4 space-y-3">
+              <div className="mt-4 ml-4 border-l-2 border-[#062da3] pl-4 space-y-4">
                 {services.map((s, i) => (
                   <button
                     key={i}
@@ -161,17 +139,10 @@ const Navbar = () => {
             )}
           </div>
 
-          <button
-            onClick={() => handleNav("#reviews")}
-            className="block text-white text-2xl font-bold uppercase"
-          >
+          <button onClick={() => handleNav("#reviews")} className="block text-white text-2xl font-bold uppercase">
             Reviews
           </button>
-
-          <button
-            onClick={() => handleNav("#gallery")}
-            className="block text-white text-2xl font-bold uppercase"
-          >
+          <button onClick={() => handleNav("#gallery")} className="block text-white text-2xl font-bold uppercase">
             Gallery
           </button>
 

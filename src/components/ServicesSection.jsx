@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const ValueCard = ({ value, index }) => {
   return (
-    <div className="flex-shrink-0 w-[90vw] sm:w-[85vw] md:w-[70vw] lg:w-[600px] px-0 md:px-4 lg:px-6 mb-6 md:mb-0">
+    <div className="flex-shrink-0 w-[90vw] sm:w-[85vw] md:w-[70vw] lg:w-[600px] px-0 md:px-4 lg:px-6 mb-6 md:mb-0" id="service">
       <a 
         href={value.href}
         className="group relative bg-[#0A0A0A] backdrop-blur-sm rounded-[2px] p-8 sm:p-10 md:p-12 lg:p-16 border border-white/5 hover:border-[#062da3]/50 transition-all duration-700 hover:shadow-2xl hover:shadow-[#062da3]/20 h-full min-h-[350px] sm:min-h-[400px] md:min-h-[450px] flex flex-col overflow-hidden cursor-pointer block"
