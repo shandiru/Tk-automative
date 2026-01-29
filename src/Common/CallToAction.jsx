@@ -22,7 +22,7 @@ const CallToAction = ({ data }) => {
               <span className="text-white">{titlePart2}</span>
             </h2>
 
-            <div className="mb-12 relative z-10">
+            {/* <div className="mb-12 relative z-10">
               <a 
                 href={buttonLink}
                 className="inline-flex items-center gap-4 bg-white text-black px-8 py-4 rounded-full font-black uppercase tracking-widest text-xs group hover:bg-black hover:text-white transition-all duration-500 shadow-xl"
@@ -32,7 +32,7 @@ const CallToAction = ({ data }) => {
                   <ArrowRight size={18} className="text-white group-hover:text-black transition-colors" />
                 </div>
               </a>
-            </div>
+            </div> */}
 
             <div className="space-y-4 relative z-10">
               {features?.map((feature, index) => (
