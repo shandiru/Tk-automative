@@ -47,7 +47,7 @@ const UniqueFooter = () => {
             </p>
             <div className="flex gap-4">
               {[Facebook].map((Icon, i) => (
-                <a key={i} href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#062da3] hover:border-[#062da3] transition-all duration-300 group">
+                <a key={i} href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand hover:border-brand transition-all duration-300 group">
                   <Icon size={18} className="text-white group-hover:scale-110 transition-transform" />
                 </a>
               ))}
@@ -69,7 +69,7 @@ const UniqueFooter = () => {
                   <a
                     href={link.path}
                     onClick={(e) => handleNavClick(e, link.path)}
-                    className="text-gray-400 hover:text-[#062da3] transition-all duration-300 flex items-center gap-2 group text-sm"
+                    className="text-gray-400 hover:text-brand transition-all duration-300 flex items-center gap-2 group text-sm"
                   >
                     <ArrowRight size={12} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                     {link.name}
@@ -84,15 +84,15 @@ const UniqueFooter = () => {
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Contact Info</h4>
             <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex flex-col">
-                <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Location</span>
+                <span className="text-brand font-black text-[10px] mb-1 uppercase tracking-tighter">Location</span>
                 Lower Ballacottier, Onchan IM4 5BQ,<br />Isle of Man
               </li>
               <li className="flex flex-col">
-                <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Phone</span>
+                <span className="text-brand font-black text-[10px] mb-1 uppercase tracking-tighter">Phone</span>
                 <a href="tel:01624860209" className="hover:text-white transition-colors">01624 860209</a>
               </li>
               <li className="flex flex-col">
-                <span className="text-[#062da3] font-black text-[10px] mb-1 uppercase tracking-tighter">Email</span>
+                <span className="text-brand font-black text-[10px] mb-1 uppercase tracking-tighter">Email</span>
                 <a href="mailto:tkautomotiveiom@gmail.com" className="hover:text-white transition-colors text-[13px]">tkautomotiveiom@gmail.com</a>
               </li>
             </ul>
@@ -128,11 +128,11 @@ const UniqueFooter = () => {
             Powered by <a href="https://www.ansely.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 text-blue-900 transition-colors">Ansely</a>
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-[10px] uppercase tracking-widest font-bold">
-            <a href="/ecu-remapping-tuning" className="text-gray-600 hover:text-[#062da3] transition-colors">Remapping</a>
-            <a href="/diagnostics" className="text-gray-600 hover:text-[#062da3] transition-colors">Diagnostics</a>
-            <a href="/dpf-egr-adblue-solutions" className="text-gray-600 hover:text-[#062da3] transition-colors">DPF/AdBlue</a>
-            <a href="/mechanical-repairs" className="text-gray-600 hover:text-[#062da3] transition-colors">Repairs</a>
-            <a href="/privacy-policy" className="text-gray-600 hover:text-[#062da3] transition-colors">Privacy</a>
+            <a href="/ecu-remapping-tuning" className="text-gray-600 hover:text-brand transition-colors">Remapping</a>
+            <a href="/diagnostics" className="text-gray-600 hover:text-brand transition-colors">Diagnostics</a>
+            <a href="/dpf-egr-adblue-solutions" className="text-gray-600 hover:text-brand transition-colors">DPF/AdBlue</a>
+            <a href="/mechanical-repairs" className="text-gray-600 hover:text-brand transition-colors">Repairs</a>
+            <a href="/privacy-policy" className="text-gray-600 hover:text-brand transition-colors">Privacy</a>
           </div>
         </div>
       </div>

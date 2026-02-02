@@ -53,8 +53,8 @@ export default function TestimonialSection() {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header Badge */}
         <div className="mb-12">
-          <div className="flex items-center gap-2 bg-[#062da3]/10 w-fit px-4 py-1.5 rounded-full border border-[#062da3]/30">
-            <Star className="w-4 h-4 text-[#062da3] fill-[#062da3]" />
+          <div className="flex items-center gap-2 bg-brand/10 w-fit px-4 py-1.5 rounded-full border border-brand/30">
+            <Star className="w-4 h-4 text-brand fill-brand" />
             <span className="text-white font-bold tracking-[0.2em] uppercase text-xs">
               Client Feedback
             </span>
@@ -64,7 +64,7 @@ export default function TestimonialSection() {
         {/* Quote Content Area */}
         <div className="flex flex-col lg:flex-row gap-8 items-start mb-12 md:mb-20 min-h-[380px] md:min-h-[250px]">
           <div className="hidden lg:block flex-shrink-0 -mt-10">
-            <div className="text-[150px] leading-none font-serif text-[#062da3] opacity-20 select-none">“</div>
+            <div className="text-[150px] leading-none font-serif text-brand opacity-20 select-none">“</div>
           </div>
 
           <div className={`flex-1 transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
@@ -73,11 +73,11 @@ export default function TestimonialSection() {
             </p>
 
             {/* Mobile/Tablet Customer Info - Visible always on small screens */}
-            <div className="lg:hidden mt-auto border-l-4 border-[#062da3] pl-5 py-2 bg-gradient-to-r from-[#062da3]/10 to-transparent">
+            <div className="lg:hidden mt-auto border-l-4 border-brand pl-5 py-2 bg-gradient-to-r from-brand/10 to-transparent">
                 <h3 className="text-white font-black uppercase text-xl tracking-tighter">
                     {testimonials[activeIndex].name}
                 </h3>
-                <p className="text-[#062da3] text-sm font-bold tracking-[0.2em] uppercase mt-1">
+                <p className="text-brand text-sm font-bold tracking-[0.2em] uppercase mt-1">
                     {testimonials[activeIndex].location}
                 </p>
             </div>
@@ -100,11 +100,11 @@ export default function TestimonialSection() {
                     }, 300);
                 }}
                 className={`cursor-pointer transition-all duration-500 group border-t-2 pt-6 ${
-                  activeIndex === index ? 'border-[#062da3] opacity-100' : 'border-gray-800 opacity-30'
+                  activeIndex === index ? 'border-brand opacity-100' : 'border-gray-800 opacity-30'
                 }`}
               >
                 <div className="space-y-2">
-                  <div className={`text-sm font-black ${activeIndex === index ? 'text-[#062da3]' : 'text-gray-500'}`}>
+                  <div className={`text-sm font-black ${activeIndex === index ? 'text-brand' : 'text-gray-500'}`}>
                     {testimonial.number}
                   </div>
                   <h3 className="text-sm font-bold text-white uppercase tracking-tighter truncate">
@@ -116,7 +116,7 @@ export default function TestimonialSection() {
           </div>
 
           {/* Rating Score Card - Centered on Mobile */}
-          <div className="lg:col-span-4 bg-[#062da3] p-8 rounded-sm shadow-2xl relative overflow-hidden group w-full">
+          <div className="lg:col-span-4 bg-brand p-8 rounded-sm shadow-2xl relative overflow-hidden group w-full">
             <Star className="absolute -right-8 -bottom-8 w-40 h-40 text-black/10 rotate-12" />
             <div className="relative z-10 flex items-center gap-6">
               <div className="text-5xl font-black text-white tracking-tighter">4.9</div>

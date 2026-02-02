@@ -16,8 +16,8 @@ const MapSection = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-[2px] bg-[#062da3]"></div>
-              <span className="text-[#062da3] font-bold uppercase tracking-[0.3em] text-[10px]">Location</span>
+              <div className="w-10 h-[2px] bg-brand"></div>
+              <span className="text-brand font-bold uppercase tracking-[0.3em] text-[10px]">Location</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter uppercase">
               Visit Our Workshop
@@ -28,7 +28,7 @@ const MapSection = () => {
             href={googleMapsExternal} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white border-b-2 border-[#062da3] pb-1 hover:text-[#062da3] transition-colors font-bold uppercase text-sm tracking-widest"
+            className="inline-flex items-center gap-2 text-white border-b-2 border-brand pb-1 hover:text-brand transition-colors font-bold uppercase text-sm tracking-widest"
           >
             Open in Google Maps <ArrowUpRight size={16} />
           </a>
@@ -37,7 +37,7 @@ const MapSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Map Container */}
           <div className="lg:col-span-2 h-[450px] rounded-2xl overflow-hidden border border-white/10 relative group">
-            <div className="absolute inset-0 border-2 border-[#062da3]/0 group-hover:border-[#062da3]/30 transition-all duration-500 pointer-events-none z-10 rounded-2xl"></div>
+            <div className="absolute inset-0 border-2 border-brand/0 group-hover:border-brand/30 transition-all duration-500 pointer-events-none z-10 rounded-2xl"></div>
             <iframe
               src={mapSource}
               width="100%"
@@ -54,8 +54,8 @@ const MapSection = () => {
           <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-white/5 flex flex-col justify-between">
             <div className="space-y-8">
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#062da3]/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-[#062da3]" size={20} />
+                <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-brand" size={20} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Address</h4>
@@ -68,8 +68,8 @@ const MapSection = () => {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#062da3]/10 flex items-center justify-center flex-shrink-0">
-                  <Clock className="text-[#062da3]" size={20} />
+                <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center flex-shrink-0">
+                  <Clock className="text-brand" size={20} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Working Hours</h4>
@@ -79,8 +79,8 @@ const MapSection = () => {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#062da3]/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-[#062da3]" size={20} />
+                <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-brand" size={20} />
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Phone </h4>
@@ -93,7 +93,7 @@ const MapSection = () => {
               href="https://www.google.com/maps?sca_esv=c64924e04d081bdf&rlz=1C1GCEA_enLK1141LK1141&sxsrf=ANbL-n4_h608ZDTltFKr0gt-wf9qJfe2WQ:1768561763908&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObzKPDZUkK-x28ZtFWvmSc-n7emKZuGMr69zTiSzQFuxIqZfSqJtWiMT667fTk8SWBjWF2j68bma-7D_h-51vqOmwj-I&biw=1366&bih=633&dpr=1&aic=0&um=1&ie=UTF-8&fb=1&gl=lk&sa=X&geocode=KZXgEDAkm2NIMeCZvG08Lk8L&daddr=Lower+Ballacottier,+Ballacottier+Rd,+Onchan+IM4+5BQ,+Isle+of+Man"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full mt-8 bg-white text-black py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-[#062da3] hover:text-white transition-all duration-300 flex items-center justify-center"
+              className="w-full mt-8 bg-white text-black py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-brand hover:text-white transition-all duration-300 flex items-center justify-center"
             >
               Get Directions
             </a>

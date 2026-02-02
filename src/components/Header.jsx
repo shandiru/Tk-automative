@@ -18,7 +18,7 @@ const AnimatedLink = ({ text, href, hasDropdown, children, onClick }) => (
         <span className="flex items-center text-white font-bold uppercase tracking-wider text-sm transition-transform duration-300 group-hover:-translate-y-full">
           {text} {hasDropdown && <ChevronDown size={14} className="ml-1" />}
         </span>
-        <span className="flex items-center text-[#062da3] font-bold uppercase tracking-wider text-sm absolute left-0 top-full transition-transform duration-300 group-hover:-translate-y-full">
+        <span className="flex items-center text-brand font-bold uppercase tracking-wider text-sm absolute left-0 top-full transition-transform duration-300 group-hover:-translate-y-full">
           {text} {hasDropdown && <ChevronDown size={14} className="ml-1" />}
         </span>
       </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
                   <button
                     key={i}
                     onClick={() => handleNav(s.href)}
-                    className="block w-full text-left px-6 py-3 text-white text-xs font-bold uppercase hover:bg-[#062da3]"
+                    className="block w-full text-left px-6 py-3 text-white text-xs font-bold uppercase hover:bg-brand"
                   >
                     {s.name}
                   </button>
@@ -87,7 +87,7 @@ const Navbar = () => {
           {/* ---------- Desktop CTA ---------- */}
           <div className="hidden lg:flex items-center gap-6">
             <a href="https://web.facebook.com/tkautomotiveiom/?_rdc=1&_rdr#" target="_blank" rel="noreferrer">
-              <Facebook size={18} className="text-white hover:text-[#062da3] transition-colors" />
+              <Facebook size={18} className="text-white hover:text-brand transition-colors" />
             </a>
             <button
               onClick={() => handleNav("#contact")}
@@ -125,7 +125,7 @@ const Navbar = () => {
             </button>
 
             {isServicesOpen && (
-              <div className="mt-4 ml-4 border-l-2 border-[#062da3] pl-4 space-y-4">
+              <div className="mt-4 ml-4 border-l-2 border-brand pl-4 space-y-4">
                 {services.map((s, i) => (
                   <button
                     key={i}
@@ -148,7 +148,7 @@ const Navbar = () => {
 
           <button
             onClick={() => handleNav("#contact")}
-            className="w-full bg-[#062da3] text-white py-5 rounded-xl font-bold uppercase tracking-widest"
+            className="w-full bg-brand text-white py-5 rounded-xl font-bold uppercase tracking-widest"
           >
             Contact Us
           </button>

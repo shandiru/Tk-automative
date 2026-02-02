@@ -52,7 +52,7 @@ export default function FAQSection() {
         {/* Header */}
         <div className="mb-12 md:mb-16 lg:mb-20 animate-fade-in">
           {/* Subtitle - Color changed to Brand Blue */}
-          <div className="text-[#062da3] text-xs md:text-sm font-medium tracking-[0.2em] uppercase mb-6">
+          <div className="text-brand text-xs md:text-sm font-medium tracking-[0.2em] uppercase mb-6">
             Engine Remapping Expertise
           </div>
 
@@ -76,14 +76,14 @@ export default function FAQSection() {
                   onClick={() => toggleAccordion(index)}
                   className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/[0.02] transition-colors duration-300"
                 >
-                  <h3 className={`text-lg md:text-xl lg:text-2xl font-medium uppercase transition-colors duration-300 ${openIndex === index ? 'text-[#062da3]' : 'text-white'}`}>
+                  <h3 className={`text-lg md:text-xl lg:text-2xl font-medium uppercase transition-colors duration-300 ${openIndex === index ? 'text-brand' : 'text-white'}`}>
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center">
                     {openIndex === index ? (
-                      <Minus className="w-6 h-6 text-[#062da3]" />
+                      <Minus className="w-6 h-6 text-brand" />
                     ) : (
-                      <Plus className="w-6 h-6 text-white group-hover:text-[#062da3]" />
+                      <Plus className="w-6 h-6 text-white group-hover:text-brand" />
                     )}
                   </div>
                 </button>
@@ -115,14 +115,14 @@ export default function FAQSection() {
                   onClick={() => toggleAccordion(index + 4)}
                   className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/[0.02] transition-colors duration-300"
                 >
-                  <h3 className={`text-lg md:text-xl lg:text-2xl font-medium uppercase transition-colors duration-300 ${openIndex === index + 4 ? 'text-[#062da3]' : 'text-white'}`}>
+                  <h3 className={`text-lg md:text-xl lg:text-2xl font-medium uppercase transition-colors duration-300 ${openIndex === index + 4 ? 'text-brand' : 'text-white'}`}>
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center">
                     {openIndex === index + 4 ? (
-                      <Minus className="w-6 h-6 text-[#062da3]" />
+                      <Minus className="w-6 h-6 text-brand" />
                     ) : (
-                      <Plus className="w-6 h-6 text-white group-hover:text-[#062da3]" />
+                      <Plus className="w-6 h-6 text-white group-hover:text-brand" />
                     )}
                   </div>
                 </button>

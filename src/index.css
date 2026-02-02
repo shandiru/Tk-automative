@@ -1,120 +1,86 @@
 /* index.css */
 @import "tailwindcss";
 
-/* make `dark:` respond to .dark on <html> */
-@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
+/* Make `dark:` respond to .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
 
- @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
+@theme {
+  --color-brand: #062da3;
+}
 
-        @keyframes slide-up {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
+/* ===============================
+   Animations
+================================ */
 
-        @keyframes slide-up-slow {
-          from { opacity: 0; transform: translateY(60px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
+/* Fade In */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-        .animate-fade-in { animation: fade-in 0.8s ease-out; }
-        .animate-fade-in-delay { animation: fade-in 1s ease-out 0.5s both; }
-        .animate-slide-up { animation: slide-up 0.8s ease-out 0.2s both; }
-        .animate-slide-up-slow { animation: slide-up-slow 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
+/* Slide Up */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Slide Up (Slow) */
+@keyframes slide-up-slow {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-          @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
+/* ===============================
+   Animation Utilities
+================================ */
 
-        @keyframes slide-up {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out both;
+}
 
-        .animate-fade-in { animation: fade-in 0.8s ease-out; }
-        .animate-fade-in-delay { animation: fade-in 1s ease-out 0.5s both; }
-        .animate-slide-up { animation: slide-up 0.8s ease-out both; }
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-out 0.5s both;
+}
 
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out both;
+}
 
-         @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slide-up {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in { animation: fade-in 0.8s ease-out; }
-        .animate-slide-up { animation: slide-up 0.8s ease-out both; }
+.animate-slide-up-slow {
+  animation: slide-up-slow 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
 
+/* ===============================
+   Custom Scrollbar
+================================ */
 
-         @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
 
-        @keyframes slide-up {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #000;
+}
 
-        .animate-fade-in { animation: fade-in 0.8s ease-out; }
-        .animate-fade-in-delay { animation: fade-in 1s ease-out 0.3s both; }
-        .animate-slide-up { animation: slide-up 0.8s ease-out; }
-
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: #000;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #062da3;
-          border-radius: 10px;
-        }
-
-
-         @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes slide-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out;
-        }
-
-        .animate-slide-up {
-          animation: slide-up 0.8s ease-out both;
-        }
-
-
-        
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s ease-out forwards;
-        }
-      
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-brand);
+  border-radius: 10px;
+}

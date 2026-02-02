@@ -19,7 +19,7 @@ const DiscoverServices = ({ data }) => {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 gap-8">
           <div className="max-w-xl">
-            <h3 className="text-[#062da3] uppercase tracking-[0.3em] font-bold text-xs mb-4">Our Expertise</h3>
+            <h3 className="text-brand uppercase tracking-[0.3em] font-bold text-xs mb-4">Our Expertise</h3>
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase">
               {data.mainTitle}
             </h2>
@@ -30,7 +30,7 @@ const DiscoverServices = ({ data }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12">
           {data.categories.map((category, catIdx) => (
             <div key={catIdx} className="bg-[#0A0A0A] p-8 rounded-3xl border border-white/5">
-              <h6 className="text-[10px] font-black uppercase tracking-[0.4em] text-[#062da3] mb-8 pb-4 border-b border-white/5">
+              <h6 className="text-[10px] font-black uppercase tracking-[0.4em] text-brand mb-8 pb-4 border-b border-white/5">
                 {category.name}
               </h6>
               
@@ -52,23 +52,23 @@ const DiscoverServices = ({ data }) => {
                       >
                         <div className="flex items-center gap-6">
                          
-                          <div className={`w-14 h-14 flex items-center justify-center rounded-xl transition-all duration-500 ${isOpen ? 'bg-[#062da3]' : 'bg-zinc-900 group-hover:scale-110'}`}>
+                          <div className={`w-14 h-14 flex items-center justify-center rounded-xl transition-all duration-500 ${isOpen ? 'bg-brand' : 'bg-zinc-900 group-hover:scale-110'}`}>
                             {IconComponent ? (
                               <IconComponent 
                                 size={28} 
-                                className={`transition-all ${isOpen ? 'text-white' : 'text-[#062da3] opacity-80'}`} 
+                                className={`transition-all ${isOpen ? 'text-white' : 'text-brand opacity-80'}`} 
                               />
                             ) : (
                               <IoIcons.IoSettingsSharp size={28} className="text-gray-600" />
                             )}
                           </div>
                           
-                          <h3 className={`text-lg md:text-xl font-bold transition-colors duration-300 ${isOpen ? 'text-[#062da3]' : 'text-white'}`}>
+                          <h3 className={`text-lg md:text-xl font-bold transition-colors duration-300 ${isOpen ? 'text-brand' : 'text-white'}`}>
                             {service.title}
                           </h3>
                         </div>
                         
-                        <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 border-2 ${isOpen ? 'bg-white border-white text-black rotate-45' : 'bg-transparent border-[#062da3] text-[#062da3]'}`}>
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 border-2 ${isOpen ? 'bg-white border-white text-black rotate-45' : 'bg-transparent border-brand text-brand'}`}>
                           <Plus size={18} strokeWidth={3} />
                         </div>
                       </div>
@@ -83,7 +83,7 @@ const DiscoverServices = ({ data }) => {
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                             {service.problems?.map((prob, pIdx) => (
                               <div key={pIdx} className="text-[11px] text-gray-500 uppercase font-bold flex items-center gap-3">
-                                <span className="w-1.5 h-1.5 bg-[#062da3] rounded-full animate-pulse" /> {prob}
+                                <span className="w-1.5 h-1.5 bg-brand rounded-full animate-pulse" /> {prob}
                               </div>
                             ))}
                           </div>
