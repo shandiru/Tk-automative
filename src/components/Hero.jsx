@@ -1,5 +1,7 @@
 import React from 'react';
 import { Star, ArrowUpRight } from 'lucide-react';
+const PHONE = import.meta.env.VITE_PHONE_NUMBER;
+const PHONE_TEL = import.meta.env.VITE_PHONE_TEL;
 
 export default function HeroSection() {
   return (
@@ -58,7 +60,7 @@ export default function HeroSection() {
               </button>
 
               <a
-                href="tel:01624860209"
+                href={PHONE_TEL}
                 className="group px-4 md:px-8 py-4 border-2 border-brand bg-transparent hover:bg-brand text-white font-bold rounded-sm transition-all duration-300 flex items-center gap-2 shrink-0"
               >
                 <svg

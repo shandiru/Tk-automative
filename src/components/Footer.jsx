@@ -1,7 +1,10 @@
 import React from 'react';
 import { Facebook, Instagram, Clock, ArrowRight } from 'lucide-react';
-// If you are using react-router-dom, you can import Link
-// import { Link } from 'react-router-dom'; 
+
+const PHONE = import.meta.env.VITE_PHONE_NUMBER;
+const PHONE_TEL = import.meta.env.VITE_PHONE_TEL;
+const EMAIL = import.meta.env.VITE_EMAIL;
+
 
 const UniqueFooter = () => {
   const openingHours = [
@@ -89,11 +92,11 @@ const UniqueFooter = () => {
               </li>
               <li className="flex flex-col">
                 <span className="text-brand font-black text-[10px] mb-1 uppercase tracking-tighter">Phone</span>
-                <a href="tel:01624860209" className="hover:text-white transition-colors">01624 860209</a>
+                <a href={PHONE_TEL} className="hover:text-white transition-colors">{PHONE}</a>
               </li>
               <li className="flex flex-col">
                 <span className="text-brand font-black text-[10px] mb-1 uppercase tracking-tighter">Email</span>
-                <a href="mailto:tkautomotiveiom@gmail.com" className="hover:text-white transition-colors text-[13px]">tkautomotiveiom@gmail.com</a>
+                <a href={`mailto:${EMAIL}`} className="hover:text-white transition-colors text-[13px]">{EMAIL}</a>
               </li>
             </ul>
           </div>

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+const PHONE = import.meta.env.VITE_PHONE_NUMBER;
+const PHONE_TEL = import.meta.env.VITE_PHONE_TEL;
+const EMAIL = import.meta.env.VITE_EMAIL;
 
 const ContactSection = () => {
   return (
@@ -26,8 +29,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-gray-500 text-xs uppercase font-bold tracking-widest mb-1">Phone</p>
-                    <a href="tel:01624860209" className="text-white text-lg md:text-xl font-semibold hover:text-brand transition-colors">
-                      01624 860209
+                    <a  href={PHONE_TEL} className="text-white text-lg md:text-xl font-semibold hover:text-brand transition-colors">
+                     {PHONE}
                     </a>
                   </div>
                 </div>
@@ -39,8 +42,8 @@ const ContactSection = () => {
                   </div>
                   <div className="min-w-0">
                     <p className="text-gray-500 text-xs uppercase font-bold tracking-widest mb-1">Email</p>
-                    <a href="mailto:tkautomotiveiom@gmail.com" className="text-white text-sm md:text-xl font-semibold hover:text-brand transition-colors break-all">
-                      tkautomotiveiom@gmail.com
+                    <a  href={`mailto:${EMAIL}`} className="text-white text-sm md:text-xl font-semibold hover:text-brand transition-colors break-all">
+                      {EMAIL}
                     </a>
                   </div>
                 </div>
