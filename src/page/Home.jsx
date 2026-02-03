@@ -10,6 +10,7 @@ import FAQSection from '../components/FAQSection';
 import WhyChooseSection from '../components/WhyChooseUs';
 import ServicesSection from '../components/ServicesSection';
 import MapSection from '../components/Map';
+import Teamcard from "../components/Teamcard"
 const Home = () => {
     return (
         <div>
@@ -17,6 +18,7 @@ const Home = () => {
             {/* <Service /> */}
 
             <About />
+            <Teamcard />
             <WhyChooseSection />
             <ServicesSection />
             <Review />
