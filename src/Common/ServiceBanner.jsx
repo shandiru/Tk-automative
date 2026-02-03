@@ -13,8 +13,8 @@ const ServiceBanner = ({ data }) => {
         {/* Text Content Area */}
         <div className="max-w-4xl mb-16 animate-fade-in">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-[2px] bg-[#062da3]"></div>
-            <span className="text-[#062da3] font-bold uppercase tracking-[0.3em] text-xs">Premium Experience</span>
+            <div className="w-12 h-[2px] bg-brand"></div>
+            <span className="text-brand font-bold uppercase tracking-[0.3em] text-xs">Premium Experience</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tighter uppercase">
             {title}
@@ -37,7 +37,7 @@ const ServiceBanner = ({ data }) => {
 
           {/* Bottom Label (Replaced "Watch Video" with a Service Label) */}
           <div className="absolute bottom-8 left-8 flex items-center gap-4">
-            <div className="w-8 h-8 bg-[#062da3] rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-brand rounded-full flex items-center justify-center">
                <div className="w-2 h-2 bg-white rounded-full" />
             </div>
             <span className="text-white font-black uppercase tracking-[0.2em] text-sm">

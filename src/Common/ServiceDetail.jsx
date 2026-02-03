@@ -15,8 +15,8 @@ const ServiceDetail = ({ data }) => {
         {/* Header Section */}
         <div className="max-w-4xl mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-[2px] bg-[#062da3]"></div>
-            <span className="text-[#062da3] font-bold uppercase tracking-[0.3em] text-[10px]">Excellence</span>
+            <div className="w-10 h-[2px] bg-brand"></div>
+            <span className="text-brand font-bold uppercase tracking-[0.3em] text-[10px]">Excellence</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tighter uppercase">
             {mainTitle}
@@ -30,21 +30,21 @@ const ServiceDetail = ({ data }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           
           {/* Left Column: Benefits */}
-          <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-[#062da3]/30 transition-colors duration-500 group">
+          <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-brand/30 transition-colors duration-500 group">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-tight flex items-center gap-3">
-              <span className="w-2 h-8 bg-[#062da3] rounded-full"></span>
+              <span className="w-2 h-8 bg-brand rounded-full"></span>
               {benefits?.title}
             </h3>
             <div className="space-y-10">
               {benefits?.items?.map((item, index) => (
                 <div key={index} className="flex gap-5">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full bg-[#062da3]/10 flex items-center justify-center border border-[#062da3]/20 group-hover:bg-[#062da3] transition-colors duration-500">
-                      <Check className="text-[#062da3] group-hover:text-white w-3.5 h-3.5 transition-colors duration-500" />
+                    <div className="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center border border-brand/20 group-hover:bg-brand transition-colors duration-500">
+                      <Check className="text-brand group-hover:text-white w-3.5 h-3.5 transition-colors duration-500" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white mb-2 uppercase tracking-wide group-hover:text-[#062da3] transition-colors">
+                    <h4 className="text-lg font-bold text-white mb-2 uppercase tracking-wide group-hover:text-brand transition-colors">
                       {item.heading}
                     </h4>
                     <p className="text-gray-500 leading-relaxed text-sm md:text-base">{item.text}</p>
@@ -55,19 +55,19 @@ const ServiceDetail = ({ data }) => {
           </div>
 
           {/* Right Column: Process */}
-          <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-[#062da3]/30 transition-colors duration-500 group">
+          <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-brand/30 transition-colors duration-500 group">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-tight flex items-center gap-3">
-              <span className="w-2 h-8 bg-white/20 rounded-full group-hover:bg-[#062da3] transition-colors"></span>
+              <span className="w-2 h-8 bg-white/20 rounded-full group-hover:bg-brand transition-colors"></span>
               {process?.title}
             </h3>
             <div className="space-y-10">
               {process?.steps?.map((step, index) => (
                 <div key={index} className="flex gap-5 relative">
                   {index !== process.steps.length - 1 && (
-                    <div className="absolute left-4 top-10 w-[1px] h-full bg-white/5 group-hover:bg-[#062da3]/20 transition-colors" />
+                    <div className="absolute left-4 top-10 w-[1px] h-full bg-white/5 group-hover:bg-brand/20 transition-colors" />
                   )}
                   
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-xs font-black text-gray-500 group-hover:text-white group-hover:border-[#062da3] group-hover:bg-[#062da3] transition-all duration-500 z-10 bg-[#0A0A0A]">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-xs font-black text-gray-500 group-hover:text-white group-hover:border-brand group-hover:bg-brand transition-all duration-500 z-10 bg-[#0A0A0A]">
                     {index + 1}
                   </div>
                   <div>

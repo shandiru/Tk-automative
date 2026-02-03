@@ -1,4 +1,7 @@
 import React from 'react';
+const PHONE = import.meta.env.VITE_PHONE_NUMBER;
+
+const EMAIL = import.meta.env.VITE_EMAIL;
 
 const PrivacyPolicy = () => {
     return (
@@ -111,8 +114,8 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="text-white">
                          <p><strong>TK Automotive</strong></p>
-                        <p>Email: <a href="mailto:tkautomotiveiom@gmail.com" className="text-blue-400 hover:underline">tkautomotiveiom@gmail.com</a></p>
-                        <p>Phone: 01624860209</p>
+                        <p>Email: <a href={`mailto:${EMAIL}`} className="text-blue-400 hover:underline">{EMAIL}</a></p>
+                        <p>Phone:  {PHONE}</p>
                         <p>Address: Lower Ballacottier, Ballacottier Rd, Onchan IM4 5BQ, Isle of Man</p>
                     </div>
                     <p className="mt-2 text-white">

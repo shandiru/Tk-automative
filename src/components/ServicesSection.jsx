@@ -6,7 +6,7 @@ const ValueCard = ({ value, index }) => {
     <div className="flex-shrink-0 w-[90vw] sm:w-[85vw] md:w-[70vw] lg:w-[600px] px-0 md:px-4 lg:px-6 mb-6 md:mb-0" id="service">
       <a 
         href={value.href}
-        className="group relative bg-[#0A0A0A] backdrop-blur-sm rounded-[2px] p-8 sm:p-10 md:p-12 lg:p-16 border border-white/5 hover:border-[#062da3]/50 transition-all duration-700 hover:shadow-2xl hover:shadow-[#062da3]/20 h-full min-h-[350px] sm:min-h-[400px] md:min-h-[450px] flex flex-col overflow-hidden cursor-pointer block"
+        className="group relative bg-[#0A0A0A] backdrop-blur-sm rounded-[2px] p-8 sm:p-10 md:p-12 lg:p-16 border border-white/5 hover:border-brand/50 transition-all duration-700 hover:shadow-2xl hover:shadow-brand/20 h-full min-h-[350px] sm:min-h-[400px] md:min-h-[450px] flex flex-col overflow-hidden cursor-pointer block"
       >
         {/* Service Image */}
         <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-[2px] mb-6">
@@ -21,12 +21,12 @@ const ValueCard = ({ value, index }) => {
         {/* Content */}
         <div className="relative z-10 flex flex-col h-full">
           {/* Icon Badge */}
-          <div className="inline-flex items-center justify-center w-12 h-12 mb-6 bg-[#062da3]/10 rounded-full group-hover:bg-[#062da3]/20 transition-all duration-700">
+          <div className="inline-flex items-center justify-center w-12 h-12 mb-6 bg-brand/10 rounded-full group-hover:bg-brand/20 transition-all duration-700">
             <img src={value.icon} alt="icon" className="w-6 h-6 invert sepia-[1] saturate-[5] hue-rotate-[190deg]" />
           </div>
 
           {/* Heading */}
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 uppercase tracking-tighter group-hover:text-[#062da3] transition-colors duration-500">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 uppercase tracking-tighter group-hover:text-brand transition-colors duration-500">
             {value.name}
           </h3>
 
@@ -39,13 +39,13 @@ const ValueCard = ({ value, index }) => {
 
           {/* Button */}
           <div className="mt-8">
-            <span className="inline-block px-10 py-4 bg-[#062da3] text-white font-bold uppercase text-sm tracking-widest group-hover:bg-white group-hover:text-[#062da3] transition-all duration-300">
+            <span className="inline-block px-10 py-4 bg-brand text-white font-bold uppercase text-sm tracking-widest group-hover:bg-white group-hover:text-brand transition-all duration-300">
               Explore Service
             </span>
           </div>
 
           {/* Decorative Corner */}
-          <div className="absolute bottom-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#062da3]/10 rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+          <div className="absolute bottom-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-brand/10 rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
         </div>
       </a>
     </div>
@@ -153,10 +153,10 @@ const OurValues = ({
             >
               {/* Subtitle */}
               <div className="mb-4 sm:mb-6">
-                <span className="text-xs sm:text-sm font-medium text-[#062da3] tracking-wider uppercase">
+                <span className="text-xs sm:text-sm font-medium text-brand tracking-wider uppercase">
                   {subtitle}
                 </span>
-                <div className="h-1 w-12 bg-[#062da3] mt-2" />
+                <div className="h-1 w-12 bg-brand mt-2" />
               </div>
 
               {/* Title */}
@@ -209,10 +209,10 @@ const OurValues = ({
             <div className="max-w-2xl">
               {/* Subtitle */}
               <div className="mb-6">
-                <span className="text-sm font-medium text-[#062da3] tracking-wider uppercase">
+                <span className="text-sm font-medium text-brand tracking-wider uppercase">
                   {subtitle}
                 </span>
-                <div className="h-1 w-12 bg-[#062da3] mt-2" />
+                <div className="h-1 w-12 bg-brand mt-2" />
               </div>
 
               {/* Title */}
@@ -227,7 +227,7 @@ const OurValues = ({
             </div>
 
             <div className="hidden md:block">
-              <div className="h-1 w-32 bg-[#062da3]"></div>
+              <div className="h-1 w-32 bg-brand"></div>
             </div>
           </motion.div>
 
@@ -248,7 +248,7 @@ const OurValues = ({
                 duration: 1.5,
                 ease: "easeInOut",
               }}
-              className="text-[#062da3]"
+              className="text-brand"
             >
               ↓
             </motion.span>
@@ -265,7 +265,7 @@ const OurValues = ({
           {/* Progress bar */}
           <motion.div className="absolute top-0 left-0 right-0 h-1 bg-[#111] z-20">
             <motion.div
-              className="h-full bg-[#062da3]"
+              className="h-full bg-brand"
               style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
             />
           </motion.div>

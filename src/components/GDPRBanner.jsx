@@ -45,7 +45,7 @@ export default function GDPRConsent() {
             <Link
               to="/privacy-policy"
               // Color changed to brand blue
-              className="underline font-bold text-[#062da3] hover:text-white transition-colors"
+              className="underline font-bold text-brand hover:text-white transition-colors"
             >
               See our Privacy Policy
             </Link>
@@ -54,14 +54,14 @@ export default function GDPRConsent() {
             <button
               onClick={handleReject}
               // Hover changed to brand blue
-              className="px-5 py-2 rounded-lg bg-gray-800 text-white text-xs font-bold uppercase tracking-widest hover:bg-[#062da3] transition-all duration-300"
+              className="px-5 py-2 rounded-lg bg-gray-800 text-white text-xs font-bold uppercase tracking-widest hover:bg-brand transition-all duration-300"
             >
               Reject
             </button>
             <button
               onClick={handleAccept}
               // Background changed to brand blue
-              className="px-5 py-2 rounded-lg text-xs font-bold uppercase tracking-widest text-white bg-[#062da3] hover:opacity-80 transition-all duration-300 shadow-[0_0_15px_rgba(6,45,163,0.3)]"
+              className="px-5 py-2 rounded-lg text-xs font-bold uppercase tracking-widest text-white bg-brand hover:opacity-80 transition-all duration-300 shadow-[0_0_15px_rgba(6,45,163,0.3)]"
             >
               Accept
             </button>
@@ -75,7 +75,7 @@ export default function GDPRConsent() {
           <button
             onClick={handleIconClick}
             // Background changed to brand blue
-            className="w-12 h-12 rounded-full bg-[#062da3] shadow-lg border border-white/20 flex items-center justify-center hover:scale-110 transition-transform cursor-pointer group"
+            className="w-12 h-12 rounded-full bg-brand shadow-lg border border-white/20 flex items-center justify-center hover:scale-110 transition-transform cursor-pointer group"
             title="Cookie Preferences"
           >
             <img

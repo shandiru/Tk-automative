@@ -31,19 +31,19 @@ export default function WhyChooseSection() {
       </div>
 
       {/* Brand Accent - Original Blue */}
-      <div className="absolute left-0 top-0 w-1.5 h-32 bg-gradient-to-b from-[#062da3] via-[#062da3]/50 to-transparent"></div>
+      <div className="absolute left-0 top-0 w-1.5 h-32 bg-gradient-to-b from-brand via-brand/50 to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-28">
           
           {/* Left Side - Your Specific Content */}
           <div className="space-y-6 md:space-y-8 animate-fade-in">
-            <div className="text-[#062da3] text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
+            <div className="text-brand text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
               Proven in Motorsport
             </div>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tighter">
-              Performance Tuning <span className="text-[#062da3]">Built on Experience</span>
+              Performance Tuning <span className="text-brand">Built on Experience</span>
             </h2>
 
             <div className="space-y-5 pt-2">
@@ -57,8 +57,8 @@ export default function WhyChooseSection() {
 
              
 
-              <div className="flex items-center gap-4 text-[#062da3] font-bold uppercase tracking-widest text-sm pt-2">
-                <span className="h-px w-8 bg-[#062da3]"></span>
+              <div className="flex items-center gap-4 text-brand font-bold uppercase tracking-widest text-sm pt-2">
+                <span className="h-px w-8 bg-brand"></span>
                 Workshop Only • Strictly By Appointment
               </div>
             </div>
@@ -73,15 +73,15 @@ export default function WhyChooseSection() {
               >
                 <div className="flex flex-col gap-4">
                   {/* Icon Box */}
-                  <div className="w-14 h-14 bg-[#062da3]/10 border border-[#062da3]/20 flex items-center justify-center text-[#062da3] group-hover:bg-[#062da3] group-hover:text-white transition-all duration-300">
+                  <div className="w-14 h-14 bg-brand/10 border border-brand/20 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all duration-300">
                     {feature.icon}
                   </div>
                   {/* Text */}
                   <div>
-                    <h3 className="text-white text-xl font-bold mb-2 tracking-tight group-hover:text-[#062da3] transition-colors">
+                    <h3 className="text-white text-xl font-bold mb-2 tracking-tight group-hover:text-brand transition-colors">
                       {feature.title}
                     </h3>
-                    <div className="w-10 h-0.5 bg-[#062da3]/30 group-hover:w-20 group-hover:bg-[#062da3] transition-all duration-500"></div>
+                    <div className="w-10 h-0.5 bg-brand/30 group-hover:w-20 group-hover:bg-brand transition-all duration-500"></div>
                   </div>
                 </div>
               </div>

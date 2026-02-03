@@ -23,16 +23,16 @@ const Gallery = () => {
       <div className="container mx-auto px-6 mb-12 flex justify-between items-end">
         <div>
           {/* Color changed to brand blue #062da3 */}
-          <h3 className="text-[#062da3] uppercase tracking-[0.3em] font-bold text-sm mb-2">Our Gallery</h3>
+          <h3 className="text-brand uppercase tracking-[0.3em] font-bold text-sm mb-2">Our Gallery</h3>
           <h2 className="text-4xl font-bold text-white">Quality in every detail</h2>
         </div>
         
         {/* Custom Navigation Arrows - Hover colors changed to brand blue */}
         <div className="hidden md:flex gap-4">
-          <button className="swiper-prev-btn w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#062da3] hover:border-[#062da3] transition-all">
+          <button className="swiper-prev-btn w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand hover:border-brand transition-all">
             <ArrowLeft size={20} />
           </button>
-          <button className="swiper-next-btn w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#062da3] hover:border-[#062da3] transition-all">
+          <button className="swiper-next-btn w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand hover:border-brand transition-all">
             <ArrowRight size={20} />
           </button>
         </div>
