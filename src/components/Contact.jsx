@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
-/* =====================
-   ENV CONFIG
-===================== */
+
 const PHONE = import.meta.env.VITE_PHONE_NUMBER;
 const PHONE_TEL = import.meta.env.VITE_PHONE_TEL;
 const EMAIL = import.meta.env.VITE_EMAIL;
@@ -14,9 +12,7 @@ const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactSection = () => {
-  /* =====================
-     STATE
-  ===================== */
+ 
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
