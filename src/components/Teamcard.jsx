@@ -2,36 +2,34 @@ import React from "react";
 import { Award } from "lucide-react";
 
 export default function TeamSection() {
-  const team = [
+const team = [
     {
-      name: "Minty",
-      role: "Senior Technician",
-      image: "/minty.jpg",
+      name: "Tristan",
+      role: "Founder & Diagnostic Specialist",
+      image: "/tristan.jpg",
       points: [
-        "Halfords – 11 years",
-        "NVQ Level 3",
-        "Mercedes – 9 years",
-        "Maintenance Qualified",
-        "Mercedes System Technician Qualified",
+        "Founder of TK Automotive",
+        "Advanced Diagnostics Specialist",
+        "ECU Calibration Expert",
+        "Performance Tuning & Building",
+        "Data-Led Methodology",
       ],
       bio:
-        "Hi, I'm Minty! I love boxing 🥊. One of my bucket list items was fighting in the ring — ticked ✔️. I’m one of the few people who hasn’t watched Avatar or Harry Potter 😅",
+        "Tristan is the founder of TK Automotive and specialises in advanced diagnostics and ECU calibration. From resolving complex faults to building reliable performance, TK’s approach is data-led and results-driven — with every job tested, validated, and backed by real experience.",
     },
     {
-      name: "Jon",
-      role: "Senior Technician",
-      image: "/jon.jpg",
+      name: "Alex",
+      role: "Workshop Operations & Technician",
+      image: "/alex.jpg",
       points: [
-        "Vauxhall – 4 years",
-        "NVQ Level 3",
-        "Arriva – 4 years",
-        "Bus Technician Qualified",
-        "Halfords – 6 years",
-        "Mercedes – 8 years",
-        "System Technician Qualified",
+        "Workshop Operations Support",
+        "Vehicle Repairs & Servicing",
+        "Pre-Delivery Preparation",
+        "Strong Mechanical Mindset",
+        "Quality Assurance Specialist",
       ],
       bio:
-        "Hi, I'm Jon! I look rough and ready but deep down I’m a detail freak. Part-time raver, full-time technician 🔧",
+        "Alex supports workshop operations and plays an essential role in repairs, servicing and preparation work. With a strong mechanical mindset and a focus on quality, Alex helps ensure every vehicle meets the high standard TK Automotive is known for.",
     },
   ];
 
