@@ -1,57 +1,56 @@
 // data.js
 export const serviceBannerData = {
   title: "Mechanical Repairs",
-  description: "From engine fixes to suspension adjustments, our expert mechanics provide reliable on-site and shop-based repairs to keep your car running smooth.",
+  description: "From engine repairs to suspension adjustments, our expert mechanics provide reliable in-house mechanical repairs to keep your vehicle running smoothly, safely, and efficiently.",
   thumbnailImage: "MechanicalRepairs.png",
 };
 
 // data.js
 export const serviceDetailData = {
   mainTitle: "Full-Service Mechanical Solutions",
-  mainDescription: "Mechanical failures can happen anytime, leaving you stranded or compromising your safety. Our mechanical repair service covers everything from minor component replacements to complex engine and gearbox issues. We combine years of expertise with high-quality parts to ensure your vehicle is restored to its optimal condition as quickly as possible.",
-  
+  mainDescription: "Mechanical issues can arise without warning, affecting performance, reliability, and safety. Our mechanical repair service covers everything from minor component replacements to complex engine and gearbox repairs. All work is carried out at our workshop using quality parts and proven repair methods to restore your vehicle to optimal condition as efficiently as possible.",
+
   // Left Column - When you need it
   benefits: {
-    title: "When you need it",
+    title: "When You Need Mechanical Repairs",
     items: [
       {
         heading: "Engine & Component Failure",
-        text: "Your car won't start, is overheating, or you notice smoke coming from under the hood."
+        text: "Your vehicle won’t start, is overheating, or you notice smoke coming from the engine bay."
       },
       {
         heading: "Brake & Suspension Issues",
-        text: "Hearing squeaking noises, feeling vibrations, or experiencing poor handling while driving."
+        text: "Unusual noises, vibrations, or reduced handling and braking performance."
       },
       {
         heading: "Leaking Fluids",
-        text: "Identifying and fixing oil, coolant, or transmission fluid leaks before they cause major damage."
+        text: "Oil, coolant, or transmission fluid leaks that need attention before causing serious damage."
       },
       {
         heading: "Belts & Hoses Replacement",
-        text: "Preventative or emergency repair of timing belts, fan belts, and radiator hoses."
+        text: "Preventative or urgent replacement of timing belts, auxiliary belts, and cooling system hoses."
       }
     ]
   },
-
   // Right Column - How it works
   process: {
-    title: "How it works",
+    title: "How It Works",
     steps: [
       {
         heading: "Damage Assessment",
-        text: "We perform a thorough physical and technical inspection to find the root cause of the mechanical failure."
+        text: "We carry out a detailed mechanical and diagnostic inspection to accurately identify the cause of the fault."
       },
       {
         heading: "Quality Part Sourcing",
-        text: "We use only high-grade or OEM parts to ensure the longevity and safety of the repair."
+        text: "Only high-quality or OEM-equivalent parts are used to ensure durability, safety, and reliability."
       },
       {
         heading: "Expert Repair Work",
-        text: "Our certified mechanics carry out the repair using precision tools and industry-standard techniques."
+        text: "Our qualified technicians complete all repairs using precision tools and industry-standard procedures."
       },
       {
         heading: "Safety Verification",
-        text: "We test the repaired systems under load to ensure everything is working perfectly before handing back the keys."
+        text: "All repaired systems are thoroughly tested to confirm safe operation before the vehicle is returned to you."
       }
     ]
   }
@@ -65,7 +64,7 @@ export const discoverServicesData = {
     {
       name: "Performance & Tuning",
       services: [
-       
+
         {
           title: "Rolling Road / Wheel Dyno",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
@@ -80,7 +79,7 @@ export const discoverServicesData = {
           problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
         },
-         {
+        {
           title: "DPF-EGR-AdBlue Solutions",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
           description: "Specialised maintenance and software solutions for exhaust after-treatment systems.",
@@ -92,14 +91,14 @@ export const discoverServicesData = {
     {
       name: "Diagnostics & Maintenance",
       services: [
-         {
+        {
           title: "ECU Remapping & Tuning",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
           description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
           problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
           link: "#"
         },
-        
+
         {
           title: "Diagnostics",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",

@@ -1,34 +1,42 @@
 // data.js
 export const serviceBannerData = {
   title: "Motorsport & Rally Preparation",
-  description: "From track day setups to full rally builds, we provide professional engineering and performance tuning to make your vehicle competition-ready.",
+  description: "Performance Engineering for Competitive Driving From track-day optimisation to full competition setups, we deliver professional motorsport tuning and preparation to help your vehicle perform reliably under demanding conditions.",
   thumbnailImage: "MotorsportRallyPreparation.png",
 };
 
 // data.js
 export const serviceDetailData = {
-  mainTitle: "Built for Performance & Endurance",
-  mainDescription: "Entering the world of motorsport requires more than just speed—it demands reliability, safety, and precision engineering. Our Motorsport & Rally Preparation service covers everything from chassis strengthening and roll cage installation to Specialised engine tuning and suspension setups. We help drivers transform standard vehicles into high-performance machines capable of handling the toughest tracks and rally stages.",
-  
+  mainTitle: "Built for Performance & Reliability",
+  mainDescription: "Motorsport demands more than outright power — it requires precision setup, consistency, and mechanical reliability. Our Motorsport & Rally Preparation service focuses on professional engine tuning, boost pressure testing, suspension setup, race fuel calibration, and suspension geometry optimisation. We help drivers extract maximum performance while maintaining control, durability, and compliance.",
+
   // Left Column - When you need it
   benefits: {
     title: "Our Expertise",
     items: [
       {
-        heading: "Proven in motor sports",
-        text: "Expert mobile support for tuned engines competing in rally, hillclimbs, sprint racing, trackdays, targa rallys, and drifting events. Fast diagnosis and on-site solutions to keep you running."
+        heading: "Proven in Motorsport",
+        text: "Experience across rallying, hill climbs, sprint racing, track days, targa events, and drifting. We specialise in performance tuning and mechanical optimisation using professional diagnostic equipment and proven motorsport methods."
       },
       {
-        heading: "Performance Suspension",
-        text: "Custom suspension tuning for better handling, weight distribution, and high-speed stability."
+        heading: "Performance Suspension Setup",
+        text: "Custom suspension tuning to improve handling, balance, and high-speed stability for competitive driving."
       },
       {
-        heading: "Brake Upgrades",
-        text: "Fitting high-performance braking systems to ensure consistent stopping power under extreme heat."
+        heading: "Brake Performance Optimisation",
+        text: "Upgrades and setup of high-performance braking systems for consistent stopping power under extreme conditions."
       },
       {
         heading: "Race-Spec Engine Tuning",
-        text: "Optimizing engine output and cooling systems for maximum endurance during competitive racing."
+        text: "Engine calibration, boost pressure testing, and thermal management optimisation for sustained high-load performance."
+      },
+      {
+        heading: "Race Fuel & ECU Calibration",
+        text: "Setup and tuning for race fuels, ensuring correct fueling, ignition timing, and safe power delivery."
+      },
+      {
+        heading: "Suspension Geometry Setup",
+        text: "Precision alignment for camber, caster, and toe to maximise grip, tyre wear, and cornering performance."
       }
     ]
   },
@@ -38,20 +46,20 @@ export const serviceDetailData = {
     title: "The Build Process",
     steps: [
       {
-        heading: "Consultation & Goals",
-        text: "We discuss your racing category, budget, and performance targets to create a custom build plan."
+        heading: "Consultation & Performance Goals",
+        text: "We discuss your motorsport discipline, vehicle setup, budget, and performance objectives to define a tailored preparation plan."
       },
       {
-        heading: "Precision Engineering",
-        text: "Our team carries out all mechanical and structural modifications using premium motorsport components."
+        heading: "Precision Engineering & Setup",
+        text: "Our technicians carry out all tuning, mechanical adjustments, and system optimisation using high-quality motorsport components."
       },
       {
-        heading: "Diagnostic Alignment",
-        text: "Using advanced equipment to align suspension and tune the ECU for race-day conditions."
+        heading: "Diagnostic Calibration",
+        text: "Advanced diagnostics are used to fine-tune ECU parameters, boost control, suspension geometry, and system balance."
       },
       {
-        heading: "Track Testing",
-        text: "Final shakedown and testing to ensure the vehicle is safe, fast, and fully compliant with regulations."
+        heading: "Testing & Validation",
+        text: "Comprehensive testing and verification ensure the vehicle performs safely, consistently, and as intended under competition conditions."
       }
     ]
   }
@@ -65,7 +73,7 @@ export const discoverServicesData = {
     {
       name: "Performance & Tuning",
       services: [
-       
+
         {
           title: "Rolling Road / Wheel Dyno",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
@@ -80,7 +88,7 @@ export const discoverServicesData = {
           problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
         },
-         {
+        {
           title: "DPF-EGR-AdBlue Solutions",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
           description: "Specialised maintenance and software solutions for exhaust after-treatment systems.",
@@ -91,28 +99,28 @@ export const discoverServicesData = {
     },
     {
       name: "Diagnostics & Maintenance",
-      services: [ {
-          title: "ECU Remapping & Tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
-          description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
-          problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
-          link: "#"
-        },
-       
-        {
-          title: "Diagnostics",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",
-          description: "Advanced dealer-level fault finding and electrical system analysis.",
-          problems: ["Intermittent faults", "Warning lights", "Electrical gremlins"],
-          link: "#"
-        },
-        {
-          title: "Mechanical Repairs",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
-          description: "Expert mechanical servicing, part replacements, and engine work.",
-          problems: ["Engine noise", "Component wear", "General maintenance"],
-          link: "#"
-        }
+      services: [{
+        title: "ECU Remapping & Tuning",
+        icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
+        description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
+        problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
+        link: "#"
+      },
+
+      {
+        title: "Diagnostics",
+        icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",
+        description: "Advanced dealer-level fault finding and electrical system analysis.",
+        problems: ["Intermittent faults", "Warning lights", "Electrical gremlins"],
+        link: "#"
+      },
+      {
+        title: "Mechanical Repairs",
+        icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
+        description: "Expert mechanical servicing, part replacements, and engine work.",
+        problems: ["Engine noise", "Component wear", "General maintenance"],
+        link: "#"
+      }
       ]
     }
   ]

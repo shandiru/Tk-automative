@@ -2,56 +2,56 @@
 
 export const serviceBannerData = {
   title: "Vehicle Diagnostics",
-  description: "Identify car issues instantly with our professional roadside diagnostic tools. We find the problem so you can get the right fix fast.",
+  description: "Identify vehicle issues quickly and accurately with our professional in-house diagnostic services. We pinpoint the problem so you can move forward with the right repair — fast and confidently.",
   thumbnailImage: "Diagnostics.png",
 };
 
 export const serviceDetailData = {
-  mainTitle: "Professional On-Site Diagnostics",
-  mainDescription: "When a warning light appears or your car starts acting strange, you need answers fast. Our Vehicle Diagnostics service brings advanced scanning technology to your location. We pinpoint engine faults, electrical issues, and sensor failures, saving you time and preventing further damage to your vehicle.",
-  
+  mainTitle: "Professional In-House Diagnostics",
+  mainDescription: "When a warning light appears or your vehicle starts behaving unusually, accurate diagnosis is essential. Our Vehicle Diagnostics service uses advanced scanning and diagnostic equipment at our workshop to identify engine faults, electrical issues, and sensor failures. This prevents unnecessary repairs, saves time, and helps protect your vehicle from further damage.",
+
   // Left Column - When you need it
   benefits: {
-    title: "When you need it",
+    title: "When You Need Diagnostics",
     items: [
       {
-        heading: "Check Engine Light is on",
-        text: "Your dashboard is showing a warning light and you're unsure if it's safe to keep driving."
+        heading: "Check Engine Light Is On",
+        text: "Your dashboard warning light has appeared, and you’re unsure what it means or whether it’s safe to continue driving."
       },
       {
-        heading: "Unusual noises or vibrations",
-        text: "You hear strange sounds from the engine or feel vibrations that weren't there before."
+        heading: "Unusual Noises or Vibrations",
+        text: "You hear unexpected sounds from the engine or notice vibrations that weren’t present before."
       },
       {
-        heading: "Performance issues",
-        text: "Your vehicle is stalling, losing power, or having trouble starting regularly."
+        heading: "Performance Issues",
+        text: "Your vehicle is losing power, stalling, struggling to start, or not running as it should."
       },
       {
-        heading: "Pre-trip peace of mind",
-        text: "You're planning a long drive and want to ensure all systems are functioning correctly."
+        heading: "Pre-Trip Peace of Mind",
+        text: "You’re planning a long journey and want to ensure all vehicle systems are operating correctly."
       }
     ]
   },
 
   // Right Column - How it works
   process: {
-    title: "How it works",
+    title: "How It Works",
     steps: [
       {
-        heading: "Request a Diagnostic Scan",
-        text: "Contact us and describe the symptoms your vehicle is showing."
+        heading: "Request a Diagnostic Appointment",
+        text: "Contact us to book a diagnostic check and briefly describe the symptoms your vehicle is experiencing."
       },
       {
-        heading: "Expert Technician Arrives",
-        text: "A specialist arrives with professional OBD-II scanners and diagnostic equipment."
+        heading: "Visit Our Workshop",
+        text: "Bring your vehicle to our workshop at your scheduled appointment time for professional inspection."
       },
       {
         heading: "Full System Analysis",
-        text: "We scan your car’s computer system to identify specific error codes and mechanical faults."
+        text: "We carry out a comprehensive diagnostic scan, reading fault codes and analysing vehicle systems to identify the root cause of the issue."
       },
       {
         heading: "Clear Explanation & Advice",
-        text: "We explain the issue clearly and recommend the best next steps, whether it's an on-site fix or a shop repair."
+        text: "We explain the findings clearly and recommend the best next steps — whether that’s repair work, further investigation, or preventative maintenance."
       }
     ]
   }
@@ -84,7 +84,7 @@ export const discoverServicesData = {
           description: "Professional preparation, chassis strengthening, and safety setups for track and rally.",
           problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
-        }, 
+        },
       ]
     },
     {
@@ -97,7 +97,7 @@ export const discoverServicesData = {
           problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
           link: "#"
         },
-       
+
         {
           title: "Diagnostics",
           icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",

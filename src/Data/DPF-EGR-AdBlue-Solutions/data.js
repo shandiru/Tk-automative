@@ -1,7 +1,7 @@
 // data.js
 export const serviceBannerData = {
   title: "DPF-EGR-AdBlue Solutions",
-  description: "Advanced diesel emission fixes to clear fault codes, restore engine power, and resolve AdBlue 'No Start' warnings.",
+  description: "Our DPF / EGR / AdBlue Solutions service is designed to resolve complex diesel exhaust and emissions issues efficiently. Whether your vehicle has entered Limp Mode due to a blocked DPF or is experiencing AdBlue system faults, our technicians use professional diagnostic tools to accurately identify and resolve issues — without the need for expensive main dealer garage visits.",
   thumbnailImage: "DPF-EGR-AdBlue-Solutions.png",
 };
 
@@ -42,8 +42,8 @@ export const serviceDetailData = {
         text: "Provide your vehicle details and the specific warning message showing on your dashboard."
       },
       {
-        heading: "On-Site Diagnostic Scan",
-        text: "Our specialist arrives with advanced equipment to read specific DPF, EGR, or AdBlue fault codes."
+        heading: "Workshop Diagnostic Scan",
+        text: "Your vehicle is inspected at our workshop using advanced diagnostic equipment to read specific DPF, EGR, and AdBlue fault codes and system data."
       },
       {
         heading: "System Restoration",

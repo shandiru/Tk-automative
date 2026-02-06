@@ -16,7 +16,7 @@ const ServiceDetail = ({ data }) => {
         <div className="max-w-4xl mb-16">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-[2px] bg-brand"></div>
-            <span className="text-brand font-bold uppercase tracking-[0.3em] text-[10px]">Excellence</span>
+            <span className="text-brand font-bold uppercase tracking-[0.3em] text-[10px]">Professional Service • Excellence</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tighter uppercase">
             {mainTitle}
