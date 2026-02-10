@@ -16,7 +16,6 @@ const Home = () => {
         <div>
             <Hero />
             {/* <Service /> */}
-
             <About />
             <Teamcard />
             <WhyChooseSection />

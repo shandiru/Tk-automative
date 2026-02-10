@@ -6,7 +6,7 @@ const team = [
     {
       name: "Tristan",
       role: "Founder & Diagnostic Specialist",
-      image: "/tristan.jpg",
+      image: "/Tristan.jpeg",
       points: [
         "Founder of TK Automotive",
         "Advanced Diagnostics Specialist",
@@ -20,7 +20,7 @@ const team = [
     {
       name: "Alex",
       role: "Workshop Operations & Technician",
-      image: "/alex.jpg",
+      image: "/Alex.jpeg",
       points: [
         "Workshop Operations Support",
         "Vehicle Repairs & Servicing",
@@ -57,7 +57,7 @@ const team = [
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-top"
                   />
                 </div>
 
