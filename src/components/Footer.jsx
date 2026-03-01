@@ -136,6 +136,7 @@ const UniqueFooter = () => {
             <a href="/dpf-egr-adblue-solutions" className="text-gray-600 hover:text-brand transition-colors">DPF/AdBlue</a>
             <a href="/mechanical-repairs" className="text-gray-600 hover:text-brand transition-colors">Repairs</a>
             <a href="/privacy-policy" className="text-gray-600 hover:text-brand transition-colors">Privacy</a>
+             <a href="/terms-conditions" className="text-gray-600 hover:text-brand transition-colors">Terms Conditions</a>
           </div>
         </div>
       </div>
