@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Clock, ArrowUpRight } from 'lucide-react';
-
+const PHONE = import.meta.env.VITE_PHONE_NUMBER;
 const MapSection = () => {
   // Replace the placeholder with the actual Google Maps embed URL for TK Automotive
   const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.44627746045!2d-4.462221799999999!3d54.19195630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48639b243010e095%3A0xb4f2e3c6dbc99e0!2sTK%20Automotive!5e1!3m2!1sen!2slk!4v1769709511202!5m2!1sen!2slk"
@@ -84,7 +84,7 @@ const MapSection = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold uppercase tracking-wide mb-1 text-xs">Phone </h4>
-                  <p className="text-gray-500 text-sm">01624 860209</p>
+                  <p className="text-gray-500 text-sm">{PHONE}</p>
                 </div>
               </div>
             </div>

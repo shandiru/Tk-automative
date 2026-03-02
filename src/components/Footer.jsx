@@ -1,10 +1,9 @@
 import React from 'react';
 import { Facebook, Clock, ArrowRight } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const PHONE = import.meta.env.VITE_PHONE_NUMBER;
 const PHONE_TEL = import.meta.env.VITE_PHONE_TEL;
 const EMAIL = import.meta.env.VITE_EMAIL;
-
 
 const UniqueFooter = () => {
   const openingHours = [
@@ -14,7 +13,6 @@ const UniqueFooter = () => {
   ];
 
   const handleNavClick = (e, path) => {
-    // If it's an ID on the same page (like #hero or #about)
     if (path.startsWith('#')) {
       e.preventDefault();
       const element = document.querySelector(path);
@@ -24,12 +22,18 @@ const UniqueFooter = () => {
         window.location.href = '/' + path;
       }
     }
-    // If it's a route (like /diagnostics), let the default link behavior happen
   };
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About Us', path: '#about' },
+    { name: 'ECU Remapping', path: '/ecu-remapping-tuning' },
+    { name: 'Diagnostics', path: '/diagnostics' },
+    { name: 'Contact Us', path: '#contact' }
+  ];
 
   return (
     <footer className="bg-[#050505] pt-24 pb-12 relative overflow-hidden">
-      {/* Background Big Text */}
       <div className="absolute bottom-[-10%] left-0 w-full pointer-events-none select-none overflow-hidden">
         <h2 className="text-[15vw] font-black text-white/[0.02] uppercase leading-none tracking-tighter whitespace-nowrap">
           TK Automotive
@@ -42,8 +46,7 @@ const UniqueFooter = () => {
           {/* Brand Info */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.jpg" alt="TK Automotive Logo" className="w-full h-full  rounded-full border border-white/10" />
-
+              <img src="/logo.jpg" alt="TK Automotive Logo" className="w-full h-full rounded-full border border-white/10" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-8">
               Professional ECU remapping, advanced diagnostics, and precision mechanical solutions for the Isle of Man.
@@ -57,26 +60,30 @@ const UniqueFooter = () => {
             </div>
           </div>
 
-          {/* Navigation - Mixed Smooth Scroll and Routes */}
+          {/* Navigation */}
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-8">Quick Navigation</h4>
             <ul className="space-y-4">
-              {[
-                { name: 'Home', path: '/' },
-                { name: 'About Us', path: '#about' },
-                { name: 'ECU Remapping', path: '/ecu-remapping-tuning' }, // Route
-                { name: 'Diagnostics', path: '/diagnostics' },           // Route
-                { name: 'Contact Us', path: '#contact' }
-              ].map((link) => (
+              {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.path}
-                    onClick={(e) => handleNavClick(e, link.path)}
-                    className="text-gray-400 hover:text-brand transition-all duration-300 flex items-center gap-2 group text-sm"
-                  >
-                    <ArrowRight size={12} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
-                    {link.name}
-                  </a>
+                  {link.path.startsWith('#') ? (
+                    <a
+                      href={link.path}
+                      onClick={(e) => handleNavClick(e, link.path)}
+                      className="text-gray-400 hover:text-brand transition-all duration-300 flex items-center gap-2 group text-sm"
+                    >
+                      <ArrowRight size={12} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.path}
+                      className="text-gray-400 hover:text-brand transition-all duration-300 flex items-center gap-2 group text-sm"
+                    >
+                      <ArrowRight size={12} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -121,7 +128,7 @@ const UniqueFooter = () => {
 
         </div>
 
-        {/* Bottom Bar - All Service Routes */}
+        {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-[10px] uppercase tracking-widest font-medium">
             © 2026 TK Automotive. All rights reserved.
@@ -131,12 +138,12 @@ const UniqueFooter = () => {
             Powered by <a href="https://www.ansely.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 text-blue-900 transition-colors">Ansely</a>
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-[10px] uppercase tracking-widest font-bold">
-            <a href="/ecu-remapping-tuning" className="text-gray-600 hover:text-brand transition-colors">Remapping</a>
-            <a href="/diagnostics" className="text-gray-600 hover:text-brand transition-colors">Diagnostics</a>
-            <a href="/dpf-egr-adblue-solutions" className="text-gray-600 hover:text-brand transition-colors">DPF/AdBlue</a>
-            <a href="/mechanical-repairs" className="text-gray-600 hover:text-brand transition-colors">Repairs</a>
-            <a href="/privacy-policy" className="text-gray-600 hover:text-brand transition-colors">Privacy</a>
-             <a href="/terms-conditions" className="text-gray-600 hover:text-brand transition-colors">Terms Conditions</a>
+            <Link to="/ecu-remapping-tuning" className="text-gray-600 hover:text-brand transition-colors">Remapping</Link>
+            <Link to="/diagnostics" className="text-gray-600 hover:text-brand transition-colors">Diagnostics</Link>
+            <Link to="/dpf-egr-adblue-solutions" className="text-gray-600 hover:text-brand transition-colors">DPF/AdBlue</Link>
+            <Link to="/mechanical-repairs" className="text-gray-600 hover:text-brand transition-colors">Repairs</Link>
+            <Link to="/privacy-policy" className="text-gray-600 hover:text-brand transition-colors">Privacy</Link>
+            <Link to="/terms-conditions" className="text-gray-600 hover:text-brand transition-colors">Terms Conditions</Link>
           </div>
         </div>
       </div>

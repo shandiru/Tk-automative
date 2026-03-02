@@ -56,7 +56,7 @@ export default function HeroSection() {
                 className="group px-4 md:px-8 py-4 bg-brand hover:bg-white text-white hover:text-brand font-bold rounded-sm transition-all duration-300 flex items-center gap-2 shadow-[0_10px_30px_rgba(6,45,163,0.3)] shrink-0"
               >
                 <span className="text-[10px] md:text-sm lg:text-base uppercase tracking-tighter whitespace-nowrap">Explore Services</span>
-                <ArrowUpRight className="w-4 h-4 md:w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </button>
 
               <a
