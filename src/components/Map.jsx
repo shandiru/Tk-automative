@@ -1,17 +1,21 @@
 import React from 'react';
 import { MapPin, Phone, Clock, ArrowUpRight } from 'lucide-react';
-const PHONE = import.meta.env.VITE_PHONE_NUMBER;
-const MapSection = () => {
-  // Replace the placeholder with the actual Google Maps embed URL for TK Automotive
-  const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.44627746045!2d-4.462221799999999!3d54.19195630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48639b243010e095%3A0xb4f2e3c6dbc99e0!2sTK%20Automotive!5e1!3m2!1sen!2slk!4v1769709511202!5m2!1sen!2slk"
 
-  // URL that forces directions from "My Location" to the workshop destination
+const PHONE = import.meta.env.VITE_PHONE_NUMBER;
+
+const MapSection = () => {
+  // Fixed Google Maps embed URL (Isle of Man locale)
+  const mapSource = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.44627746045!2d-4.462221799999999!3d54.19195630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48639b243010e095%3A0xb4f2e3c6dbc99e0!2sTK%20Automotive!5e1!3m2!1sen!2sim!4v1769709511202!5m2!1sen!2sim";
+
+  // Fixed Google Maps directions URL (Isle of Man locale)
   const googleMapsExternal = "https://www.google.com/maps/dir/?api=1&destination=TK+Automotive+Lower+Ballacottier+Onchan+IM4+5BQ&destination_place_id=ChIJleAQMCSbY0gR4Jm8bTwuTws";
+
+  const googleMapsDirections = "https://www.google.com/maps?daddr=Lower+Ballacottier,+Ballacottier+Rd,+Onchan+IM4+5BQ,+Isle+of+Man";
 
   return (
     <section className="bg-black py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
@@ -23,10 +27,10 @@ const MapSection = () => {
               Visit Our Workshop
             </h2>
           </div>
-          
-          <a 
-            href={googleMapsExternal} 
-            target="_blank" 
+
+          <a
+            href={googleMapsExternal}
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white border-b-2 border-brand pb-1 hover:text-brand transition-colors font-bold uppercase text-sm tracking-widest"
           >
@@ -89,8 +93,8 @@ const MapSection = () => {
               </div>
             </div>
 
-            <a 
-              href="https://www.google.com/maps?sca_esv=c64924e04d081bdf&rlz=1C1GCEA_enLK1141LK1141&sxsrf=ANbL-n4_h608ZDTltFKr0gt-wf9qJfe2WQ:1768561763908&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObzKPDZUkK-x28ZtFWvmSc-n7emKZuGMr69zTiSzQFuxIqZfSqJtWiMT667fTk8SWBjWF2j68bma-7D_h-51vqOmwj-I&biw=1366&bih=633&dpr=1&aic=0&um=1&ie=UTF-8&fb=1&gl=lk&sa=X&geocode=KZXgEDAkm2NIMeCZvG08Lk8L&daddr=Lower+Ballacottier,+Ballacottier+Rd,+Onchan+IM4+5BQ,+Isle+of+Man"
+            <a
+              href={googleMapsDirections}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full mt-8 bg-white text-black py-4 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-brand hover:text-white transition-all duration-300 flex items-center justify-center"
