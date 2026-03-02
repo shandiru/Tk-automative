@@ -88,7 +88,7 @@ export default function TestimonialSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           
           {/* Progress Selectors - NOW HIDDEN ON MOBILE */}
-          <div className="hidden md:grid lg:col-span-8 grid-cols-3 gap-8">
+          <div className="hidden md:grid lg:col-span-8 grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={testimonial.id}

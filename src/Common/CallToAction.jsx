@@ -1,14 +1,13 @@
 import React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
 
-// We pass 'data' as a prop here
 const CallToAction = ({ data }) => {
-  // If data hasn't loaded yet, return null to prevent errors
   if (!data) return null;
 
   const { titlePart1, titlePart2, buttonText, buttonLink, image, features } = data;
 
   return (
+    // உங்கள் விருப்பப்படி bg-black பயன்படுத்தப்பட்டுள்ளது
     <section className="py-12 px-6 bg-black">
       <div className="max-w-7xl mx-auto overflow-hidden rounded-[40px] shadow-2xl border border-white/5">
         <div className="flex flex-col lg:flex-row">
@@ -22,9 +21,7 @@ const CallToAction = ({ data }) => {
               <span className="text-white">{titlePart2}</span>
             </h2>
 
-            
-
-            <div className="space-y-4 relative z-10">
+            <div className="space-y-4 relative z-10 mb-10">
               {features?.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 group">
                   <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center border border-white/30 group-hover:bg-white transition-all duration-300">
@@ -36,6 +33,20 @@ const CallToAction = ({ data }) => {
                 </div>
               ))}
             </div>
+
+           
+            {buttonText && (
+              <div className="relative z-10">
+                <a 
+                  href={buttonLink || "#"} 
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-900 font-black uppercase tracking-widest rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-xl"
+                >
+                  {buttonText}
+                  <ArrowRight size={20} />
+                </a>
+              </div>
+            )}
+            {/* ---------------------------- */}
           </div>
 
           <div className="lg:w-1/2 relative min-h-[450px]">

@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            {/* <Service /> */}
+           
             <About />
             <Teamcard />
             <WhyChooseSection />

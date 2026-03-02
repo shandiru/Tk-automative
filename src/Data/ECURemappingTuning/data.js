@@ -1,4 +1,12 @@
-// data.js
+import {
+  Cpu,
+  Gauge,
+  Trophy,
+  Wind,
+  SearchCode,
+  Wrench,
+ 
+} from "lucide-react";
 export const serviceBannerData = {
   title: "ECU Remapping & Tuning",
   description: "Unlock your vehicle's true potential. Increase horsepower, improve torque, and enhance fuel efficiency with our expert tuning services.",
@@ -61,60 +69,58 @@ export const serviceDetailData = {
 export const discoverServicesData = {
   mainTitle: "Discover more our services",
   buttonText: "All services list",
-  categories: [
+ categories: [
     {
       name: "Performance & Tuning",
       services: [
-       
+        {
+          title: "ECU Remapping & Tuning",
+           icon: Cpu,
+          description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
+          problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
+          link: "#"
+        },
         {
           title: "Rolling Road / Wheel Dyno",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d34460197162e420bd0_Layer_1%20(1).webp",
+          icon: Gauge,
           description: "Accurate power and torque measurement using professional-grade dyno equipment.",
           problems: ["Unknown power output", "Hidden engine faults", "Tuning verification"],
           link: "#"
         },
         {
           title: "Motorsport & Rally Preparation",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(5).webp",
+          icon: Trophy,
           description: "Professional preparation, chassis strengthening, and safety setups for track and rally.",
           problems: ["Track safety", "Chassis flex", "Inconsistent lap times"],
           link: "#"
-        }
-        ,
-         {
-          title: "Mechanical Repairs",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(4).webp",
-          description: "Expert mechanical servicing, part replacements, and engine work.",
-          problems: ["Engine noise", "Component wear", "General maintenance"],
-          link: "#"
-        }
+        },
       ]
     },
     {
       name: "Diagnostics & Maintenance",
       services: [
-         {
-          title: "ECU Remapping & Tuning",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f50d8a6c3a627e59a58830_Auto%20tuning%20icon%20(1).webp",
-          description: "Software optimization for increased power, improved driveability, and better fuel efficiency.",
-          problems: ["Manufacturer restrictions", "Slow acceleration", "Flat spots"],
-          link: "#"
-        },
         {
           title: "DPF-EGR-AdBlue Solutions",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(2).webp",
+          icon: Wind,
           description: "Specialised maintenance and software solutions for exhaust after-treatment systems.",
           problems: ["Limp mode", "Blocked filters", "Dashboard warning lights"],
           link: "#"
         },
+
         {
           title: "Diagnostics",
-          icon: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce87703/67f512b08e43151f14523e87_Auto%20tuning%20icon%20(3).webp",
+         icon: SearchCode,
           description: "Advanced dealer-level fault finding and electrical system analysis.",
           problems: ["Intermittent faults", "Warning lights", "Electrical gremlins"],
           link: "#"
         },
-       
+        {
+          title: "Mechanical Repairs",
+         icon: Wrench,
+          description: "Expert mechanical servicing, part replacements, and engine work.",
+          problems: ["Engine noise", "Component wear", "General maintenance"],
+          link: "#"
+        }
       ]
     }
   ]
@@ -124,7 +130,7 @@ export const ctaData = {
   titlePart1: "Ready for more power?",
   titlePart2: "Upgrade your driving experience today!",
   buttonText: "Book a Tune Now",
-  buttonLink: "#",
+   buttonLink: "tel:01624860209",
   image: "https://cdn.prod.website-files.com/67d1666f8b02642a9ce876dc/67d2e18af8d1c0c328adac3a_pexels-jakewymoore-12330350%20(1).webp",
   features: [
     "Custom Tailored Maps",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Clock, ArrowRight } from 'lucide-react';
+import { Facebook, Clock, ArrowRight } from 'lucide-react';
 
 const PHONE = import.meta.env.VITE_PHONE_NUMBER;
 const PHONE_TEL = import.meta.env.VITE_PHONE_TEL;
